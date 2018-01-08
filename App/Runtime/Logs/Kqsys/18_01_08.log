@@ -1,0 +1,1498 @@
+[ 2018-01-08T22:44:53+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `kq_config` [ RunTime:0.0320s ]
+SQL: SELECT `config_pic` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `web_name` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `keywords` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `description` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-01-08T22:44:54+08:00 ] 127.0.0.1 /index.php?s=/Login/index.html
+ERR: Cron:cron_1 Runat 2018-01-08 22:44:54 Use 0.030001 s
+
+[ 2018-01-08T22:44:54+08:00 ] 127.0.0.1 /index.php?s=/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `kq_config` [ RunTime:0.0070s ]
+SQL: SELECT `copyright`,`config_pic` FROM `kq_config` LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `kq_user` [ RunTime:0.0290s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.047002s ]
+INFO: [ app_end ] --END-- [ RunTime:0.049003s ]
+
+[ 2018-01-08T22:44:54+08:00 ] 127.0.0.1 /index.php?s=/Login/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-01-08T22:44:54+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-08T22:45:07+08:00 ] 127.0.0.1 /index.php?s=/login/dologin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kq_admin` [ RunTime:0.0450s ]
+
+[ 2018-01-08T22:45:08+08:00 ] 127.0.0.1 /index.php?s=/Login/verify/0.7031953790275334
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-01-08T22:45:10+08:00 ] 127.0.0.1 /index.php?s=/Login/verify/0.14208900875781993
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-01-08T22:45:17+08:00 ] 127.0.0.1 /index.php?s=/login/dologin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kq_admin` [ RunTime:0.0050s ]
+SQL: SELECT `password` FROM `kq_admin` WHERE `admin_name` = 'zzcn77' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `status` FROM `kq_admin` WHERE `admin_name` = 'zzcn77' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `kq_admin` WHERE `admin_name` = 'zzcn77' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `character_id` FROM `kq_admin` WHERE `admin_name` = 'zzcn77' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_character` [ RunTime:0.0140s ]
+SQL: SELECT `is_root` FROM `kq_character` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `character` FROM `kq_character` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-01-08T22:45:19+08:00 ] 127.0.0.1 /index.php?s=/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `kq_config` [ RunTime:0.0060s ]
+SQL: SELECT `config_pic` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `web_name` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `keywords` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `description` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `kq_character` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Kqsys\Controller\CommonController.class.php 第 26 行.
+SQL: SELECT `character` FROM `kq_character` WHERE `id` = null LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: monitoring D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\33ee3f78805f6515ac8c1359a1ee4ca2.php 第 156 行.
+NOTIC: [8] Undefined variable: monitoring D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\33ee3f78805f6515ac8c1359a1ee4ca2.php 第 167 行.
+NOTIC: [8] Undefined variable: monitoring D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\33ee3f78805f6515ac8c1359a1ee4ca2.php 第 177 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-01-08T22:45:20+08:00 ] 127.0.0.1 /index.php?s=/Index/welcome1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kq_config` [ RunTime:0.0060s ]
+SQL: SELECT `config_pic` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `web_name` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `keywords` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `description` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `kq_character` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Kqsys\Controller\CommonController.class.php 第 26 行.
+SQL: SELECT `character` FROM `kq_character` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-01-08T22:45:25+08:00 ] 127.0.0.1 /index.php?s=/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kq_config` [ RunTime:0.0080s ]
+SQL: SELECT `config_pic` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `web_name` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `keywords` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `description` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `kq_character` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Kqsys\Controller\CommonController.class.php 第 26 行.
+SQL: SELECT `character` FROM `kq_character` WHERE `id` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `kq_user` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `kq_user` WHERE `addtime` < 1515422725 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kq_user` WHERE `addtime` < 1515422725 AND `status` = 1 ORDER BY status asc,addtime desc LIMIT 0,20   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_site` [ RunTime:0.0520s ]
+SQL: SELECT `name` FROM `kq_site` WHERE ( id='28' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name` FROM `kq_site`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\19e9f877e809a4a24b7651346253b8b8.php 第 51 行.
+NOTIC: [8] Undefined index: status D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\19e9f877e809a4a24b7651346253b8b8.php 第 52 行.
+NOTIC: [8] Undefined index: is_guo D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\19e9f877e809a4a24b7651346253b8b8.php 第 58 行.
+NOTIC: [8] Undefined index: is_guo D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\19e9f877e809a4a24b7651346253b8b8.php 第 59 行.
+NOTIC: [8] Undefined index: sid D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\19e9f877e809a4a24b7651346253b8b8.php 第 67 行.
+NOTIC: [8] Undefined index: sid D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\19e9f877e809a4a24b7651346253b8b8.php 第 67 行.
+NOTIC: [8] Undefined index: sid D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\19e9f877e809a4a24b7651346253b8b8.php 第 67 行.
+NOTIC: [8] Undefined index: sid D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\19e9f877e809a4a24b7651346253b8b8.php 第 67 行.
+NOTIC: [8] Undefined index: sid D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\19e9f877e809a4a24b7651346253b8b8.php 第 67 行.
+NOTIC: [8] Undefined index: sid D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\19e9f877e809a4a24b7651346253b8b8.php 第 67 行.
+NOTIC: [8] Undefined index: sid D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\19e9f877e809a4a24b7651346253b8b8.php 第 67 行.
+NOTIC: [8] Undefined index: sid D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\19e9f877e809a4a24b7651346253b8b8.php 第 67 行.
+NOTIC: [8] Undefined index: start D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\19e9f877e809a4a24b7651346253b8b8.php 第 71 行.
+NOTIC: [8] Undefined index: end D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\19e9f877e809a4a24b7651346253b8b8.php 第 73 行.
+NOTIC: [8] Undefined index: keyword D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\19e9f877e809a4a24b7651346253b8b8.php 第 74 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-01-08T22:47:24+08:00 ] 127.0.0.1 /index.php?s=/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kq_config` [ RunTime:0.0070s ]
+SQL: SELECT `config_pic` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `web_name` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `keywords` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `description` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_character` [ RunTime:0.0090s ]
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Kqsys\Controller\CommonController.class.php 第 26 行.
+SQL: SELECT `character` FROM `kq_character` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: monitoring D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\33ee3f78805f6515ac8c1359a1ee4ca2.php 第 159 行.
+NOTIC: [8] Undefined variable: monitoring D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\33ee3f78805f6515ac8c1359a1ee4ca2.php 第 170 行.
+NOTIC: [8] Undefined variable: monitoring D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\33ee3f78805f6515ac8c1359a1ee4ca2.php 第 180 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-01-08T22:47:25+08:00 ] 127.0.0.1 /index.php?s=/Index/welcome1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kq_config` [ RunTime:0.0040s ]
+SQL: SELECT `config_pic` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `web_name` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `keywords` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `description` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_character` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Kqsys\Controller\CommonController.class.php 第 26 行.
+SQL: SELECT `character` FROM `kq_character` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-01-08T22:48:01+08:00 ] 127.0.0.1 /index.php?s=/Teachingsite/site_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kq_config` [ RunTime:0.0040s ]
+SQL: SELECT `config_pic` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `web_name` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `keywords` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `description` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_character` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Kqsys\Controller\CommonController.class.php 第 26 行.
+SQL: SELECT `character` FROM `kq_character` WHERE `id` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `kq_site` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `kq_site` WHERE ( `name` LIKE '%%' OR `principal` LIKE '%%' OR `tel` LIKE '%%' OR `account` LIKE '%%' ) LIMIT 1   [ RunTime:0.0810s ]
+SQL: SELECT * FROM `kq_site` WHERE ( `name` LIKE '%%' OR `principal` LIKE '%%' OR `tel` LIKE '%%' OR `account` LIKE '%%' ) ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: start D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 58 行.
+NOTIC: [8] Undefined index: end D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 60 行.
+NOTIC: [8] Undefined index: keyword D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 61 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 206 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-01-08T22:48:02+08:00 ] 127.0.0.1 /index.php?s=/Teachingsite/site_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kq_config` [ RunTime:0.0030s ]
+SQL: SELECT `config_pic` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `web_name` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `keywords` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `description` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_character` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Kqsys\Controller\CommonController.class.php 第 26 行.
+SQL: SELECT `character` FROM `kq_character` WHERE `id` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `kq_site` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `kq_site` WHERE ( `name` LIKE '%%' OR `principal` LIKE '%%' OR `tel` LIKE '%%' OR `account` LIKE '%%' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kq_site` WHERE ( `name` LIKE '%%' OR `principal` LIKE '%%' OR `tel` LIKE '%%' OR `account` LIKE '%%' ) ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: start D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 58 行.
+NOTIC: [8] Undefined index: end D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 60 行.
+NOTIC: [8] Undefined index: keyword D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 61 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 206 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-01-08T22:48:05+08:00 ] 127.0.0.1 /index.php?s=/Teachingsite/site_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `kq_config` [ RunTime:0.0080s ]
+SQL: SELECT `config_pic` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `web_name` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `keywords` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `description` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_character` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Kqsys\Controller\CommonController.class.php 第 26 行.
+SQL: SELECT `character` FROM `kq_character` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_site` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `kq_site` WHERE ( `name` LIKE '%%' OR `principal` LIKE '%%' OR `tel` LIKE '%%' OR `account` LIKE '%%' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kq_site` WHERE ( `name` LIKE '%%' OR `principal` LIKE '%%' OR `tel` LIKE '%%' OR `account` LIKE '%%' ) ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: start D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 58 行.
+NOTIC: [8] Undefined index: end D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 60 行.
+NOTIC: [8] Undefined index: keyword D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 61 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 206 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2018-01-08T22:48:36+08:00 ] 127.0.0.1 /index.php?s=/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `kq_config` [ RunTime:0.0080s ]
+SQL: SELECT `config_pic` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `web_name` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `keywords` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `description` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `kq_character` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Kqsys\Controller\CommonController.class.php 第 26 行.
+SQL: SELECT `character` FROM `kq_character` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: monitoring D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\33ee3f78805f6515ac8c1359a1ee4ca2.php 第 159 行.
+NOTIC: [8] Undefined variable: monitoring D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\33ee3f78805f6515ac8c1359a1ee4ca2.php 第 170 行.
+NOTIC: [8] Undefined variable: monitoring D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\33ee3f78805f6515ac8c1359a1ee4ca2.php 第 180 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.006001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008001s ]
+
+[ 2018-01-08T22:48:37+08:00 ] 127.0.0.1 /index.php?s=/Index/welcome1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `kq_config` [ RunTime:0.0050s ]
+SQL: SELECT `config_pic` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `web_name` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `keywords` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `description` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_character` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Kqsys\Controller\CommonController.class.php 第 26 行.
+SQL: SELECT `character` FROM `kq_character` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-01-08T22:48:39+08:00 ] 127.0.0.1 /index.php?s=/Teachingsite/site_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kq_config` [ RunTime:0.0060s ]
+SQL: SELECT `config_pic` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `web_name` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `keywords` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `description` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `kq_character` [ RunTime:0.0090s ]
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Kqsys\Controller\CommonController.class.php 第 26 行.
+SQL: SELECT `character` FROM `kq_character` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_site` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `kq_site` WHERE ( `name` LIKE '%%' OR `principal` LIKE '%%' OR `tel` LIKE '%%' OR `account` LIKE '%%' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kq_site` WHERE ( `name` LIKE '%%' OR `principal` LIKE '%%' OR `tel` LIKE '%%' OR `account` LIKE '%%' ) ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: start D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 58 行.
+NOTIC: [8] Undefined index: end D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 60 行.
+NOTIC: [8] Undefined index: keyword D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 61 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 206 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2018-01-08T22:48:41+08:00 ] 127.0.0.1 /index.php?s=/Teachingsite/site_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kq_config` [ RunTime:0.0080s ]
+SQL: SELECT `config_pic` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `web_name` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `keywords` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `description` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_character` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Kqsys\Controller\CommonController.class.php 第 26 行.
+SQL: SELECT `character` FROM `kq_character` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_site` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `kq_site` WHERE ( `name` LIKE '%%' OR `principal` LIKE '%%' OR `tel` LIKE '%%' OR `account` LIKE '%%' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kq_site` WHERE ( `name` LIKE '%%' OR `principal` LIKE '%%' OR `tel` LIKE '%%' OR `account` LIKE '%%' ) ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: start D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 58 行.
+NOTIC: [8] Undefined index: end D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 60 行.
+NOTIC: [8] Undefined index: keyword D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 61 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 206 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-08T22:48:42+08:00 ] 127.0.0.1 /index.php?s=/Teachingsite/site_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kq_config` [ RunTime:0.0100s ]
+SQL: SELECT `config_pic` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `web_name` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `keywords` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `description` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `kq_character` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Kqsys\Controller\CommonController.class.php 第 26 行.
+SQL: SELECT `character` FROM `kq_character` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_site` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `kq_site` WHERE ( `name` LIKE '%%' OR `principal` LIKE '%%' OR `tel` LIKE '%%' OR `account` LIKE '%%' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kq_site` WHERE ( `name` LIKE '%%' OR `principal` LIKE '%%' OR `tel` LIKE '%%' OR `account` LIKE '%%' ) ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: start D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 58 行.
+NOTIC: [8] Undefined index: end D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 60 行.
+NOTIC: [8] Undefined index: keyword D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 61 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 206 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-01-08T22:48:43+08:00 ] 127.0.0.1 /index.php?s=/Teachingsite/site_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kq_config` [ RunTime:0.0090s ]
+SQL: SELECT `config_pic` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `web_name` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `keywords` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `description` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_character` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Kqsys\Controller\CommonController.class.php 第 26 行.
+SQL: SELECT `character` FROM `kq_character` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_site` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `kq_site` WHERE ( `name` LIKE '%%' OR `principal` LIKE '%%' OR `tel` LIKE '%%' OR `account` LIKE '%%' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kq_site` WHERE ( `name` LIKE '%%' OR `principal` LIKE '%%' OR `tel` LIKE '%%' OR `account` LIKE '%%' ) ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: start D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 58 行.
+NOTIC: [8] Undefined index: end D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 60 行.
+NOTIC: [8] Undefined index: keyword D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 61 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 206 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-01-08T22:48:44+08:00 ] 127.0.0.1 /index.php?s=/Teachingsite/site_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kq_config` [ RunTime:0.0040s ]
+SQL: SELECT `config_pic` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `web_name` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `keywords` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `description` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `kq_character` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Kqsys\Controller\CommonController.class.php 第 26 行.
+SQL: SELECT `character` FROM `kq_character` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_site` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `kq_site` WHERE ( `name` LIKE '%%' OR `principal` LIKE '%%' OR `tel` LIKE '%%' OR `account` LIKE '%%' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kq_site` WHERE ( `name` LIKE '%%' OR `principal` LIKE '%%' OR `tel` LIKE '%%' OR `account` LIKE '%%' ) ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: start D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 58 行.
+NOTIC: [8] Undefined index: end D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 60 行.
+NOTIC: [8] Undefined index: keyword D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 61 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 206 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-08T22:48:45+08:00 ] 127.0.0.1 /index.php?s=/Teachingsite/site_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kq_config` [ RunTime:0.0070s ]
+SQL: SELECT `config_pic` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `web_name` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `keywords` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `description` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_character` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Kqsys\Controller\CommonController.class.php 第 26 行.
+SQL: SELECT `character` FROM `kq_character` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_site` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `kq_site` WHERE ( `name` LIKE '%%' OR `principal` LIKE '%%' OR `tel` LIKE '%%' OR `account` LIKE '%%' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kq_site` WHERE ( `name` LIKE '%%' OR `principal` LIKE '%%' OR `tel` LIKE '%%' OR `account` LIKE '%%' ) ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: start D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 58 行.
+NOTIC: [8] Undefined index: end D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 60 行.
+NOTIC: [8] Undefined index: keyword D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 61 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 206 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-01-08T22:48:46+08:00 ] 127.0.0.1 /index.php?s=/Teachingsite/site_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kq_config` [ RunTime:0.0050s ]
+SQL: SELECT `config_pic` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `web_name` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `keywords` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `description` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_character` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Kqsys\Controller\CommonController.class.php 第 26 行.
+SQL: SELECT `character` FROM `kq_character` WHERE `id` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `kq_site` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `kq_site` WHERE ( `name` LIKE '%%' OR `principal` LIKE '%%' OR `tel` LIKE '%%' OR `account` LIKE '%%' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kq_site` WHERE ( `name` LIKE '%%' OR `principal` LIKE '%%' OR `tel` LIKE '%%' OR `account` LIKE '%%' ) ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: start D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 58 行.
+NOTIC: [8] Undefined index: end D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 60 行.
+NOTIC: [8] Undefined index: keyword D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 61 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 206 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-01-08T22:48:47+08:00 ] 127.0.0.1 /index.php?s=/Teachingsite/site_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kq_config` [ RunTime:0.0080s ]
+SQL: SELECT `config_pic` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `web_name` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `keywords` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `description` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_character` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Kqsys\Controller\CommonController.class.php 第 26 行.
+SQL: SELECT `character` FROM `kq_character` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_site` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `kq_site` WHERE ( `name` LIKE '%%' OR `principal` LIKE '%%' OR `tel` LIKE '%%' OR `account` LIKE '%%' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kq_site` WHERE ( `name` LIKE '%%' OR `principal` LIKE '%%' OR `tel` LIKE '%%' OR `account` LIKE '%%' ) ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: start D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 58 行.
+NOTIC: [8] Undefined index: end D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 60 行.
+NOTIC: [8] Undefined index: keyword D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 61 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 206 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-08T22:48:48+08:00 ] 127.0.0.1 /index.php?s=/Teachingsite/site_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `kq_config` [ RunTime:0.0030s ]
+SQL: SELECT `config_pic` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `web_name` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `keywords` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `description` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_character` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Kqsys\Controller\CommonController.class.php 第 26 行.
+SQL: SELECT `character` FROM `kq_character` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_site` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `kq_site` WHERE ( `name` LIKE '%%' OR `principal` LIKE '%%' OR `tel` LIKE '%%' OR `account` LIKE '%%' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kq_site` WHERE ( `name` LIKE '%%' OR `principal` LIKE '%%' OR `tel` LIKE '%%' OR `account` LIKE '%%' ) ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: start D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 58 行.
+NOTIC: [8] Undefined index: end D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 60 行.
+NOTIC: [8] Undefined index: keyword D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 61 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 206 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-01-08T22:48:51+08:00 ] 127.0.0.1 /index.php?s=/Teachingsite/site_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `kq_config` [ RunTime:0.0090s ]
+SQL: SELECT `config_pic` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `web_name` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `keywords` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `description` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `kq_character` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Kqsys\Controller\CommonController.class.php 第 26 行.
+SQL: SELECT `character` FROM `kq_character` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_site` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `kq_site` WHERE ( `name` LIKE '%%' OR `principal` LIKE '%%' OR `tel` LIKE '%%' OR `account` LIKE '%%' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kq_site` WHERE ( `name` LIKE '%%' OR `principal` LIKE '%%' OR `tel` LIKE '%%' OR `account` LIKE '%%' ) ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: start D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 58 行.
+NOTIC: [8] Undefined index: end D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 60 行.
+NOTIC: [8] Undefined index: keyword D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 61 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 206 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2018-01-08T22:49:03+08:00 ] 127.0.0.1 /index.php?s=/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kq_config` [ RunTime:0.0080s ]
+SQL: SELECT `config_pic` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `web_name` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `keywords` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `description` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_character` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Kqsys\Controller\CommonController.class.php 第 26 行.
+SQL: SELECT `character` FROM `kq_character` WHERE `id` = null LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: monitoring D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\33ee3f78805f6515ac8c1359a1ee4ca2.php 第 159 行.
+NOTIC: [8] Undefined variable: monitoring D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\33ee3f78805f6515ac8c1359a1ee4ca2.php 第 170 行.
+NOTIC: [8] Undefined variable: monitoring D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\33ee3f78805f6515ac8c1359a1ee4ca2.php 第 180 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-01-08T22:49:04+08:00 ] 127.0.0.1 /index.php?s=/Index/welcome1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `kq_config` [ RunTime:0.0050s ]
+SQL: SELECT `config_pic` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `web_name` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `keywords` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `description` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_character` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Kqsys\Controller\CommonController.class.php 第 26 行.
+SQL: SELECT `character` FROM `kq_character` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2018-01-08T22:49:07+08:00 ] 127.0.0.1 /index.php?s=/Teachingsite/site_list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `kq_config` [ RunTime:0.0030s ]
+SQL: SELECT `config_pic` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `web_name` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `keywords` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `description` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `kq_character` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Kqsys\Controller\CommonController.class.php 第 26 行.
+SQL: SELECT `character` FROM `kq_character` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_site` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `kq_site` WHERE ( `name` LIKE '%%' OR `principal` LIKE '%%' OR `tel` LIKE '%%' OR `account` LIKE '%%' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `kq_site` WHERE ( `name` LIKE '%%' OR `principal` LIKE '%%' OR `tel` LIKE '%%' OR `account` LIKE '%%' ) ORDER BY add_time desc LIMIT 0,25   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: start D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 58 行.
+NOTIC: [8] Undefined index: end D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 60 行.
+NOTIC: [8] Undefined index: keyword D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 61 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 106 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 107 行.
+NOTIC: [8] Undefined index: p D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\b909c45194c3179ff6993b248d848a09.php 第 206 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-01-08T22:49:09+08:00 ] 127.0.0.1 /index.php?s=/Teachingsite/site_lista.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `kq_config` [ RunTime:0.0070s ]
+SQL: SELECT `config_pic` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `web_name` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `keywords` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `description` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_character` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Kqsys\Controller\CommonController.class.php 第 26 行.
+SQL: SELECT `character` FROM `kq_character` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+ERR: 非法操作:site_lista
+
+[ 2018-01-08T23:05:00+08:00 ] 127.0.0.1 /index.php?s=/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kq_config` [ RunTime:0.0040s ]
+SQL: SELECT `config_pic` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `web_name` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `keywords` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `description` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_character` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Kqsys\Controller\CommonController.class.php 第 26 行.
+SQL: SELECT `character` FROM `kq_character` WHERE `id` = null LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: monitoring D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\33ee3f78805f6515ac8c1359a1ee4ca2.php 第 163 行.
+NOTIC: [8] Undefined variable: monitoring D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\33ee3f78805f6515ac8c1359a1ee4ca2.php 第 174 行.
+NOTIC: [8] Undefined variable: monitoring D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\33ee3f78805f6515ac8c1359a1ee4ca2.php 第 184 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-01-08T23:05:01+08:00 ] 127.0.0.1 /index.php?s=/Index/welcome1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `kq_config` [ RunTime:0.0030s ]
+SQL: SELECT `config_pic` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `web_name` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `keywords` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `description` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `kq_character` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Kqsys\Controller\CommonController.class.php 第 26 行.
+SQL: SELECT `character` FROM `kq_character` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-01-08T23:05:06+08:00 ] 127.0.0.1 /index.php?s=/Carousel/classify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kq_config` [ RunTime:0.0040s ]
+SQL: SELECT `config_pic` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `web_name` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `keywords` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `description` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_character` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Kqsys\Controller\CommonController.class.php 第 26 行.
+SQL: SELECT `character` FROM `kq_character` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: monitoring D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\ce305777a36066d063759db7030a579e.php 第 163 行.
+NOTIC: [8] Undefined variable: monitoring D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\ce305777a36066d063759db7030a579e.php 第 174 行.
+NOTIC: [8] Undefined variable: monitoring D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\ce305777a36066d063759db7030a579e.php 第 184 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-01-08T23:05:07+08:00 ] 127.0.0.1 /index.php?s=/Index/welcome1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kq_config` [ RunTime:0.0080s ]
+SQL: SELECT `config_pic` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `web_name` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `keywords` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `description` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_character` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Kqsys\Controller\CommonController.class.php 第 26 行.
+SQL: SELECT `character` FROM `kq_character` WHERE `id` = null LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-01-08T23:05:55+08:00 ] 127.0.0.1 /index.php?s=/Carousel/classify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kq_config` [ RunTime:0.0090s ]
+SQL: SELECT `config_pic` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `web_name` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `keywords` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `description` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_character` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Kqsys\Controller\CommonController.class.php 第 26 行.
+SQL: SELECT `character` FROM `kq_character` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\ce305777a36066d063759db7030a579e.php 第 40 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\ce305777a36066d063759db7030a579e.php 第 46 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\ce305777a36066d063759db7030a579e.php 第 52 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\ce305777a36066d063759db7030a579e.php 第 58 行.
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\ce305777a36066d063759db7030a579e.php 第 75 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\ce305777a36066d063759db7030a579e.php 第 75 行.
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\ce305777a36066d063759db7030a579e.php 第 79 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\ce305777a36066d063759db7030a579e.php 第 79 行.
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\ce305777a36066d063759db7030a579e.php 第 83 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\ce305777a36066d063759db7030a579e.php 第 83 行.
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\ce305777a36066d063759db7030a579e.php 第 98 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\ce305777a36066d063759db7030a579e.php 第 98 行.
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\ce305777a36066d063759db7030a579e.php 第 102 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\ce305777a36066d063759db7030a579e.php 第 102 行.
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\ce305777a36066d063759db7030a579e.php 第 106 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\ce305777a36066d063759db7030a579e.php 第 106 行.
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\ce305777a36066d063759db7030a579e.php 第 121 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\ce305777a36066d063759db7030a579e.php 第 121 行.
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\ce305777a36066d063759db7030a579e.php 第 125 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\ce305777a36066d063759db7030a579e.php 第 125 行.
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\ce305777a36066d063759db7030a579e.php 第 129 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\ce305777a36066d063759db7030a579e.php 第 129 行.
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\ce305777a36066d063759db7030a579e.php 第 133 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\ce305777a36066d063759db7030a579e.php 第 133 行.
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\ce305777a36066d063759db7030a579e.php 第 137 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\ce305777a36066d063759db7030a579e.php 第 137 行.
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\ce305777a36066d063759db7030a579e.php 第 141 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\ce305777a36066d063759db7030a579e.php 第 141 行.
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\ce305777a36066d063759db7030a579e.php 第 158 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\ce305777a36066d063759db7030a579e.php 第 158 行.
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\ce305777a36066d063759db7030a579e.php 第 161 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\ce305777a36066d063759db7030a579e.php 第 161 行.
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\ce305777a36066d063759db7030a579e.php 第 164 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\ce305777a36066d063759db7030a579e.php 第 164 行.
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\ce305777a36066d063759db7030a579e.php 第 167 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\ce305777a36066d063759db7030a579e.php 第 167 行.
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\ce305777a36066d063759db7030a579e.php 第 184 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\ce305777a36066d063759db7030a579e.php 第 184 行.
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\ce305777a36066d063759db7030a579e.php 第 187 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\ce305777a36066d063759db7030a579e.php 第 187 行.
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\ce305777a36066d063759db7030a579e.php 第 204 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\ce305777a36066d063759db7030a579e.php 第 204 行.
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\ce305777a36066d063759db7030a579e.php 第 220 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\ce305777a36066d063759db7030a579e.php 第 220 行.
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\ce305777a36066d063759db7030a579e.php 第 224 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\ce305777a36066d063759db7030a579e.php 第 224 行.
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\ce305777a36066d063759db7030a579e.php 第 228 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\ce305777a36066d063759db7030a579e.php 第 228 行.
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\ce305777a36066d063759db7030a579e.php 第 232 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\ce305777a36066d063759db7030a579e.php 第 232 行.
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\ce305777a36066d063759db7030a579e.php 第 250 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\ce305777a36066d063759db7030a579e.php 第 250 行.
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\ce305777a36066d063759db7030a579e.php 第 267 行.
+NOTIC: [2] in_array() expects parameter 2 to be array, null given D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\ce305777a36066d063759db7030a579e.php 第 267 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-01-08T23:06:32+08:00 ] 127.0.0.1 /index.php?s=/Carousel/classify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kq_config` [ RunTime:0.0080s ]
+SQL: SELECT `config_pic` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `web_name` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `keywords` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `description` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_character` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Kqsys\Controller\CommonController.class.php 第 26 行.
+SQL: SELECT `character` FROM `kq_character` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-01-08T23:07:21+08:00 ] 127.0.0.1 /index.php?s=/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kq_config` [ RunTime:0.0070s ]
+SQL: SELECT `config_pic` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `web_name` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `keywords` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `description` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_character` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Kqsys\Controller\CommonController.class.php 第 26 行.
+SQL: SELECT `character` FROM `kq_character` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: monitoring D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\33ee3f78805f6515ac8c1359a1ee4ca2.php 第 164 行.
+NOTIC: [8] Undefined variable: monitoring D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\33ee3f78805f6515ac8c1359a1ee4ca2.php 第 175 行.
+NOTIC: [8] Undefined variable: monitoring D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\33ee3f78805f6515ac8c1359a1ee4ca2.php 第 185 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-01-08T23:07:22+08:00 ] 127.0.0.1 /index.php?s=/Index/welcome1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kq_config` [ RunTime:0.0040s ]
+SQL: SELECT `config_pic` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `web_name` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `keywords` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `description` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `kq_character` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Kqsys\Controller\CommonController.class.php 第 26 行.
+SQL: SELECT `character` FROM `kq_character` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-01-08T23:07:24+08:00 ] 127.0.0.1 /index.php?s=/Carousel/demo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `kq_config` [ RunTime:0.0050s ]
+SQL: SELECT `config_pic` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `web_name` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `keywords` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `description` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_character` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Kqsys\Controller\CommonController.class.php 第 26 行.
+SQL: SELECT `character` FROM `kq_character` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-01-08T23:07:51+08:00 ] 127.0.0.1 /index.php?s=/Carousel/classify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kq_config` [ RunTime:0.0090s ]
+SQL: SELECT `config_pic` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `web_name` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `keywords` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `description` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `kq_character` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Kqsys\Controller\CommonController.class.php 第 26 行.
+SQL: SELECT `character` FROM `kq_character` WHERE `id` = null LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
