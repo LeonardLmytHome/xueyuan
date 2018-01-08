@@ -1,0 +1,109 @@
+<aside class="Hui-aside">
+	<input runat="server" id="divScrollValue" type="hidden" value="" />
+	<div class="menu_dropdown bk_2">
+
+
+        <dl id="menu-admin">
+
+            <dt>
+                <i class="Hui-iconfont">&#xe643;</i>
+                教学点管理
+                <i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i>
+            </dt>
+
+            <dd>
+                <ul>
+                    <!--                    <li>
+                                            <a _href="{:U('Teachingsite/site_add')}" data-title="添加教学点" href="javascript:void(0)">添加教学点</a>
+                                        </li>-->
+
+                    <li>
+                        <a _href="{:U('Teachingsite/site_list')}" data-title="教学点列表" href="javascript:void(0)">教学点列表</a>
+                    </li>
+                </ul>
+            </dd>
+
+        </dl>
+		<dl id="menu-article">
+			<dt><i class="Hui-iconfont">&#xe6cc;</i> 学员管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+			<dd>
+				<ul>
+					<li><a _href="{:U('User/index')}" data-title="学员列表" href="javascript:void(0)"> 学员列表</a></li>
+				</ul>
+			</dd>
+		</dl>
+		<dl id="menu-article">
+			<dt><i class="Hui-iconfont">&#xe6cc;</i> 设备管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+			<dd>
+				<ul>
+					<!-- <li><a _href="{:U('User/add')}" data-title="生成验证码" href="javascript:void(0)"> 生成验证码</a></li> -->
+					<li><a _href="{:U('Equip/index')}" data-title="设备列表" href="javascript:void(0)"> 设备列表</a></li>
+				</ul>
+			</dd>
+		</dl>
+		<dl id="menu-admin">
+			<dt><i class="Hui-iconfont">&#xe62d;</i> 管理员<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+			<dd>
+				<ul>
+					<li><a _href="{:U('Admin/index')}" data-title="管理员列表" href="javascript:void(0)">管理员列表</a></li>
+				</ul>
+			</dd>
+		</dl>
+		<dl id="menu-admin">
+			<a _href="{:U('Web/edit')}" data-title="验证码管理" href="javascript:void(0)"><dt><i class="Hui-iconfont">&#xe61d;</i> 验证码管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt></a>
+		</dl>
+		<dl id="menu-admin">
+			<dt><i class="Hui-iconfont">&#xe60a;</i> 我的账号<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+			<dd>
+				<ul>
+					<li><a _href="{:U('admin/pass')}" data-title="密码修改" href="javascript:void(0)">密码修改</a></li>
+				</ul>
+			</dd>
+		</dl>
+
+
+
+
+
+
+		
+	</div>
+</aside>
+<!--监控-->
+<if condition="$monitoring['order']==1">
+	<script type="text/javascript">
+        setInterval(function () {
+            var url = '{:U("Order/check")}';
+            $.post(url,{url:url},function (data) {
+//                console.dir(data);
+                if(data.flag){
+					layer.alert(data.msg);
+				}
+            });
+        },60000);
+	</script>
+</if>
+<if condition="$monitoring['work']==1">
+	<script type="text/javascript">
+        setInterval(function () {
+            var url = '{:U("Work/check")}';
+            $.post(url,{url:url},function (data) {
+                if(data.flag){
+                    layer.alert(data.msg);
+                }
+            });
+        },60000);
+	</script>
+</if>
+<if condition="$monitoring['icp']==1">
+	<script type="text/javascript">
+        setInterval(function () {
+            var url = '{:U("Icp/check")}';
+            $.post(url,{url:url},function (data) {
+                if(data.flag){
+                    layer.alert(data.msg);
+                }
+            });
+        },60000);
+	</script>
+</if>

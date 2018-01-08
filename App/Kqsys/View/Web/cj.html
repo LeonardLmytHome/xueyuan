@@ -1,0 +1,150 @@
+<!--_meta 作为公共模版分离出去-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<LINK rel="Bookmark" href="/favicon.ico" >
+<LINK rel="Shortcut Icon" href="/favicon.ico" />
+<!--[if lt IE 9]>
+<script type="text/javascript" src="__ROOT__/Public/lib/html5.js"></script>
+<script type="text/javascript" src="__ROOT__/Public/lib/respond.min.js"></script>
+<script type="text/javascript" src="__ROOT__/Public/lib/PIE_IE678.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="__ROOT__/Public/static/h-ui/css/H-ui.min.css" />
+<link rel="stylesheet" type="text/css" href="__ROOT__/Public/static/h-ui.admin/css/H-ui.admin.css" />
+<link rel="stylesheet" type="text/css" href="__ROOT__/Public/lib/Hui-iconfont/1.0.7/iconfont.css" />
+<link rel="stylesheet" type="text/css" href="__ROOT__/Public/lib/icheck/icheck.css" />
+<link rel="stylesheet" type="text/css" href="__ROOT__/Public/static/h-ui.admin/skin/default/skin.css" id="skin" />
+<link rel="stylesheet" type="text/css" href="__ROOT__/Public/static/h-ui.admin/css/style.css" />
+<!--[if IE 6]>
+<script type="text/javascript" src="http://lib.h-ui.net/DD_belatedPNG_0.0.8a-min.js" ></script>
+<script>DD_belatedPNG.fix('*');</script>
+<![endif]-->
+<!--/meta 作为公共模版分离出去-->
+
+<title>抽奖设置</title>
+</head>
+<body>
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 系统管理 <span class="c-gray en">&gt;</span> 微信菜单设置 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+<div class="page-container">
+	<form class="form form-horizontal" name="form1" method="post" id="form-article-add">
+		<div id="tab-system" class="HuiTab">
+			<div class="tabBar cl"><span>微信菜单设置</span></div>
+			<div class="tabCon">
+				<div class="row cl">
+					<label class="form-label col-xs-4 col-sm-2"></label>
+					<div class="formControls col-xs-8 col-sm-9" style="width:80%">
+						如果菜单下有子菜单，该菜单链接将无效。每个菜单字数限制在7个字之内.如想删除某个菜单，只需要将菜单名清空
+					</div>
+					
+				</div>
+				<volist name="list" id="vo">
+				<div class="row cl">
+					<label class="form-label col-xs-4 col-sm-2">菜单名称：</label>
+					<div class="formControls col-xs-8 col-sm-9" style="width:16%">
+						<input type="text" name="item_name[{$vo.id}]" style="width:90%;" value="{$vo.name}" class="input-text">
+					</div>
+					<div class="formControls col-xs-8 col-sm-9" style="width:15%;">
+						<select name="type[{$vo.id}]" class="select">
+							<option <if condition="$vo['type'] eq 'view'">selected</if> value="view">跳转链接</option>
+							<option <if condition="$vo['type'] eq 'click'">selected</if> value="click">单击事件</option>
+						</select>
+					</div>
+					<label class="form-label col-xs-4 col-sm-2" style="width:13%">菜单地址：</label>
+					<div class="formControls col-xs-8 col-sm-9" style="width:38%;">
+						<input type="text" name="item[{$vo.id}]" style="width:90%;"  value="{$vo.url}" class="input-text">
+					</div>
+					
+				</div>
+				<volist name="vo['son']" id="v">
+				<div class="row cl">
+					<label class="form-label col-xs-4 col-sm-2">├----</label>
+					<div class="formControls col-xs-8 col-sm-9" style="width:16%">
+						<input type="text" name="item_name[{$v.id}]" style="width:90%;"  value="{$v.name}" class="input-text">
+					</div>
+					<div class="formControls col-xs-8 col-sm-9" style="width:15%;">
+						<select name="type[{$v.id}]" class="select">
+							<option <if condition="$v['type'] eq 'view'">selected</if> value="view">跳转链接</option>
+							<option <if condition="$v['type'] eq 'click'">selected</if> value="click">单击事件</option>
+						</select>
+					</div>
+					<label class="form-label col-xs-4 col-sm-2" style="width:13%"></label>
+					<div class="formControls col-xs-8 col-sm-9" style="width:38%;">
+						<input type="text" name="item[{$v.id}]" style="width:90%;" value="{$v.url}" class="input-text">
+					</div>
+					
+				</div>
+				</volist>
+				</volist>
+			</div>
+		<div class="row cl">
+			<div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2">
+				<button onClick="return check();" class="btn btn-primary radius" type="submit"><i class="Hui-iconfont">&#xe632;</i> 保存</button>
+			</div>
+		</div>
+	</form>
+</div>
+
+<!--_footer 作为公共模版分离出去-->
+<script type="text/javascript" src="__ROOT__/Public/lib/jquery/1.9.1/jquery.min.js"></script> 
+<script type="text/javascript" src="__ROOT__/Public/lib/layer/2.1/layer.js"></script> 
+<script type="text/javascript" src="__ROOT__/Public/lib/icheck/jquery.icheck.min.js"></script> 
+<script type="text/javascript" src="__ROOT__/Public/lib/jquery.validation/1.14.0/jquery.validate.min.js"></script> 
+<script type="text/javascript" src="__ROOT__/Public/lib/jquery.validation/1.14.0/validate-methods.js"></script> 
+<script type="text/javascript" src="__ROOT__/Public/lib/jquery.validation/1.14.0/messages_zh.min.js"></script> 
+<script type="text/javascript" src="__ROOT__/Public/static/h-ui/js/H-ui.js"></script> 
+<script type="text/javascript" src="__ROOT__/Public/static/h-ui.admin/js/H-ui.admin.js"></script> 
+<!--/_footer /作为公共模版分离出去-->
+
+<!--请在下方写此页面业务相关的脚本-->
+<script type="text/javascript">
+$(function(){
+	$('.skin-minimal input').iCheck({
+		checkboxClass: 'icheckbox-blue',
+		radioClass: 'iradio-blue',
+		increaseArea: '20%'
+	});
+	$.Huitab("#tab-system .tabBar span","#tab-system .tabCon","current","click","0");
+});
+
+function check(){
+	var cj_gl1 = document.form1.cj_gl1.value;
+	var cj_gl2 = document.form1.cj_gl2.value;
+	var cj_gl3 = document.form1.cj_gl3.value;
+	var cj_money1 = document.form1.cj_money1.value;
+	var cj_money2 = document.form1.cj_money2.value;
+	var cj_money3 = document.form1.cj_money3.value;
+	
+	if(!(/^\d+(\.\d+)?$/.test(cj_gl1))){
+		alert('请输入正确的一等奖概率');
+		return false;
+	}
+	if(!(/^\d+(\.\d+)?$/.test(cj_money1))){
+		alert('请输入正确的一等奖金额');
+		return false;
+	}
+	if(!(/^\d+(\.\d+)?$/.test(cj_gl2))){
+		alert('请输入正确的二等奖概率');
+		return false;
+	}
+	if(!(/^\d+(\.\d+)?$/.test(cj_money2))){
+		alert('请输入正确的二等奖金额');
+		return false;
+	}
+	if(!(/^\d+(\.\d+)?$/.test(cj_gl3))){
+		alert('请输入正确的三等奖概率');
+		return false;
+	}
+	if(!(/^\d+(\.\d+)?$/.test(cj_money3))){
+		alert('请输入正确的三等奖金额');
+		return false;
+	}
+}
+</script>
+<!--/请在上方写此页面业务相关的脚本-->
+</body>
+</html>

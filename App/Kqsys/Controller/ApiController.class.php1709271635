@@ -1,0 +1,160 @@
+<?php
+// 本类由系统自动生成，仅供测试用途
+namespace Kqsys\Controller;
+//use Think\Controller;
+class ApiController extends BaseController {
+
+	//激活接口
+    public function jihuo(){
+		//个人信息
+		$user_name=I('post.uuid/d');
+		$name=I('post.active_code');
+		if(empty($user_name)||empty($name)){
+			$return['stu'] = '0';
+			$return['code'] = '108';
+			$return['msg'] = '缺少重要参数';
+			$this->ajaxReturn($return);
+		}
+		$whe='';
+		$whe['name']=$name;
+		$res_zai=M('user')->where($whe)->find();
+		if(!$res_zai){
+			$return['stu'] = '0';
+			$return['code'] = '109';
+			$return['msg'] = '该验证码不存在';
+			$this->ajaxReturn($return);
+		}
+		$whe='';
+		$whe['name']=$name;
+		$whe['stu']=2;
+		$res=M('user')->where($whe)->find();
+		if($res){
+			$return['stu'] = '0';
+			$return['code'] = '110';
+			$return['msg'] = '该验证码已激活';
+			$this->ajaxReturn($return);
+		}
+		$whe='';
+		$whe['user_name']=$user_name;
+		$whe['stu']=2;
+		$res=M('user')->where($whe)->find();
+		if($res){
+			$return['stu'] = '0';
+			$return['code'] = '112';
+			$return['msg'] = '该用户名(设备号)已激活';
+			$this->ajaxReturn($return);
+		}
+		$res_user['user_name']=$user_name;
+		$res_user['down_time']=time();
+		$res_user['over_time']=time()+(86400*$res_zai['days']);
+		$res_user['stu']=2;
+		
+		//分类
+		$res_jihuo=M('user')->where("name ='".$name."'")->save($res_user);
+		if($res_jihuo!==false){
+			$return['stu'] = '1';
+			$return['msg'] = '激活成功';
+			$this->ajaxReturn($return);
+		}else{
+			$return['stu'] = '0';
+			$return['code'] = '113';
+			$return['msg'] = '激活失败，请您稍后再试';
+			$this->ajaxReturn($return);
+		}
+
+    }
+
+	
+	//判断是否激活
+    public function is_guoqi(){
+		//个人信息
+		$user_name=I('post.uuid/d');
+		$name=I('post.active_code');
+		if(empty($user_name)){
+			$return['stu'] = '0';
+			$return['code'] = '108';
+			$return['msg'] = '缺少重要参数';
+			$this->ajaxReturn($return);
+		}
+		$whe='';
+		$whe['user_name']=$user_name;
+		$whe['name']=$name;
+		$whe['stu']=2;
+		$res_zai=M('user')->where($whe)->find();
+		if(!$res_zai){
+			$return['stu'] = '0';
+			$return['code'] = '114';
+			$return['msg'] = '该验证码不存在或未激活';
+			$this->ajaxReturn($return);
+		}
+		if($res_zai['over_time']<time()){
+			$return['stu'] = '0';
+			$return['code'] = '115';
+			$return['msg'] = '该验证码已过期';
+			$this->ajaxReturn($return);
+		}else{
+			$return['stu'] = '1';
+			$return['msg'] = '未过期';
+			$this->ajaxReturn($return);
+		}
+		
+
+    }
+	
+	function rand_yzm($length = 10)
+	{
+		$chars = 'abcdefghijklmnopqrstuvwxyz0123456789';
+		$str = '';
+		for ( $i = 0; $i < $length; $i++ ) 
+		{
+			$str .= $chars[ mt_rand(0, strlen($chars) - 1) ];
+		}
+		return $str;
+	}
+	
+	
+	//判断是否超期
+    public function regist(){
+		//个人信息
+		$user_name=I('post.uuid/d');
+		$add_time=I('post.install_time');
+		if(empty($user_name)||empty($add_time)){
+			$return['stu'] = '0';
+			$return['code'] = '108';
+			$return['msg'] = '缺少重要参数';
+			$this->ajaxReturn($return);
+		}
+		$whe='';
+		$whe['uuid']=$user_name;
+		$res_zai=M('user')->where($whe)->find();
+		if(!$res_zai){
+		    $res_yzm=M('user')->getField("name",true);
+			$res=M('config')->find(1);
+			$data_user['user_name']=$user_name;
+			$data_user['uuid']=$user_name;
+			$data_user['stu']=2;
+			$data_user['add_time']=$add_time;
+			$data_user['name']=$this->rand_yzm();
+			if(in_array($data_user['name'],$res_yzm)) {
+				$return['stu'] = '0';
+				$return['code'] = '115';
+				$return['msg'] = '录入失败，请您稍后再试';
+				$this->ajaxReturn($return);
+			} 
+			$data_user['over_time']=$add_time+(86400*$res['app_use_day']);
+			$res_reg=M('user')->add($data_user);
+			if($res_reg){
+				$return['stu'] = '1';
+				$return['msg'] = '录入成功';
+				$this->ajaxReturn($return);
+			}
+		}else{
+			$return['stu'] = '0';
+			$return['code'] = '115';
+			$return['msg'] = '设备号已录入';
+			$this->ajaxReturn($return);
+		}
+    }
+	
+	
+}

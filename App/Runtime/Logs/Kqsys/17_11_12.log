@@ -1,0 +1,310 @@
+[ 2017-11-12T07:36:39+08:00 ] 111.7.173.242 /jhapi/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000493s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000627s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000703s ]
+SQL: SHOW COLUMNS FROM `kq_equip` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kq_equip` WHERE `uuid` = '867855025831180' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-11-12T07:36:39+08:00 ] 111.7.173.242 /loginapi/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000479s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000642s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000720s ]
+SQL: SHOW COLUMNS FROM `kq_site` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `kq_site` WHERE `account` = '77qiao' AND `password` = '14e1b600b1fd579f47433b88e8d85291' AND `status` = 1 LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2017-11-12T07:36:39+08:00 ] 111.7.173.242 /userapi/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000723s ]
+SQL: SHOW COLUMNS FROM `kq_user` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`number`,`name`,`shang_hours`,`total_hours`,`end_time` FROM `kq_user` WHERE `status` = 1 LIMIT 0,10   [ RunTime:0.0001s ]
+
+[ 2017-11-12T07:36:45+08:00 ] 111.7.173.242 /userapi/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000496s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000637s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000718s ]
+SQL: SHOW COLUMNS FROM `kq_user` [ RunTime:0.0011s ]
+SQL: SELECT `id`,`number`,`name`,`shang_hours`,`total_hours`,`end_time` FROM `kq_user` WHERE `status` = 1 LIMIT 0,10   [ RunTime:0.0002s ]
+
+[ 2017-11-12T07:57:24+08:00 ] 111.7.173.242 /jhapi/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000459s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000611s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000686s ]
+SQL: SHOW COLUMNS FROM `kq_equip` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `kq_equip` WHERE `uuid` = '867855025831180' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-11-12T07:57:24+08:00 ] 111.7.173.242 /loginapi/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000496s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000721s ]
+SQL: SHOW COLUMNS FROM `kq_site` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kq_site` WHERE `account` = '77qiao' AND `password` = '14e1b600b1fd579f47433b88e8d85291' AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-11-12T07:57:25+08:00 ] 111.7.173.242 /userapi/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000495s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000656s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000737s ]
+SQL: SHOW COLUMNS FROM `kq_user` [ RunTime:0.0009s ]
+SQL: SELECT `id`,`number`,`name`,`shang_hours`,`total_hours`,`end_time` FROM `kq_user` WHERE `status` = 1 LIMIT 0,10   [ RunTime:0.0001s ]
+
+[ 2017-11-12T07:57:35+08:00 ] 111.7.173.242 /userapi/detail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000668s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000742s ]
+SQL: SHOW COLUMNS FROM `kq_user` [ RunTime:0.0008s ]
+SQL: SELECT `name`,`sex`,`age`,`number`,`tel`,`sid`,`total_hours`,`shang_hours`,`start_time`,`end_time` FROM `kq_user` WHERE ( id='14' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `kq_site` [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `kq_site` WHERE ( id='24' ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-11-12T07:57:35+08:00 ] 111.7.173.242 /userapi/add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000461s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000618s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000693s ]
+SQL: SHOW COLUMNS FROM `kq_site` [ RunTime:0.0007s ]
+SQL: SELECT `id`,`name` FROM `kq_site` WHERE ( status=1 )  [ RunTime:0.0001s ]
+
+[ 2017-11-12T07:57:41+08:00 ] 111.7.173.242 /userapi/detail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000492s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000653s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000732s ]
+SQL: SHOW COLUMNS FROM `kq_user` [ RunTime:0.0010s ]
+SQL: SELECT `name`,`sex`,`age`,`number`,`tel`,`sid`,`total_hours`,`shang_hours`,`start_time`,`end_time` FROM `kq_user` WHERE ( id='13' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `kq_site` [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `kq_site` WHERE ( id='29' ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-11-12T07:57:46+08:00 ] 111.7.173.242 /userapi/detail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000632s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000706s ]
+SQL: SHOW COLUMNS FROM `kq_user` [ RunTime:0.0009s ]
+SQL: SELECT `name`,`sex`,`age`,`number`,`tel`,`sid`,`total_hours`,`shang_hours`,`start_time`,`end_time` FROM `kq_user` WHERE ( id='14' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `kq_site` [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `kq_site` WHERE ( id='24' ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-11-12T07:57:51+08:00 ] 111.7.173.242 /userapi/sign
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000484s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000657s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000731s ]
+SQL: SHOW COLUMNS FROM `kq_user` [ RunTime:0.0009s ]
+SQL: SELECT `id` FROM `kq_user` WHERE ( id='14' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `kq_user_log` [ RunTime:0.0007s ]
+SQL: SELECT `addtime` FROM `kq_user_log` WHERE ( uid='14' )  [ RunTime:0.0001s ]
+
+[ 2017-11-12T07:57:58+08:00 ] 111.7.173.242 /userapi/sign
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000634s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000710s ]
+SQL: SHOW COLUMNS FROM `kq_user` [ RunTime:0.0008s ]
+SQL: SELECT `id` FROM `kq_user` WHERE ( id='14' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `kq_user_log` [ RunTime:0.0006s ]
+SQL: SELECT `addtime` FROM `kq_user_log` WHERE ( uid='14' )  [ RunTime:0.0001s ]
+
+[ 2017-11-12T07:58:01+08:00 ] 111.7.173.242 /userapi/sign
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000482s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000720s ]
+SQL: SHOW COLUMNS FROM `kq_user` [ RunTime:0.0009s ]
+SQL: SELECT `id` FROM `kq_user` WHERE ( id='14' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `kq_user_log` [ RunTime:0.0007s ]
+SQL: SELECT `addtime` FROM `kq_user_log` WHERE ( uid='14' )  [ RunTime:0.0001s ]
+
+[ 2017-11-12T07:58:08+08:00 ] 111.7.173.242 /userapi/detail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000442s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000598s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000668s ]
+SQL: SHOW COLUMNS FROM `kq_user` [ RunTime:0.0009s ]
+SQL: SELECT `name`,`sex`,`age`,`number`,`tel`,`sid`,`total_hours`,`shang_hours`,`start_time`,`end_time` FROM `kq_user` WHERE ( id='14' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `kq_site` [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `kq_site` WHERE ( id='24' ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-11-12T07:58:11+08:00 ] 111.7.173.242 /userapi/detail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000491s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000634s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000711s ]
+SQL: SHOW COLUMNS FROM `kq_user` [ RunTime:0.0010s ]
+SQL: SELECT `name`,`sex`,`age`,`number`,`tel`,`sid`,`total_hours`,`shang_hours`,`start_time`,`end_time` FROM `kq_user` WHERE ( id='14' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `kq_site` [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `kq_site` WHERE ( id='24' ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-11-12T07:58:23+08:00 ] 111.7.173.242 /userapi/detail
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000465s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000708s ]
+SQL: SHOW COLUMNS FROM `kq_user` [ RunTime:0.0010s ]
+SQL: SELECT `name`,`sex`,`age`,`number`,`tel`,`sid`,`total_hours`,`shang_hours`,`start_time`,`end_time` FROM `kq_user` WHERE ( id='13' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `kq_site` [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `kq_site` WHERE ( id='29' ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-11-12T07:58:30+08:00 ] 111.7.173.242 /userapi/sign
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000473s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000615s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000688s ]
+SQL: SHOW COLUMNS FROM `kq_user` [ RunTime:0.0010s ]
+SQL: SELECT `id` FROM `kq_user` WHERE ( id='13' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `kq_user_log` [ RunTime:0.0006s ]
+SQL: SELECT `addtime` FROM `kq_user_log` WHERE ( uid='13' )  [ RunTime:0.0001s ]
+
+[ 2017-11-12T08:06:34+08:00 ] 112.97.57.215 /jhapi/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000502s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000671s ]
+SQL: SHOW COLUMNS FROM `kq_equip` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `kq_equip` WHERE `uuid` = '864044031195459' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2017-11-12T08:06:34+08:00 ] 112.97.57.215 /loginapi/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000483s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000655s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000736s ]
+SQL: SHOW COLUMNS FROM `kq_site` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `kq_site` WHERE `account` = 'xiping01' AND `password` = '14e1b600b1fd579f47433b88e8d85291' AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2017-11-12T08:06:34+08:00 ] 112.97.57.215 /userapi/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000491s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000635s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000714s ]
+SQL: SHOW COLUMNS FROM `kq_user` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`number`,`name`,`shang_hours`,`total_hours`,`end_time` FROM `kq_user` WHERE `status` = 1 LIMIT 0,10   [ RunTime:0.0001s ]
+
+[ 2017-11-12T08:06:37+08:00 ] 112.97.57.215 /userapi/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000452s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000610s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000684s ]
+SQL: SHOW COLUMNS FROM `kq_user` [ RunTime:0.0009s ]
+SQL: SELECT `id`,`number`,`name`,`shang_hours`,`total_hours`,`end_time` FROM `kq_user` WHERE `status` = 1 LIMIT 0,10   [ RunTime:0.0001s ]
+
+[ 2017-11-12T08:07:31+08:00 ] 112.97.57.215 /jhapi/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000466s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000620s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000695s ]
+SQL: SHOW COLUMNS FROM `kq_equip` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `kq_equip` WHERE `uuid` = '864044031195459' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-11-12T08:07:31+08:00 ] 112.97.57.215 /loginapi/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000481s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000617s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000705s ]
+SQL: SHOW COLUMNS FROM `kq_site` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `kq_site` WHERE `account` = 'xiping01' AND `password` = '14e1b600b1fd579f47433b88e8d85291' AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-11-12T08:07:31+08:00 ] 112.97.57.215 /userapi/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000501s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000719s ]
+SQL: SHOW COLUMNS FROM `kq_user` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`number`,`name`,`shang_hours`,`total_hours`,`end_time` FROM `kq_user` WHERE `status` = 1 LIMIT 0,10   [ RunTime:0.0002s ]
+
+[ 2017-11-12T08:07:34+08:00 ] 112.97.57.215 /userapi/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000639s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000715s ]
+SQL: SHOW COLUMNS FROM `kq_user` [ RunTime:0.0009s ]
+SQL: SELECT `id`,`number`,`name`,`shang_hours`,`total_hours`,`end_time` FROM `kq_user` WHERE `status` = 1 LIMIT 0,10   [ RunTime:0.0001s ]
+
+[ 2017-11-12T08:36:51+08:00 ] 111.7.173.242 /jhapi/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000473s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000660s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000738s ]
+SQL: SHOW COLUMNS FROM `kq_equip` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `kq_equip` WHERE `uuid` = '867855025831180' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-11-12T08:36:51+08:00 ] 111.7.173.242 /loginapi/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000491s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000640s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000720s ]
+SQL: SHOW COLUMNS FROM `kq_site` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `kq_site` WHERE `account` = '77qiao' AND `password` = '14e1b600b1fd579f47433b88e8d85291' AND `status` = 1 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2017-11-12T08:36:52+08:00 ] 111.7.173.242 /userapi/lists
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000459s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000628s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000703s ]
+SQL: SHOW COLUMNS FROM `kq_user` [ RunTime:0.0008s ]
+SQL: SELECT `id`,`number`,`name`,`shang_hours`,`total_hours`,`end_time` FROM `kq_user` WHERE `status` = 1 LIMIT 0,10   [ RunTime:0.0001s ]
+

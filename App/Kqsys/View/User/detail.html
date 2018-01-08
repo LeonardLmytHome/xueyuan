@@ -1,0 +1,82 @@
+<include file="Public:header2" />
+<body>
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 学员管理 <span class="c-gray en">&gt;</span> 学员详情 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+<article class="page-container" style="margin-left: 50px;">
+		<div style="margin-left: 40%;color: #ff7800;font-size:16px;margin-top: 20px;">
+			学员详情
+		</div>
+		<div class="row cl" style="margin-top: 20px;">
+			<label class="form-label col-xs-4 col-sm-2" style="width:13%;text-align:center"><span class="c-red"></span>姓 名：</label>
+			<div class="formControls col-xs-8 col-sm-9" style="font-size: 14px;width:35%;">
+				{$info.name}
+			</div>
+			<label class="form-label col-xs-4 col-sm-2" style="width:9%;text-align:center"><span class="c-red"></span>性 别：</label>
+			<div class="formControls col-xs-8 col-sm-9" style="font-size: 14px;width:35%">
+				<if condition="$info['sex'] eq 1">男<else/>女</if>
+			</div>
+		</div>
+		<div class="row cl" style="margin-top: 20px;">
+			<label class="form-label col-xs-4 col-sm-2" style="width:13%;text-align:center"><span class="c-red"></span>年 龄：</label>
+			<div class="formControls col-xs-8 col-sm-9" style="font-size: 14px;width:35%;">
+				{$info.age}
+			</div>
+			<label class="form-label col-xs-4 col-sm-2" style="width:9%;text-align:center"><span class="c-red"></span>编 号：</label>
+			<div class="formControls col-xs-8 col-sm-9" style="font-size: 14px;width:35%">
+				{$info.number}
+			</div>
+		</div>
+		<div class="row cl" style="margin-top: 20px;">
+			<label class="form-label col-xs-4 col-sm-2" style="width:13%;text-align:center"><span class="c-red"></span>联系电话：</label>
+			<div class="formControls col-xs-8 col-sm-9" style="font-size: 14px;width:35%;">
+				{$info.tel}
+			</div>
+			<label class="form-label col-xs-4 col-sm-2" style="width:9%;text-align:center"><span class="c-red"></span>教学点：</label>
+			<div class="formControls col-xs-8 col-sm-9" style="font-size: 14px;width:35%">
+				{$info.sid}
+			</div>
+		</div>
+		<div class="row cl" style="margin-top: 20px;">
+			<label class="form-label col-xs-4 col-sm-2" style="width:13%;text-align:center"><span class="c-red"></span>上课次数：</label>
+			<div class="formControls col-xs-8 col-sm-9" style="font-size: 14px;width:35%;">
+				{$info.shang_hours}
+			</div>
+			<label class="form-label col-xs-4 col-sm-2" style="width:9%;text-align:center"><span class="c-red"></span>学员状态：</label>
+			<div class="formControls col-xs-8 col-sm-9" style="font-size: 14px;width:35%;">
+				<if condition="$info['status'] eq 1"><span style="color:green">正常</span><else/><span style="color:#aaa">已删除</span></if>
+			</div>
+		</div>
+		<!-- <div style="margin-left: 40%;color: #ff7800;font-size:16px;margin-top: 20px;">
+			签到记录
+		</div>
+		<table style="margin-top:20px;border: 10px solid #e2eaf3;">
+			<thead>
+			<tr style="line-height: 35px;">
+				<th style="text-align:center;" width="10%">昵称/头像</th>
+				<th style="text-align:center;" width="10%">推荐时间</th>
+			</tr>
+			</thead>
+			<volist name="list_xia" id="vo">
+				<tbody style="line-height:60px;">
+					<tr >
+						<td style="text-align:center;" width="10%"><img src="{$vo.img}" style="width:50px;height:50px;border-radius:25px">&nbsp;&nbsp;{$vo.ni_name} </td>
+						<td style="text-align:center;" width="10%">{$vo.add_time|date='Y-m-d H:i',###}</td>
+					</tr>
+					
+				</tbody>
+			</volist>
+			<if condition="empty($list_xia)">
+				<tbody>
+					<tr >
+						<td style="text-align:center;" colspan="30" >暂无</td>
+					</tr>
+				</tbody>
+			</if>
+		</table> -->
+</article>
+<include file="Public:footer"/>
+<!--_footer 作为公共模版分离出去-->
+<script>
+	
+</script>
+</body>
+</html>

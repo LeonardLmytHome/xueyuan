@@ -1,0 +1,194 @@
+<include file="Public:header2" />
+<body>
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 教学点管理<span class="c-gray en">&gt;</span> 教学点列表 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+<div class="page-container">
+    <form action="{:U('Teachingsite/site_list')}" method="get">
+        <div class="text-c">
+        <span class="select-box inline">
+			<select class="select" name="status" id="status">
+                <option  value="2" <?php echo $status==2?'selected':'';?>>全部</option>
+                <option value="1" <?php echo $status==1?'selected':'';?>>启用</option>
+                <option value="0" <?php echo $status==0?'selected':'';?>>禁用</option>
+            </select>
+		</span>
+        <input name="c" type="hidden" value="{$kongzhi.c}">
+        <input name="a" type="hidden" value="{$kongzhi.a}">
+            添加时间：
+            <input name="start" value="{$_GET['start']}" type="text"  onfocus="WdatePicker()"  id="txtBeginDate" class="input-text Wdate" style="width:120px;">
+            -
+            <input name="end" value="{$_GET['end']}" type="text" onfocus="WdatePicker()" id="txtEndDate" class="input-text Wdate" style="width:120px;">
+            <input type="text" value="{$_GET['keyword']}" name="keyword" id="keyword" placeholder="教学点名称/负责人/联系方式/app账号" style="width:250px" class="input-text">
+            <button name="" id="search" class="btn btn-success" type="submit"><i class="Hui-iconfont">&#xe665;</i> 搜教学点</button>
+        </div>
+    </form>
+
+
+
+    <!--s-->
+    <form action="{:U('Admin/del')}" method="post">
+        <input type="hidden" name="id" value="">
+        <!--e-->
+
+        <div class="cl pd-5 bg-1 bk-gray mt-20">
+
+
+            <span class="l">
+
+            <a href="{:U('Teachingsite/site_add')}" class="btn btn-primary radius"><i class="Hui-iconfont">&#xe600;</i> 添加教学点</a>
+
+        </span>
+
+
+
+            <span class="r">共有数据：<strong>{$count}</strong> 条</span>
+        </div>
+
+
+    </form>
+    <table class="table table-border table-bordered table-bg table-sort">
+        <thead>
+
+        <tr class="text-c">
+            <!-- <th width="25"><input type="checkbox" name="" value=""></th> -->
+            <!-- <th width="40">ID</th> -->
+            <th width="8%">教学点名称</th>
+            <th width="8%">负责人</th>
+            <th width="8%">手机号</th>
+            <th width="10%">app账号</th>
+            <th width="15%">添加时间</th>
+            <th width="10%">状态</th>
+            <th width="8%">操作</th>
+        </tr>
+        </thead>
+        <tbody>
+<volist name="list" id="val">
+
+                <tr class="text-c">
+                    <!-- <td><input type="checkbox" value="{$v.id}" name="spCodesid"></td> -->
+                    <!-- <td>{$v.id}</td> -->
+                    <td class="ser_gao">{$val.name}</td>
+                    <td class="ser_gao">{$val.principal}</td>
+                    <td class="ser_gao">{$val.tel}</td>
+                    <td class="ser_gao">{$val.account}</td>
+                    <td>
+                        {:date('Y-m-d H:i',$val['add_time'])}
+                    </td>
+
+
+
+                    <td>
+                        <if condition="$val.status eq 1"><span class="label label-success radius">启用</span></if>
+                        <if condition="$val.status eq 0"><span class="label label-danger radius">禁用</span></if>
+                    </td>
+
+
+
+                    <td>
+
+
+
+
+                        <if condition="$val.status eq 1">
+                                <a href="javascript:void(0)" onclick="save_status({$val.id},0)" title="禁用"><i class="Hui-iconfont">&#xe631;</i></a>
+                        </if>
+
+
+
+                        <if condition="$val.status eq 0">
+                                <a href="javascript:void(0)" onclick="save_status({$val.id},1)" title="启用"><i class="Hui-iconfont">&#xe615;</i></a>
+                        </if>
+
+                        <a title="编辑" href="{:U('Teachingsite/save_msg',array('id'=>$val['id']))}" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6df;</i></a>
+
+
+
+
+
+                            <a title="删除" href="javascript:;" onclick="del({$val.id})" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6e2;</i></a>
+
+
+
+
+                    </td>
+
+
+
+                </tr>
+
+</volist>
+
+
+
+
+        <if condition="empty($list)">
+            <tr><td colspan='8' style="text-align:center;">暂时没有数据！</td></tr>
+        </if>
+        </tbody>
+    </table>
+    <div class="page">{$show}</div>
+</div>
+<include file="Public:footer"/>
+<script type="text/javascript">
+    //搜索样式
+    function init(){
+        var v = $("input[name='keyword']").val();
+        $(".ser_gao").textSearch(v);
+    }
+    window.onload=init;
+
+    p="{$Think.get.p}";
+    my_status="{$status}";
+
+
+    /*管理员-启用*/
+    function save_status(id,val){
+        if(val==1){
+            var prompt='确定要启用吗？';
+        }else{
+            var prompt='确实要禁用吗？';
+        }
+        layer.confirm(prompt,function(){
+            $.post("{:U('Teachingsite/save_status')}",{id:id,status:val},function(data){
+                if(data.status){
+                    layer.msg('修改成功',{icon:1},function(){
+                        var start=$('#txtBeginDate').val();
+                        var end=$('#txtEndDate').val();
+                        var keyword=$('#keyword').val();
+                        //要测试直接将else提出来 ，if结构和内容去掉就可以看出效果
+                        if(my_status!=2){
+                        location.href="{:U('Teachingsite/site_list')}"+'?start='+start+'&end='+end+'&keyword='+keyword+'&status='+my_status;
+                    }else{
+                        location.href="{:U('Teachingsite/site_list')}"+"?p="+p+'&start='+start+'&end='+end+'&keyword='+keyword+'&status='+my_status;
+                    }
+
+
+                    })
+                }else{
+                    layer.msg('修改失败',{icon:2})
+                }
+            })
+        });
+    }
+
+
+    function del(o){
+        layer.confirm('确认要删除吗？',function(){
+            $.post("{:U('Teachingsite/del')}",{id:o},function(data){
+                if(data.status){
+                    layer.msg('删除成功',{icon:1},function(){
+                        location.href="{:U('Teachingsite/site_list')}";
+                    })
+                }else{
+                    layer.msg(data.info)
+
+                }
+            })
+        });
+    }
+
+
+
+
+</script>
+</body>
+</html>

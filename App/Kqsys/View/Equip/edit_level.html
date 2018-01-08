@@ -1,0 +1,70 @@
+<include file="Public:header2"/>
+<body>
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> {$cons2}管理 <span class="c-gray en">&gt;</span> 修改{$cons2}"{$user.username}"信息 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+
+<article class="page-container">
+	<form class="form form-horizontal" name="form1" method="post" enctype='multipart/form-data' id="form-article-add">
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>{$cons2}名：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" class="input-text" value="{$user.username}" readonly placeholder="请输入{$cons2}名" id="" name="username">
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>手机号：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" class="input-text"  value="{$user.tel}" placeholder="请输入正确的手机号码" id="" name="tel">
+			</div>
+		</div>
+		<!-- <div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>邮箱：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text" class="input-text"  value="{$user.email}" placeholder="请输入正确的邮箱" id="" name="email">
+			</div>
+		</div> -->
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>新登陆密码：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="password" class="input-text"  placeholder="请输入6~16位数字或字母,不修改可置空" id="" name="password">
+			</div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>确认登陆密码：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="password" class="input-text"  placeholder="请输入6~16位数字或字母,不修改可置空" id="" name="cfpwd">
+			</div>
+		</div>
+		<input name="id" type="hidden" value="{$user.id}">
+		<div class="row cl">
+			<div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2">
+				<button onclick="return check();" class="btn btn-primary radius" type="submit"><i class="Hui-iconfont">&#xe632;</i> 提交保存</button>
+			</div>
+		</div>
+	</form>
+</article>
+<include file="Public:footer"/>
+
+<script type="text/javascript">
+	function check(){
+		var name = document.form1.name.value;
+		var email = document.form1.email.value;
+		var alipay = document.form1.alipay.value;
+
+		if(name == ''){
+			alert('姓名');
+			return false;
+		}
+		if(email == ""){
+			alert('请输入电子邮件');
+			return false;
+		}
+		if(alipay == ""){
+			alert('请输入支付宝账号');
+			return false;
+		}
+
+	}
+</script>
+<!--/请在上方写此页面业务相关的脚本-->
+</body>
+</html>

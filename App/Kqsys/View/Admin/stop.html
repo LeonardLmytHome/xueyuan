@@ -1,0 +1,186 @@
+<include file="Public:header2" />
+<body>
+<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页 <span class="c-gray en">&gt;</span> 管理员管理 <span class="c-gray en">&gt;</span> 管理员列表 <a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a></nav>
+<div class="page-container">
+	<form action="{:U('Admin/index')}" method="get">
+	<div class="text-c"> <span class="select-box inline">
+		<select name="character_id" class="select">
+			<option value="0">全部分类</option>
+			<foreach name="character" item="v">
+			<option value="{$v.id}" {$v['id']==$_GET['character_id']?"selected":""}>{$v.character}</option>
+			</foreach>
+		</select>
+		</span> 日期范围：	
+		<input name="start" value="{$_GET['start']}" type="text"  onfocus="WdatePicker()"  id="txtBeginDate" class="input-text Wdate" style="width:120px;">
+		-
+		<input name="end" value="{$_GET['end']}" type="text" onfocus="WdatePicker()" id="txtEndDate" class="input-text Wdate" style="width:120px;">
+		<input type="text" value="{$_GET['key']}" name="key" id="" placeholder=" 输入管理员名称" style="width:250px" class="input-text">
+		<button name="" id="search" class="btn btn-success" type="submit"><i class="Hui-iconfont">&#xe665;</i> 搜管理员</button>
+	</div>
+	</form>
+		<!--s-->
+	<form action="{:U('Admin/del')}" method="post">
+	<input type="hidden" name="id" value="">
+	<!--e-->
+	<div class="cl pd-5 bg-1 bk-gray mt-20"> <span class="l"><a href="{:U("Admin/add")}" class="btn btn-primary radius"><i class="Hui-iconfont">&#xe600;</i> 添加管理员</a></span></div>
+	</form>
+	<table class="table table-border table-bordered table-bg table-sort">
+		<thead>
+
+			<tr class="text-c">
+				<!-- <th width="25"><input type="checkbox" name="" value=""></th> -->
+				<!-- <th width="40">ID</th> -->
+				<th width="150">登录名</th>
+				<th width="90">手机</th>
+				<th width="150">邮箱</th>
+				<th width="90">角色</th>
+				<th width="130">加入时间</th>
+				<th width="100">是否已启用</th>
+				<th width="100">操作</th>
+			</tr>
+		</thead>                           
+		<tbody>
+			<foreach name="list" item="v">
+			<if condition="$v.id neq 0">
+			<tr class="text-c">
+				<!-- <td><input type="checkbox" value="{$v.id}" name="spCodesid"></td> -->
+				<!-- <td>{$v.id}</td> -->
+				<td>{$v.admin_name}</td>
+				<td>{$v.phone}</td>
+				<td>{$v.email}</td>
+				<td>
+					<foreach name="character" item="c">
+						{$c['id']==$v['character_id']?$c['character']:''}
+					</foreach>
+				</td>
+				<td>{$v.addtime|date="Y-m-d H:i:s",###}</td>
+				<td>
+					<if condition="$v.status eq 1"><span class="label label-success radius">启用</span></if>
+					<if condition="$v.status eq 0"><span class="label label-danger radius">禁用</span></if>
+				</td>
+				<td>
+					<if condition="$v.status eq 1">
+						<a href="javascript:void(0)" onclick="stop({$v.id})" title="禁用"><i class="Hui-iconfont">&#xe631;</i></a>
+					</if>
+					<if condition="$v.status eq 0">
+						<a href="javascript:void(0)" onclick="start({$v.id})" title="启用"><i class="Hui-iconfont">&#xe615;</i></a>
+					</if>
+					<a title="编辑" href="{:U("Admin/edit?id=".$v['id'])}" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6df;</i></a>
+					<!-- <a title="删除" href="javascript:;" onclick="admin_del(this,id)" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6e2;</i></a></td> -->
+					<if condition="$v.id neq $_SESSION['admin']['id']">
+						<a title="删除" href="javascript:;" onclick="del({$v.id})" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6e2;</i></a>
+					</if>
+				</td>
+			</tr></if>
+			</foreach>
+		</tbody>
+	</table>
+	<if condition="empty($list)">
+		<div align="center">
+			<span style="text-align: center; padding-top: 20px;display: block; font-size:16px; color: #ff7800;">没有你要查询的数据！</span>
+		</div>
+	</if><div class="page">{$page}</div>
+</div>
+<include file="Public:footer"/>
+<script type="text/javascript">
+
+
+	/*管理员-增加*/
+	function admin_add(title,url,w,h){
+		var index = layer.open({
+			type: 2,
+			title: title,
+			content: url
+		});
+		layer.full(index);
+		// layer_show(title,url,w,h);
+	}
+	/*管理员-删除*/
+	function del(o){
+		layer.confirm('确认要删除吗？',function(){
+			//此处请求后台程序
+
+			$.ajax({
+				type:'POST',
+				url:'{:U("Admin/del")}',
+				data:'id='+o,
+				datatype:'json',
+				success:function(data)
+				{
+					if(data.stu==1)
+					{
+						layer.msg(data.msg,{icon:1,time:2000});
+						location.reload();
+					}
+					else
+					{
+						layer.msg(data.msg,{icon:2,time:2000});
+					}
+				}
+			});
+			
+		});
+	}
+	/*管理员-编辑*/
+	function admin_edit(title,url,id,w,h){
+		var index = layer.open({
+			type: 2,
+			id:id,
+			title: title,
+			content: url
+		});
+		layer.full(index);
+	}
+	/*管理员-停用*/
+	function stop(o){
+		layer.confirm('确认要禁用吗？',function(index){
+			//此处请求后台程序
+
+			$.ajax({
+				type:'POST',
+				url:'{:U("Admin/toggle")}',
+				data:'id='+o+'&type=-1',
+				datatype:'json',
+				success:function(data)
+				{
+					if(data.stu==1)
+					{
+						layer.msg(data.msg,{icon:5,time:2000});
+						location.reload();
+					}
+					else
+					{
+						layer.msg(data.msg,{icon:7,time:2000});
+					}
+				}
+			});
+		});
+	}
+
+	/*管理员-启用*/
+	function start(o){
+		layer.confirm('确认要启用吗？',function(){
+			$.ajax({
+				type:'POST',
+				url:'{:U("Admin/toggle")}',
+				data:'id='+o+'&type=1',
+				datatype:'json',
+				success:function(data)
+				{
+					if(data.stu==1)
+					{
+						layer.msg(data.msg,{icon:6,time:2000});
+						location.reload();
+					}
+					else
+					{
+						layer.msg(data.msg,{icon:7,time:2000});
+					}
+				}
+			});
+		});
+	}
+
+</script>
+</body>
+</html>
