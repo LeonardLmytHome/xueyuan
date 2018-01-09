@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 return array(
     //'配置项'=>'配置值'
     //数据库配置信息
@@ -6,7 +6,7 @@ return array(
 
 
     'DB_HOST'   => 'localhost', // 服务器地址
-    'DB_NAME'   => 'xueyuan', // 数据库名
+    'DB_NAME'   => 'xueyuantest', // 数据库名
     'DB_USER'   => 'root', // 用户名
     'DB_PWD'    => 'root', // 密码
 
