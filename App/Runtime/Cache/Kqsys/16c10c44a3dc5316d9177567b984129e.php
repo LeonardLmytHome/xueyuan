@@ -1,4 +1,4 @@
-<!--_meta 作为公共模版分离出去-->
+<?php if (!defined('THINK_PATH')) exit();?><!--_meta 作为公共模版分离出去-->
 <!DOCTYPE HTML>
 <html>
 
@@ -15,15 +15,15 @@
 <script type="text/javascript" src="lib/respond.min.js"></script>
 <script type="text/javascript" src="lib/PIE_IE678.js"></script>
 <![endif]-->
-    <link rel="stylesheet" type="text/css" href="__ROOT__/Public/static/h-ui/css/H-ui.min.css" />
-    <link rel="stylesheet" type="text/css" href="__ROOT__/Public/static/h-ui.admin/css/H-ui.admin.css" />
-    <link rel="stylesheet" type="text/css" href="__ROOT__/Public/lib/Hui-iconfont/1.0.7/iconfont.css" />
-    <link rel="stylesheet" type="text/css" href="__ROOT__/Public/lib/icheck/icheck.css" />
-    <link rel="stylesheet" type="text/css" href="__ROOT__/Public/static/h-ui.admin/skin/default/skin.css" id="skin" />
-    <link rel="stylesheet" type="text/css" href="__ROOT__/Public/static/h-ui.admin/css/style.css" />
-    <link rel="stylesheet" type="text/css" href="__ROOT__/Public/static/h-ui.admin/css/swiper.min.css" />
-    <link rel="stylesheet" type="text/css" href="__ROOT__/Public/static/h-ui.admin/css/certify.css" />
-    <link rel="stylesheet" type="text/css" href="__ROOT__/Public/static/h-ui.admin/layui-v2.2.5/layui/css/layui.css" />
+    <link rel="stylesheet" type="text/css" href="/Public/static/h-ui/css/H-ui.min.css" />
+    <link rel="stylesheet" type="text/css" href="/Public/static/h-ui.admin/css/H-ui.admin.css" />
+    <link rel="stylesheet" type="text/css" href="/Public/lib/Hui-iconfont/1.0.7/iconfont.css" />
+    <link rel="stylesheet" type="text/css" href="/Public/lib/icheck/icheck.css" />
+    <link rel="stylesheet" type="text/css" href="/Public/static/h-ui.admin/skin/default/skin.css" id="skin" />
+    <link rel="stylesheet" type="text/css" href="/Public/static/h-ui.admin/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/Public/static/h-ui.admin/css/swiper.min.css" />
+    <link rel="stylesheet" type="text/css" href="/Public/static/h-ui.admin/css/certify.css" />
+    <link rel="stylesheet" type="text/css" href="/Public/static/h-ui.admin/layui-v2.2.5/layui/css/layui.css" />
     <!--[if IE 6]>
 <script type="text/javascript" src="http://lib.h-ui.net/DD_belatedPNG_0.0.8a-min.js" ></script>
 <script>DD_belatedPNG.fix('*');</script>
@@ -38,7 +38,7 @@
 <body>
     <div id="certify">
         <div style="width: 216px; margin:20px;">
-        	<a href="{:U('Carousel/carouseltoggle',array('id'=>'0'))}">
+        	<a href="<?php echo U('Carousel/carouseltoggle',array('id'=>'0'));?>">
                <button class="layui-btn layui-btn-fluid">新增</button>
             </a>
         </div>
@@ -80,17 +80,53 @@
         <div class="swiper-button-next"></div>
     </div>
     <!--_footer 作为公共模版分离出去-->
-    <include file="Public:footer" />
+    <script type="text/javascript" src="/Public/lib/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="/Public/lib/layer/2.1/layer.js"></script> 
+<script type="text/javascript" src="/Public/lib/icheck/jquery.icheck.min.js"></script> 
+<script type="text/javascript" src="/Public/lib/jquery.validation/1.14.0/jquery.validate.min.js"></script> 
+<script type="text/javascript" src="/Public/lib/jquery.validation/1.14.0/validate-methods.js"></script> 
+<script type="text/javascript" src="/Public/lib/jquery.validation/1.14.0/messages_zh.min.js"></script> 
+<script type="text/javascript" src="/Public/static/h-ui/js/H-ui.js"></script>
+<script type="text/javascript" src="/Public/lib/datatables/1.10.0/jquery.dataTables.min.js"></script> 
+<script type="text/javascript" src="/Public/static/h-ui.admin/js/H-ui.admin.js"></script>
+<script language="javascript" type="text/javascript" src="/Public/lib/My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript" src="/Public/lib/jquery.textSearch-1.0.js"></script> 
+<!--分页样式-->
+<script type="text/javascript">
+    $("#page a").hover(function(){
+        $(this).addClass('current');
+    },function(){
+        $(this).removeClass('current');
+    })
+</script>
+<style>
+    #page a{
+        background: #EEE none repeat scroll 0% 0%;
+        margin: 0px 3px;
+        border-radius: 3px;
+        padding: 2px 5px;
+        color: rgb(102, 102, 102);
+        text-decoration:none;
+    }
+    #page .current{
+        background: #ff8a00 none repeat scroll 0% 0%;
+        font-size: 12px;
+        color: #FFF;
+        margin: 0px 3px;
+        border-radius: 3px;
+        padding: 2px 5px;
+    }
+</style>
     <!--/_footer /作为公共模版分离出去-->
 
     <!--请在下方写此页面业务相关的脚本-->
-    <script type="text/javascript" src="__ROOT__/Public/lib/My97DatePicker/WdatePicker.js"></script>
-    <script type="text/javascript" src="__ROOT__/Public/lib/ueditor/1.4.3/ueditor.config.js"></script>
-    <script type="text/javascript" src="__ROOT__/Public/lib/ueditor/1.4.3/lang/zh-cn/zh-cn.js"></script>
-    <script type="text/javascript" src="__ROOT__/Public/lib/ueditor/1.4.3/lang/zh-cn/zh-cn.js"></script>
-    <script type="text/javascript" src="__ROOT__/Public/static/h-ui.admin/js/swiper.min.js"></script>
-    <script type="text/javascript" src="__ROOT__/Public/static/h-ui.admin/js/jquery-1.8.3.min.js"></script>
-    <script type="text/javascript" src="__ROOT__/Public/static/h-ui.admin/layui-v2.2.5/layui/layui.js"></script>
+    <script type="text/javascript" src="/Public/lib/My97DatePicker/WdatePicker.js"></script>
+    <script type="text/javascript" src="/Public/lib/ueditor/1.4.3/ueditor.config.js"></script>
+    <script type="text/javascript" src="/Public/lib/ueditor/1.4.3/lang/zh-cn/zh-cn.js"></script>
+    <script type="text/javascript" src="/Public/lib/ueditor/1.4.3/lang/zh-cn/zh-cn.js"></script>
+    <script type="text/javascript" src="/Public/static/h-ui.admin/js/swiper.min.js"></script>
+    <script type="text/javascript" src="/Public/static/h-ui.admin/js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="/Public/static/h-ui.admin/layui-v2.2.5/layui/layui.js"></script>
 
     <script type="text/javascript">
         certifySwiper = new Swiper('#certify .swiper-container', {
@@ -144,7 +180,7 @@
                 type: 2,
                 title: '轮播操作',
                 area: ['600px', '500px'],
-                content: "{:U('Carousel/carouseltoggle',array('id'=>"+$(this).data('id')+"))}"
+                content: "<?php echo U('Carousel/carouseltoggle',array('id'=>"+$(this).data('id')+"));?>"
             });
         })
 

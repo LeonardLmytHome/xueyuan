@@ -25,19 +25,43 @@
     <title></title>
     <meta name="keywords" content="">
     <meta name="description" content="">
+    <style>
+        .layui-form {
+          padding: 44px 104px;
+        }
+      </style>
 </head>
 
 <body>
-	<div style="width: 216px; margin: 20px;">
-      <button class="layui-btn layui-btn-fluid">新增</button>
-    </div>
-    <table class="layui-hide" id="test" lay-filter="demo"></table>
-
-    <script type="text/html" id="barDemo">
-         <a class="layui-btn layui-btn-primary layui-btn-xs" href="<?php echo U('Carousel/index');?>">查看</a>
-         <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
-         <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
-       </script>
+    <form class="layui-form layui-form-pane">
+        <div class="layui-form-item">
+          <label class="layui-form-label">轮播内容</label>
+          <div class="layui-input-inline">
+          	<input value="<?php echo ($classify["id"]); ?>" hidden="hidden" name="id" lay-verify="id"  />
+            <input type="text" name="name" lay-verify="name" autocomplete="off" placeholder="请输入标题" class="layui-input" value="<?php echo ($classify["name"]); ?>">
+          </div>
+        </div>
+        <?php if($classify["addtime"] != ''): ?><div class="layui-form-item">
+	          <label class="layui-form-label">添加时间</label>
+	          <div class="layui-input-inline">
+	            <input type="text" name="addtime" lay-verify="addtime" value="<?php echo (date('Y-m-d H:i:s',$classify["addtime"])); ?>" disabled="disabled" autocomplete="off" class="layui-input">
+	          </div>
+	        </div><?php endif; ?>
+        <div class="layui-form-item">
+          <label class="layui-form-label">禁用</label>
+          <div class="layui-input-block">
+            <input type="radio" name="disable" value="1" title="是" <?php if($classify["disable"] == 1): ?>checked<?php endif; ?> >
+            <input type="radio" name="disable" value="0" title="否" <?php if($classify["disable"] == 0): ?>checked<?php endif; ?> >
+          </div>
+        </div>
+    
+        <div class="layui-form-item">
+          <div class="layui-input-block">
+            <button class="layui-btn submit" type="button" lay-submit="" lay-filter="demo1">立即提交</button>
+            <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+          </div>
+        </div>
+      </form>
     <!--_footer 作为公共模版分离出去-->
     <script type="text/javascript" src="/Public/lib/jquery/1.9.1/jquery.min.js"></script>
 <script type="text/javascript" src="/Public/lib/layer/2.1/layer.js"></script> 
@@ -83,59 +107,26 @@
     <script type="text/javascript" src="/Public/static/h-ui.admin/layui-v2.2.5/layui/layui.js"></script>
 
     <script type="text/javascript">
-        layui.use(['layer', 'table'], function () {
-            var layer = layui.layer, //弹层
-                table = layui.table //表格
-
-            //执行一个 table 实例
-            table.render({
-                elem: '#test'
-                , height: 500
-                , url: "<?php echo U('Carousel/classify_list');?>" //数据接口
-                , page: true //开启分页
-                , cols: [[ //表头
-                    { field: 'id', title: 'ID', width: 120, sort: true, fixed: 'left' }
-                    , { field: 'name', title: '分类', width: 300 }
-                    , { field: 'addtime', title: '添加时间', width: 300, sort: true }
-                    , { field: 'disable', title: '禁用', width: 100, sort: true }
-                    ,{fixed: 'right', width: 165, align:'center', toolbar: '#barDemo'}
-                ]]
-            });
-
-            //监听工具条
-            table.on('tool(demo)', function (obj) { //注：tool是工具条事件名，test是table原始容器的属性 lay-filter="对应的值"
-                var data = obj.data //获得当前行数据
-                    , layEvent = obj.event; //获得 lay-event 对应的值
-                if (layEvent === 'del') {
-                    layer.confirm('真的删除行么', function (index) {
-                        $.get("<?php echo U('Carousel/classify_del');?>"+"&id="+data.id,function(res){
-                        	layer.msg(res.info);
-                        	obj.del(); //删除对应行（tr）的DOM结构
-                            layer.close(index);
-                        })
-                    });
-                } else if (layEvent === 'edit') {
-                    openEdit(data.id)
-                }
-            });
-        })
-        
-        
-        $(".layui-btn-fluid").click(function(){
-        	openEdit(0)
-        })
-        
-        
-        function openEdit(id){
-        	layer.open({
-                type: 2,
-                title: '轮播操作',
-                area: ['600px', '400px'],
-                content: "<?php echo U('Carousel/classifyltoggle');?>"+'&id='+id
-            });
-        }
+       layui.use(['layer', 'form'], function () {
+	      var layer = layui.layer
+	        , form = layui.form;
+	    });
+	    
+	    $(".submit").click(function(){
+	    	console.log(1)
+	    	$.post("<?php echo U('Carousel/classify_add');?>",
+	    	{
+	    		id:$("input[name='id']").val(),
+	    		name:$("input[name='name']").val(),
+	    		disable:$("input[name='disable']:checked").val()
+	    	},function(res){
+            	layer.msg(res.info);
+            	setTimeout(function(){
+            		window.parent.location.reload(); 
+            	},1000)
+            })
+	    })
     </script>
     <!--/请在上方写此页面业务相关的脚本-->
 </body>
-
 </html>
