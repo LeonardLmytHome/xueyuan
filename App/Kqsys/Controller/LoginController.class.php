@@ -39,11 +39,13 @@ class LoginController extends Controller
         //    // 如果创建失败 表示验证没有通过 输出错误提示信息
         //    $this->error($mod->getError());
         // }
-         if(!$Verify->check($code)){
-          $data['status'] = 0;
-          $data['msg'] = "验证码不正确！";
-          $this->ajaxReturn($data);
-        }
+
+        //屏蔽验证码
+        // if(!$Verify->check($code)){
+        //   $data['status'] = 0;
+        //   $data['msg'] = "验证码不正确！";
+        //   $this->ajaxReturn($data);
+        // }
         //用户名检测
         $arr['admin_name'] = trim(I('post.admin_name'));
 		$pass=trim(I('post.password'));
