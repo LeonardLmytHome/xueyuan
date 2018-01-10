@@ -10,14 +10,14 @@ class CarouselController extends CommonController{
             $obj=M('carousel_classify');
             if($data=$obj->validate($val)->create()){
                 if(empty($data['id'])){
-                    $data['addtime']=time();
+                    $data['addtime']=date("Y-m-d H:i:s");
                     if($obj->add($data)){
                         $this->ajaxReturn("添加成功",1);
                     }else{
                         $this->ajaxReturn("添加失败",0);
                     }
                 }else{
-                    $data['addtime']=time();
+                    $data['addtime']=date("Y-m-d H:i:s");
                     if($obj->save($data)){
                         $this->ajaxReturn("更新成功",1);
                     }else{
@@ -40,6 +40,7 @@ class CarouselController extends CommonController{
         $limit=I('get.limit',10);
         $page = ($page - 1) * $limit;
         $list=$obj->where($where)->order('id desc')->select();
+        
         $this->ajaxReturn(array(
             "code"=> 0,
             "msg" => "",
