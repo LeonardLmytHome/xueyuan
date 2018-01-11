@@ -38,9 +38,7 @@
 <body>
     <div id="certify">
         <div style="width: 216px; margin:20px;">
-        	<a href="{:U('Carousel/carouseltoggle',array('id'=>'0'))}">
-               <button class="layui-btn layui-btn-fluid">新增</button>
-            </a>
+               <button class="layui-btn layui-btn-fluid add" data-id="0">新增</button>
         </div>
 
         <div class="swiper-container swiper-container-horizontal">
@@ -139,13 +137,8 @@
 
         })
 
-        $(".swiper-edit").click(function () {
-            layer.open({
-                type: 2,
-                title: '轮播操作',
-                area: ['600px', '500px'],
-                content: "{:U('Carousel/carouseltoggle',array('id'=>"+$(this).data('id')+"))}"
-            });
+        $(".swiper-edit,.add").click(function () {
+            openEdit($(this).data('id'))
         })
 
         $(".swiper-del").click(function () {
@@ -158,6 +151,16 @@
                 layer.msg('取消', { icon: 1 });
             });
         })
+
+
+        function openEdit(id){
+        	layer.open({
+                type: 2,
+                title: '轮播操作',
+                area: ['600px', '400px'],
+                content: "{:U('Carousel/carouseltoggle')}"+'&id='+id
+            });
+        }
     </script>
     <!--/请在上方写此页面业务相关的脚本-->
 </body>
