@@ -33,28 +33,27 @@
 </head>
 
 <body>
-  <form class="layui-form layui-form-pane" action="">
+  <form class="layui-form layui-form-pane">
     <div class="layui-form-item">
       <label class="layui-form-label">轮播内容</label>
       <div class="layui-input-inline">
-        <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入标题" class="layui-input">
+        <input type="text" value="<?php echo ($carousel["title"]); ?>" name="title" lay-verify="title" autocomplete="off" placeholder="请输入标题" class="layui-input">
+        <input type="text" value="<?php echo ($carousel["id"]); ?>" hidden="hidden" name="id">
       </div>
     </div>
     <div class="layui-form-item">
       <label class="layui-form-label">分类</label>
       <div class="layui-input-inline">
-        <select name="modules" lay-verify="required" lay-search="">
-          <option value="">直接选择或搜索选择</option>
-          <option value="1">layer</option>
-          <option value="2">form</option>
-          <option value="3">layim</option>
+        <select name="c_id" lay-search="">
+          <option value="0">直接选择或搜索选择</option>
+          <?php if(is_array($carousel_classify)): $i = 0; $__LIST__ = $carousel_classify;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value="<?php echo ($vo["id"]); ?>" <?php if($carousel['c_id'] == $vo['id']): ?>selected<?php endif; ?> ><?php echo ($vo["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
         </select>
       </div>
     </div>
     <div class="layui-form-item">
       <label class="layui-form-label">链接文章</label>
       <div class="layui-input-inline">
-        <select name="modules" lay-verify="required" lay-search="">
+        <select name="a_id" lay-search="">
           <option value="">直接选择或搜索选择</option>
           <option value="1">layer</option>
           <option value="2">form</option>
@@ -67,13 +66,9 @@
     <div class="layui-form-item">
       <label class="layui-form-label">教学点</label>
       <div class="layui-input-inline">
-        <select name="modules" lay-verify="required" lay-search="">
-          <option value="">直接选择或搜索选择</option>
-          <option value="1">layer</option>
-          <option value="2">form</option>
-          <option value="3">layim</option>
-          <option value="4">element</option>
-          <option value="5">laytpl</option>
+        <select name="s_id" lay-search="">
+          <option value="0">直接选择或搜索选择</option>
+          <?php if(is_array($site)): $i = 0; $__LIST__ = $site;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value="<?php echo ($vo["id"]); ?>" <?php if($carousel['s_id'] == $vo['id']): ?>selected<?php endif; ?> ><?php echo ($vo["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
         </select>
       </div>
     </div>
@@ -95,7 +90,7 @@
 
     <div class="layui-form-item">
       <div class="layui-input-block">
-        <button class="layui-btn" lay-submit="" lay-filter="demo1">立即提交</button>
+        <button class="layui-btn submit" type="button" lay-submit="" lay-filter="demo1">立即提交</button>
         <button type="reset" class="layui-btn layui-btn-primary">重置</button>
       </div>
     </div>
@@ -146,22 +141,53 @@
 
   <script type="text/javascript">
     layui.use(['form', 'upload'], function () {
-
     });
 
-    $(".upload-pic").change(function () {
-      var reader = new FileReader();
-      reader.onload = function (oFREvent) {
-        console.log(oFREvent.currentTarget.result)
-
-        $.post("<?php echo U('Carousel/carouselt_add');?>", {
-          img: oFREvent.currentTarget.result
-        }, function (res) {
-          console.log(res)
-        })
-      }
-      reader.readAsDataURL($(this).prop('files')[0]);
-    })
+		!(function(){
+			var imgpath = null;
+			$(".submit").click(function(){
+				if(!$("input[name='title']").val()){
+					layer.msg('轮播内容不能为空');
+					return false;
+				}
+				var files = $('input[type="file"]').prop('files')[0];
+				if(!!files){
+					var reader = new FileReader();
+		      reader.onload = function (oFREvent) {
+		        upload(oFREvent.currentTarget.result);
+		      }
+		      reader.readAsDataURL(files);
+				}else{
+					if(!'<?php echo ($carousel["id"]); ?>'){
+						layer.msg('轮播图片不能为空');
+					  return false;
+					}
+					upload('old');
+				}
+			})
+			
+			function upload(img){
+				$.post("<?php echo U('Carousel/carouselt_add');?>", {
+					  id: $("input[name='id']").val(),
+	          img: img,
+	          c_id:$("select[name='c_id'] option:checked").val(),
+	          a_id:$("select[name='a_id'] option:checked").val(),
+	          s_id:$("select[name='s_id'] option:checked").val(),
+	          title:$("input[name='title']").val(),
+	          disable:$("input[name='disable']:checked").val()
+	       }, function (res) {
+	          layer.msg(res.info);
+	          if(!!res.status){
+	          	var index = parent.layer.getFrameIndex(window.name);  
+              setTimeout(function(){
+              	window.parent.location.reload(true); //刷新父页面
+              	parent.layer.close(index);
+              }, 1000);
+	          }
+	        })
+			}
+		})()
+    
   </script>
   <!--/请在上方写此页面业务相关的脚本-->
 </body>

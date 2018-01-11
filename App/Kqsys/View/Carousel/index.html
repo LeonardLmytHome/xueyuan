@@ -22,7 +22,7 @@
     <link rel="stylesheet" type="text/css" href="__ROOT__/Public/static/h-ui.admin/skin/default/skin.css" id="skin" />
     <link rel="stylesheet" type="text/css" href="__ROOT__/Public/static/h-ui.admin/css/style.css" />
     <link rel="stylesheet" type="text/css" href="__ROOT__/Public/static/h-ui.admin/css/swiper.min.css" />
-    <link rel="stylesheet" type="text/css" href="__ROOT__/Public/static/h-ui.admin/css/certify.css" />
+    <link rel="stylesheet" type="text/css" href="__ROOT__/Public/static/h-ui.admin/css/certify.css?1" />
     <link rel="stylesheet" type="text/css" href="__ROOT__/Public/static/h-ui.admin/layui-v2.2.5/layui/css/layui.css" />
     <!--[if IE 6]>
 <script type="text/javascript" src="http://lib.h-ui.net/DD_belatedPNG_0.0.8a-min.js" ></script>
@@ -40,42 +40,33 @@
         <div style="width: 216px; margin:20px;">
                <button class="layui-btn layui-btn-fluid add" data-id="0">新增</button>
         </div>
-
+        <if condition="!empty($carousel)">
         <div class="swiper-container swiper-container-horizontal">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="images/certify01.png">
-                    <p>
-                        非常难得又值钱的认证证书
-                    </p>
-                    <div class="swiper-operation">
-                        <button class="layui-btn layui-btn-sm layui-btn-danger swiper-edit" data-id="1">
-                            <i class="layui-icon">&#xe642;</i>
-                        </button>
-                        <button class="layui-btn layui-btn-sm layui-btn-danger swiper-del">
-                            <i class="layui-icon">&#xe640;</i>
-                        </button>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <img src="images/certify01.png">
-                    <p>
-                        非常难得又值钱的认证证书
-                    </p>
-                    <div class="swiper-operation">
-                        <button class="layui-btn layui-btn-sm layui-btn-danger swiper-edit" data-id="2">
-                            <i class="layui-icon">&#xe642;</i>
-                        </button>
-                        <button class="layui-btn layui-btn-sm layui-btn-danger swiper-del">
-                            <i class="layui-icon">&#xe640;</i>
-                        </button>
-                    </div>
-                </div>
+            	<volist name="carousel" id="vo">
+					<div class="swiper-slide">
+	                    <img src="{$vo.img}">
+	                    <p>
+	                        {$vo.title}
+	                    </p>
+	                    <div class="swiper-operation">
+	                        <button class="layui-btn layui-btn-sm layui-btn-danger swiper-edit" data-id="{$vo.id}">
+	                            <i class="layui-icon">&#xe642;</i>
+	                        </button>
+	                        <button class="layui-btn layui-btn-sm layui-btn-danger swiper-del" data-id="{$vo.id}">
+	                            <i class="layui-icon">&#xe640;</i>
+	                        </button>
+	                    </div>
+	                </div>
+				</volist>
             </div>
         </div>
         <div class="swiper-pagination swiper-pagination-bullets"></div>
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
+        <else />
+        	暂无数据，请添加轮播
+        </if>
     </div>
     <!--_footer 作为公共模版分离出去-->
     <include file="Public:footer" />
@@ -142,23 +133,28 @@
         })
 
         $(".swiper-del").click(function () {
-            //询问框
+        	var t = $(this);
             layer.confirm('您确定要删除此图片？', {
                 btn: ['确定', '取消'] //按钮
             }, function () {
-                layer.msg('删除', { icon: 1 });
+                $.get("{:U('Carousel/carousel_del')}"+"&id="+t.data('id'),function(res){
+                	layer.msg(res.info);
+                	setTimeout(function(){
+                		window.location.reload(true);
+                	},1000);
+                })
             }, function () {
-                layer.msg('取消', { icon: 1 });
+                layer.msg('取消');
             });
         })
 
 
         function openEdit(id){
-        	layer.open({
+          	layer.open({
                 type: 2,
                 title: '轮播操作',
                 area: ['600px', '400px'],
-                content: "{:U('Carousel/carouseltoggle')}"+'&id='+id
+                content: "{:U('Carousel/carouseltoggle')}"+'&id='+id +"&c_id={$c_id}"
             });
         }
     </script>

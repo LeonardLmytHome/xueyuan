@@ -34,7 +34,7 @@
     <table class="layui-hide" id="test" lay-filter="demo"></table>
 
     <script type="text/html" id="barDemo">
-         <a class="layui-btn layui-btn-primary layui-btn-xs" href="<?php echo U('Carousel/index');?>">查看</a>
+         <a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="look">查看</a>
          <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
          <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
        </script>
@@ -109,13 +109,17 @@
                 if (layEvent === 'del') {
                     layer.confirm('真的删除行么', function (index) {
                         $.get("<?php echo U('Carousel/classify_del');?>"+"&id="+data.id,function(res){
+                        	if(!!res.status){
+                        		obj.del(); //删除对应行（tr）的DOM结构
+                                layer.close(index);
+                        	}
                         	layer.msg(res.info);
-                        	obj.del(); //删除对应行（tr）的DOM结构
-                            layer.close(index);
                         })
                     });
                 } else if (layEvent === 'edit') {
                     openEdit(data.id)
+                }else if(layEvent === 'look'){
+                	window.location.href = "<?php echo U('Carousel/index');?>"+"&id="+data.id;
                 }
             });
         })

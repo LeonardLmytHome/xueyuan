@@ -10,6 +10,43 @@ class CarouselController extends CommonController{
 			 
 			 $this->assign('classify',$list);
 		 }
+		 
+		 $this->display();
+	}
+	
+	
+	public function index(){
+		 $id=I('get.id');
+		 if(!empty($id)){
+			 $obj=M('carousel');
+			 $list=$obj->where(array('c_id'=>$id))->select();
+			 $this->assign('carousel',$list);
+		 }
+		 $this->assign('c_id',$id);
+		 $this->display();
+	}
+	
+	public function carouseltoggle(){
+		 $id=I('get.id');
+		 $c_id=I('get.c_id');
+		 
+		 if(!empty($id)){
+			 $obj=M('carousel');
+			 $list=$obj->where(array('id'=>$id))->find();
+			 
+			 $this->assign('carousel',$list);
+		 }
+		 
+		 //分类
+		 $carousel_classify=M('carousel_classify');
+		 $list_carousel_classify=$carousel_classify->where(array('id'=>(int)$c_id))->select();
+	     $this->assign('carousel_classify',$list_carousel_classify);
+		 
+		 //教学点
+		 $site=M('site');
+		 $list_site=$site->select();
+	     $this->assign('site',$list_site);
+	     
 		 $this->display();
 	}
 	
@@ -47,12 +84,18 @@ class CarouselController extends CommonController{
     public function classify_del(){
     	$obj=M('carousel_classify');
     	$id=I('get.id');
-    	if(!empty($id)){
-    		if($obj->where(array('id'=>$id))->delete()){
-	            $this->success('删除成功');
-	        }else{
-	            $this->error("删除失败");
-	        }
+    	$carousel=M('carousel');
+    	$carousel = $carousel->where(array('c_id'=>$id))->find();
+    	if(empty($carousel)){
+    		if(!empty($id)){
+	    		if($obj->where(array('id'=>$id))->delete()){
+		            $this->success('删除成功');
+		        }else{
+		            $this->error("删除失败");
+		        }
+	    	}
+    	}else{
+    		$this->error("删除失败，该分类有轮播");
     	}
     }
 
@@ -72,26 +115,68 @@ class CarouselController extends CommonController{
     }
 
 
-    function carouselt_add()
+    public function carouselt_add()
     {  
-        $base64_image_content = $_POST['img'];
-        //匹配出图片的格式
-        if (preg_match('/^(data:\s*image\/(\w+);base64,)/', $base64_image_content, $result)){
-            $type = $result[2];
-            $new_file = "/Public/uploads/images/carousel/".date('Ymd',time())."/";
-            if(!file_exists($new_file)){
-                //检查是否有该文件夹，如果没有就创建，并给予最高权限
-                mkdir($new_file, 0700);
-            }
-            $new_file = $new_file.time().".{$type}";
-            $this->ajaxReturn($new_file,0);
-            if (file_put_contents($new_file, base64_decode(str_replace($result[1], '', $base64_image_content)))){
-                return '/'.$new_file;
+    	$obj=M('carousel');
+        if(empty($_POST['id'])){
+        	$image = $_POST['img'];
+	        $upImg = $this->addImg($image);
+            $_POST['addtime']=time();
+            $_POST['img'] = $upImg;
+            if($obj->add($_POST)){
+                $this->success('添加成功');
             }else{
-                $this->ajaxReturn('csa',0);
+                $this->error("添加失败");
             }
         }else{
-            $this->ajaxReturn('csaa',0);
+        	$carousel=M('carousel');
+        	$carousel=$carousel->where(array('id'=>$_POST['id']))->find();
+        	if($_POST['img'] == 'old'){
+        		$_POST['img'] = $carousel['img'];
+        	}else{
+        		$image = $_POST['img'];
+	            $upImg = $this->addImg($image);
+        		$_POST['img'] = $upImg;
+        	}
+        	 
+            if($obj->save($_POST)){
+                $this->success('更新成功');
+            }else{
+                $this->error("更新失败");
+            }
         }
     } 
+    
+    
+    public function addImg($image){
+    	$imageName = "25220_".date("His",time())."_".rand(1111,9999).'.png';
+    	if (strstr($image,",")){
+            $image = explode(',',$image);
+            $image = $image[1];
+        }
+        
+    	$dir = iconv("UTF-8", "GBK", "Public/uploads/images/carouselt");
+        if (!file_exists($dir)){
+            mkdir ($dir,0777,true);
+        } 
+    	$imageSrc=  $dir."/". $imageName;  //图片名字
+        $r = file_put_contents($imageSrc, base64_decode($image));//返回的是字节数
+        if (!$r) {
+            return 0;
+        }else{
+            return '/'.$imageSrc;
+        }
+    }
+    
+    public function carousel_del(){
+    	$obj=M('carousel');
+    	$id=I('get.id');
+		if(!empty($id)){
+    		if($obj->where(array('id'=>$id))->delete()){
+	            $this->success('删除成功');
+	        }else{
+	            $this->error("删除失败");
+	        }
+    	}
+    }
 }

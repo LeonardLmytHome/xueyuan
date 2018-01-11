@@ -20,6 +20,8 @@ body{
 }
 #certify  .swiper-slide img{
 	display:block;
+	width: 100%;
+    height: 300px;
 }
 #certify  .swiper-slide p {
 	line-height: 98px;
