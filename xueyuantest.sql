@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50553
 File Encoding         : 65001
 
-Date: 2018-01-10 23:08:03
+Date: 2018-01-11 23:56:59
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -45,7 +45,7 @@ INSERT INTO `kq_admin` VALUES ('2', 'kuaiqian', '1', '86bd97a59a14ce3948ffcf7c11
 -- ----------------------------
 DROP TABLE IF EXISTS `kq_carousel`;
 CREATE TABLE `kq_carousel` (
-  `id` int(10) unsigned zerofill NOT NULL AUTO_INCREMENT,
+  `id` int(10) NOT NULL AUTO_INCREMENT,
   `c_id` int(10) NOT NULL COMMENT '分类',
   `a_id` int(10) NOT NULL COMMENT '文章id',
   `s_id` int(10) NOT NULL DEFAULT '0',
@@ -54,18 +54,23 @@ CREATE TABLE `kq_carousel` (
   `disable` int(1) NOT NULL DEFAULT '0',
   `addtime` int(10) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of kq_carousel
 -- ----------------------------
+INSERT INTO `kq_carousel` VALUES ('6', '9', '1', '32', '/Public/uploads/images/carouselt/25220_233814_4226.png', '哈哈哈', '1', '1515685094');
+INSERT INTO `kq_carousel` VALUES ('2', '7', '0', '0', '/Public/uploads/images/carouselt/25220_210042_1406.png', 'csadcsa', '0', '1515675642');
+INSERT INTO `kq_carousel` VALUES ('5', '18', '1', '32', '/Public/uploads/images/carouselt/25220_233706_7910.png', '轮播', '1', '1515685026');
+INSERT INTO `kq_carousel` VALUES ('4', '7', '0', '31', '/Public/uploads/images/carouselt/25220_231115_2627.png', '差时辰2', '1', '1515682844');
+INSERT INTO `kq_carousel` VALUES ('7', '18', '2', '28', '/Public/uploads/images/carouselt/25220_233905_1351.png', '呵呵', '1', '1515685145');
 
 -- ----------------------------
 -- Table structure for `kq_carousel_classify`
 -- ----------------------------
 DROP TABLE IF EXISTS `kq_carousel_classify`;
 CREATE TABLE `kq_carousel_classify` (
-  `id` int(10) unsigned zerofill NOT NULL AUTO_INCREMENT,
+  `id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(255) NOT NULL,
   `addtime` int(10) NOT NULL,
   `disable` int(1) NOT NULL,
@@ -75,15 +80,13 @@ CREATE TABLE `kq_carousel_classify` (
 -- ----------------------------
 -- Records of kq_carousel_classify
 -- ----------------------------
-INSERT INTO `kq_carousel_classify` VALUES ('0000000015', '添加数据', '1515596247', '1');
-INSERT INTO `kq_carousel_classify` VALUES ('0000000014', 'csacsa', '1515596247', '1');
-INSERT INTO `kq_carousel_classify` VALUES ('0000000013', 'cscsacs', '1515596247', '1');
-INSERT INTO `kq_carousel_classify` VALUES ('0000000007', '测试1', '0', '1');
-INSERT INTO `kq_carousel_classify` VALUES ('0000000008', '测试1', '0', '1');
-INSERT INTO `kq_carousel_classify` VALUES ('0000000009', '测试1', '1515596662', '0');
-INSERT INTO `kq_carousel_classify` VALUES ('0000000012', 'cscsacs', '1515596674', '1');
-INSERT INTO `kq_carousel_classify` VALUES ('0000000018', '测试232', '1515596290', '0');
-INSERT INTO `kq_carousel_classify` VALUES ('0000000019', '时间', '1515596850', '0');
+INSERT INTO `kq_carousel_classify` VALUES ('15', '添加数据', '1515596247', '1');
+INSERT INTO `kq_carousel_classify` VALUES ('7', '测试1', '0', '1');
+INSERT INTO `kq_carousel_classify` VALUES ('8', '测试1', '0', '1');
+INSERT INTO `kq_carousel_classify` VALUES ('9', '测试1', '1515596662', '0');
+INSERT INTO `kq_carousel_classify` VALUES ('12', 'cscsacs', '1515596674', '1');
+INSERT INTO `kq_carousel_classify` VALUES ('18', '测试232', '1515596290', '0');
+INSERT INTO `kq_carousel_classify` VALUES ('19', '时间', '1515596850', '0');
 
 -- ----------------------------
 -- Table structure for `kq_character`
