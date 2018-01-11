@@ -74,50 +74,24 @@ class CarouselController extends CommonController{
 
     function carouselt_add()
     {  
-        echo json_encode(array(
-            "code"=> 0,
-            "msg" => "",
-            "data"=> array("src"=> $_FILES['img']['name'])
-        ));
-        //上传图片具体操作
-        // $file_name = $_FILES['img']['name'];
-        // $file_type = $_FILES["img"]["type"];
-        // $file_tmp = $_FILES["img"]["tmp_name"];
-        // $file_error = $_FILES["img"]["error"];
-        // $file_size = $_FILES["img"]["size"];
-        // if ($file_error > 0) { // 出错
-        //     $return['status'] = 1;
-        //     $return['message'] = $file_error;
-        //     $return['time'] = 3000;
-        //     exit(json_encode($return));
-        // }
-        // if ($file_size > 1048576) { // 文件太大了
-        //     $return['status'] = 1;
-        //     $return['message'] = "上传文件不能大于1MB";
-        //     $return['time'] = 3000;
-        //     exit(json_encode($return));
-        // }
-        // $file_name_arr = explode('.', $file_name);
-        // $new_file_name = date('YmdHis') . '.' . $file_name_arr[1];
-        // $file_path = "Public/uploads/images/" . $new_file_name;
-        // if (file_exists($file_path)) {
-        //     $return['status'] = 1;
-        //     $return['message'] = "此文件已经存在啦";
-        //     $return['time'] = 3000;
-        //     exit(json_encode($return));
-        // } else {
-        //     $upload_result = move_uploaded_file($file_tmp, $file_path); // 此函数只支持 HTTP POST 上传的文件
-        //     if ($upload_result) {
-        //         $return['status'] = 0;
-        //         $return['message'] = $file_path;
-        //         $return['time'] = 1000;
-        //         exit(json_encode($return));
-        //     } else {
-        //         $return['status'] = 1;
-        //         $return['message'] = "文件上传失败，请稍后再尝试";
-        //         $return['time'] = 3000;
-        //         exit(json_encode($return));
-        //     }
-        // }
+        $base64_image_content = $_POST['img'];
+        //匹配出图片的格式
+        if (preg_match('/^(data:\s*image\/(\w+);base64,)/', $base64_image_content, $result)){
+            $type = $result[2];
+            $new_file = "/Public/uploads/images/carousel/".date('Ymd',time())."/";
+            if(!file_exists($new_file)){
+                //检查是否有该文件夹，如果没有就创建，并给予最高权限
+                mkdir($new_file, 0700);
+            }
+            $new_file = $new_file.time().".{$type}";
+            $this->ajaxReturn($new_file,0);
+            if (file_put_contents($new_file, base64_decode(str_replace($result[1], '', $base64_image_content)))){
+                return '/'.$new_file;
+            }else{
+                $this->ajaxReturn('csa',0);
+            }
+        }else{
+            $this->ajaxReturn('csaa',0);
+        }
     } 
 }

@@ -146,24 +146,19 @@
 
   <script type="text/javascript">
     layui.use(['form', 'upload'], function () {
-      //执行实例
-      // var uploadInst = upload.render({
-      //   elem: '#image' //绑定元素
-      //   , url: "<?php echo U('Carousel/carouselt_add');?>" //上传接口
-      //   , done: function (res) {
-      //     //上传完毕回调
-      //   }
-      //   , error: function () {
-      //     //请求异常回调
-      //   }
-      // });
 
     });
 
     $(".upload-pic").change(function () {
       var reader = new FileReader();
       reader.onload = function (oFREvent) {
-        console.log(oFREvent)
+        console.log(oFREvent.currentTarget.result)
+
+        $.post("<?php echo U('Carousel/carouselt_add');?>", {
+          img: oFREvent.currentTarget.result
+        }, function (res) {
+          console.log(res)
+        })
       }
       reader.readAsDataURL($(this).prop('files')[0]);
     })
