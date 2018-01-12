@@ -35,10 +35,19 @@
 <body>
     <form class="layui-form layui-form-pane">
         <div class="layui-form-item">
-          <label class="layui-form-label">轮播内容</label>
+          <label class="layui-form-label">轮播标题</label>
           <div class="layui-input-inline">
           	<input value="<?php echo ($classify["id"]); ?>" hidden="hidden" name="id" lay-verify="id"  />
             <input type="text" name="name" lay-verify="name" autocomplete="off" placeholder="请输入标题" class="layui-input" value="<?php echo ($classify["name"]); ?>">
+          </div>
+        </div>
+        <div class="layui-form-item">
+          <label class="layui-form-label">教学点</label>
+          <div class="layui-input-inline">
+            <select name="s_id" lay-search="">
+              <option value="0">直接选择或搜索选择</option>
+              <?php if(is_array($site)): $i = 0; $__LIST__ = $site;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value="<?php echo ($vo["id"]); ?>" <?php if($classify['s_id'] == $vo['id']): ?>selected<?php endif; ?> ><?php echo ($vo["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+            </select>
           </div>
         </div>
         <?php if($classify["addtime"] != ''): ?><div class="layui-form-item">
@@ -48,13 +57,20 @@
 	          </div>
 	        </div><?php endif; ?>
         <div class="layui-form-item">
+          <label class="layui-form-label">类型</label>
+          <div class="layui-input-block" style="width: 310px;">
+            <input type="radio" name="type" value="0" title="教学点" <?php if($classify["type"] == 0): ?>checked<?php endif; ?> >
+            <input type="radio" name="type" value="1" title="首页" <?php if($classify["type"] == 1): ?>checked<?php endif; ?> >
+            <input type="radio" name="type" value="2" title="课程页" <?php if($classify["type"] == 2): ?>checked<?php endif; ?> >
+          </div>
+        </div>
+        <div class="layui-form-item">
           <label class="layui-form-label">禁用</label>
           <div class="layui-input-block">
             <input type="radio" name="disable" value="1" title="是" <?php if($classify["disable"] == 1): ?>checked<?php endif; ?> >
             <input type="radio" name="disable" value="0" title="否" <?php if($classify["disable"] == 0): ?>checked<?php endif; ?> >
           </div>
         </div>
-    
         <div class="layui-form-item">
           <div class="layui-input-block">
             <button class="layui-btn submit" type="button" lay-submit="" lay-filter="demo1">立即提交</button>
@@ -113,11 +129,16 @@
 	    });
 	    
 	    $(".submit").click(function(){
-	    	console.log(1)
+        if(!$("input[name='name']").val()){
+          layer.msg('轮播分类名称不能为空');
+					  return false;
+        }
 	    	$.post("<?php echo U('Carousel/classify_add');?>",
 	    	{
 	    		id:$("input[name='id']").val(),
-	    		name:$("input[name='name']").val(),
+          s_id:$("select[name='s_id'] option:checked").val(),
+          name:$("input[name='name']").val(),
+          type:$("input[name='type']:checked").val(),
 	    		disable:$("input[name='disable']:checked").val()
 	    	},function(res){
             	layer.msg(res.info);

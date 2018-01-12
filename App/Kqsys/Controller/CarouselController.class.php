@@ -10,6 +10,11 @@ class CarouselController extends CommonController{
 			 
 			 $this->assign('classify',$list);
 		 }
+
+		 //教学点
+		 $site=M('site');
+		 $list_site=$site->select();
+	     $this->assign('site',$list_site);
 		 
 		 $this->display();
 	}
@@ -42,11 +47,6 @@ class CarouselController extends CommonController{
 		 $list_carousel_classify=$carousel_classify->where(array('id'=>(int)$c_id))->select();
 	     $this->assign('carousel_classify',$list_carousel_classify);
 		 
-		 //教学点
-		 $site=M('site');
-		 $list_site=$site->select();
-	     $this->assign('site',$list_site);
-	     
 		 $this->display();
 	}
 	
@@ -104,7 +104,7 @@ class CarouselController extends CommonController{
         $page=I('get.page',1);
         $limit=I('get.limit',10);
         $page = ($page - 1) * $limit;
-        $list=$Model->query("select id,FROM_UNIXTIME(addtime,'%Y-%m-%d %H:%i:%s') as addtime,name,case disable when '0' then '否' else '是' end as disable from kq_carousel_classify order by id asc");
+        $list=$Model->query("select a.id,FROM_UNIXTIME(a.addtime,'%Y-%m-%d %H:%i:%s') as addtime,a.name,case a.disable when '0' then '否' else '是' end as disable,case b.name is NULL when 1 then '无' else b.name end as site_name,case a.type when '0' then '教学点' when '1' then '首页' else '课程页' end as type from kq_carousel_classify as a left join kq_site as b on a.s_id = b.id order by id asc");
         
         $this->ajaxReturn(array(
             "code"=> 0,
@@ -178,5 +178,26 @@ class CarouselController extends CommonController{
 	            $this->error("删除失败");
 	        }
     	}
+	}
+	
+
+	/*
+	    接口 教学点轮播
+	    http://127.0.0.1/index.php?s=/Carousel/api_carousel_list.html&s_id=33 请求实例
+	*/
+	public function api_carousel_list(){
+    	$Model = M();
+		$s_id=I('get.s_id');
+		$type=I('get.type'); //site->教学点查询 main->首页、课程页
+		$where = "";
+		if($type == "site"){
+			$where .= " a.s_id = {$s_id} ";
+		}elseif($type == "main"){
+			$where .= " a.type = {$type} ";
+		}
+
+        $list=$Model->query("select title,a_id,img from kq_carousel_classify as a inner join kq_carousel as b on a.id = b.c_id where a.disable = 0 and b.disable = 0 ".$where);
+		
+		$this->ajaxReturn($list);
     }
 }

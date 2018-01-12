@@ -15,7 +15,7 @@
 <script type="text/javascript" src="lib/respond.min.js"></script>
 <script type="text/javascript" src="lib/PIE_IE678.js"></script>
 <![endif]-->
-    <link rel="stylesheet" type="text/css" href="/Public/static/h-ui.admin/layui-v2.2.5/layui/css/layui.css" />
+    <link rel="stylesheet" type="text/css" href="/xueyuan/Public/static/h-ui.admin/layui-v2.2.5/layui/css/layui.css" />
     <!--[if IE 6]>
 <script type="text/javascript" src="http://lib.h-ui.net/DD_belatedPNG_0.0.8a-min.js" ></script>
 <script>DD_belatedPNG.fix('*');</script>
@@ -39,17 +39,17 @@
          <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
        </script>
     <!--_footer 作为公共模版分离出去-->
-    <script type="text/javascript" src="/Public/lib/jquery/1.9.1/jquery.min.js"></script>
-<script type="text/javascript" src="/Public/lib/layer/2.1/layer.js"></script> 
-<script type="text/javascript" src="/Public/lib/icheck/jquery.icheck.min.js"></script> 
-<script type="text/javascript" src="/Public/lib/jquery.validation/1.14.0/jquery.validate.min.js"></script> 
-<script type="text/javascript" src="/Public/lib/jquery.validation/1.14.0/validate-methods.js"></script> 
-<script type="text/javascript" src="/Public/lib/jquery.validation/1.14.0/messages_zh.min.js"></script> 
-<script type="text/javascript" src="/Public/static/h-ui/js/H-ui.js"></script>
-<script type="text/javascript" src="/Public/lib/datatables/1.10.0/jquery.dataTables.min.js"></script> 
-<script type="text/javascript" src="/Public/static/h-ui.admin/js/H-ui.admin.js"></script>
-<script language="javascript" type="text/javascript" src="/Public/lib/My97DatePicker/WdatePicker.js"></script>
-<script type="text/javascript" src="/Public/lib/jquery.textSearch-1.0.js"></script> 
+    <script type="text/javascript" src="/xueyuan/Public/lib/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="/xueyuan/Public/lib/layer/2.1/layer.js"></script> 
+<script type="text/javascript" src="/xueyuan/Public/lib/icheck/jquery.icheck.min.js"></script> 
+<script type="text/javascript" src="/xueyuan/Public/lib/jquery.validation/1.14.0/jquery.validate.min.js"></script> 
+<script type="text/javascript" src="/xueyuan/Public/lib/jquery.validation/1.14.0/validate-methods.js"></script> 
+<script type="text/javascript" src="/xueyuan/Public/lib/jquery.validation/1.14.0/messages_zh.min.js"></script> 
+<script type="text/javascript" src="/xueyuan/Public/static/h-ui/js/H-ui.js"></script>
+<script type="text/javascript" src="/xueyuan/Public/lib/datatables/1.10.0/jquery.dataTables.min.js"></script> 
+<script type="text/javascript" src="/xueyuan/Public/static/h-ui.admin/js/H-ui.admin.js"></script>
+<script language="javascript" type="text/javascript" src="/xueyuan/Public/lib/My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript" src="/xueyuan/Public/lib/jquery.textSearch-1.0.js"></script> 
 <!--分页样式-->
 <script type="text/javascript">
     $("#page a").hover(function(){
@@ -79,8 +79,8 @@
     <!--/_footer /作为公共模版分离出去-->
 
     <!--请在下方写此页面业务相关的脚本-->
-    <script type="text/javascript" src="/Public/static/h-ui.admin/js/jquery-1.8.3.min.js"></script>
-    <script type="text/javascript" src="/Public/static/h-ui.admin/layui-v2.2.5/layui/layui.js"></script>
+    <script type="text/javascript" src="/xueyuan/Public/static/h-ui.admin/js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="/xueyuan/Public/static/h-ui.admin/layui-v2.2.5/layui/layui.js"></script>
 
     <script type="text/javascript">
         layui.use(['layer', 'table'], function () {
@@ -95,7 +95,9 @@
                 , page: true //开启分页
                 , cols: [[ //表头
                     { field: 'id', title: 'ID', width: 120, sort: true, fixed: 'left' }
-                    , { field: 'name', title: '分类', width: 300 }
+                    , { field: 'name', title: '分类', width: 200 }
+                    , { field: 'type', title: '类型', width: 100 }
+                    , { field: 'site_name', title: '教学点', width: 300 }
                     , { field: 'addtime', title: '添加时间', width: 300, sort: true }
                     , { field: 'disable', title: '禁用', width: 100, sort: true }
                     ,{fixed: 'right', width: 165, align:'center', toolbar: '#barDemo'}
@@ -133,7 +135,7 @@
         function openEdit(id){
         	layer.open({
                 type: 2,
-                title: '轮播操作',
+                title: '轮播分类',
                 area: ['600px', '400px'],
                 content: "<?php echo U('Carousel/classifyltoggle');?>"+'&id='+id
             });

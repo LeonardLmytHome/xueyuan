@@ -102,9 +102,9 @@ class UserapiController extends BaseController {
 		$num=10;//每页数量
 		$firstRow = ($p - 1) * $num;
 		$list=$mod->where($whe)->field("id,number,name,shang_hours,total_hours,end_time")->limit($firstRow, $num)->select();
-		$list_site=$mod_site->where($whe_site)->field("id,name")->limit($firstRow, $num)->select();
-		$data["id"]=$list_site[0]['id'];
-		$data["name"]=$list_site[0]['name'];
+		$list_site=$mod_site->where($whe_site)->field("id,name")->limit($firstRow, $num)->find();
+		$data["id"]=$list_site['id'];
+		$data["name"]=$list_site['name'];
 		if(!$list){
 			$data['code']='111';
 			$data['msg']="没有要查询的数据";

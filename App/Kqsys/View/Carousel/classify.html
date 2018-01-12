@@ -59,7 +59,9 @@
                 , page: true //开启分页
                 , cols: [[ //表头
                     { field: 'id', title: 'ID', width: 120, sort: true, fixed: 'left' }
-                    , { field: 'name', title: '分类', width: 300 }
+                    , { field: 'name', title: '分类', width: 200 }
+                    , { field: 'type', title: '类型', width: 100 }
+                    , { field: 'site_name', title: '教学点', width: 300 }
                     , { field: 'addtime', title: '添加时间', width: 300, sort: true }
                     , { field: 'disable', title: '禁用', width: 100, sort: true }
                     ,{fixed: 'right', width: 165, align:'center', toolbar: '#barDemo'}
@@ -97,7 +99,7 @@
         function openEdit(id){
         	layer.open({
                 type: 2,
-                title: '轮播操作',
+                title: '轮播分类',
                 area: ['600px', '400px'],
                 content: "{:U('Carousel/classifyltoggle')}"+'&id='+id
             });

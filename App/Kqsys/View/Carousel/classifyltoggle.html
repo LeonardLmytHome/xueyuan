@@ -35,10 +35,21 @@
 <body>
     <form class="layui-form layui-form-pane">
         <div class="layui-form-item">
-          <label class="layui-form-label">轮播内容</label>
+          <label class="layui-form-label">轮播标题</label>
           <div class="layui-input-inline">
           	<input value="{$classify.id}" hidden="hidden" name="id" lay-verify="id"  />
             <input type="text" name="name" lay-verify="name" autocomplete="off" placeholder="请输入标题" class="layui-input" value="{$classify.name}">
+          </div>
+        </div>
+        <div class="layui-form-item">
+          <label class="layui-form-label">教学点</label>
+          <div class="layui-input-inline">
+            <select name="s_id" lay-search="">
+              <option value="0">直接选择或搜索选择</option>
+              <volist name="site" id="vo">
+                 <option value="{$vo.id}" <if condition="$classify['s_id'] eq $vo['id']">selected</if> >{$vo.name}</option>
+              </volist>
+            </select>
           </div>
         </div>
         <if condition="$classify.addtime != ''">
@@ -50,13 +61,20 @@
 	        </div>
         </if>
         <div class="layui-form-item">
+          <label class="layui-form-label">类型</label>
+          <div class="layui-input-block" style="width: 310px;">
+            <input type="radio" name="type" value="0" title="教学点" <if condition="$classify.type == 0">checked</if> >
+            <input type="radio" name="type" value="1" title="首页" <if condition="$classify.type == 1">checked</if> >
+            <input type="radio" name="type" value="2" title="课程页" <if condition="$classify.type == 2">checked</if> >
+          </div>
+        </div>
+        <div class="layui-form-item">
           <label class="layui-form-label">禁用</label>
           <div class="layui-input-block">
             <input type="radio" name="disable" value="1" title="是" <if condition="$classify.disable == 1">checked</if> >
             <input type="radio" name="disable" value="0" title="否" <if condition="$classify.disable == 0">checked</if> >
           </div>
         </div>
-    
         <div class="layui-form-item">
           <div class="layui-input-block">
             <button class="layui-btn submit" type="button" lay-submit="" lay-filter="demo1">立即提交</button>
@@ -79,11 +97,16 @@
 	    });
 	    
 	    $(".submit").click(function(){
-	    	console.log(1)
+        if(!$("input[name='name']").val()){
+          layer.msg('轮播分类名称不能为空');
+					  return false;
+        }
 	    	$.post("{:U('Carousel/classify_add')}",
 	    	{
 	    		id:$("input[name='id']").val(),
-	    		name:$("input[name='name']").val(),
+          s_id:$("select[name='s_id'] option:checked").val(),
+          name:$("input[name='name']").val(),
+          type:$("input[name='type']:checked").val(),
 	    		disable:$("input[name='disable']:checked").val()
 	    	},function(res){
             	layer.msg(res.info);

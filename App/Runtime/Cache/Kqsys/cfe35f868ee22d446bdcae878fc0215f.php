@@ -64,16 +64,6 @@
       </div>
     </div>
     <div class="layui-form-item">
-      <label class="layui-form-label">教学点</label>
-      <div class="layui-input-inline">
-        <select name="s_id" lay-search="">
-          <option value="0">直接选择或搜索选择</option>
-          <?php if(is_array($site)): $i = 0; $__LIST__ = $site;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value="<?php echo ($vo["id"]); ?>" <?php if($carousel['s_id'] == $vo['id']): ?>selected<?php endif; ?> ><?php echo ($vo["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
-        </select>
-      </div>
-    </div>
-
-    <div class="layui-form-item">
       <label class="layui-form-label">图片</label>
       <button type="button" class="layui-btn" id="image" style="position: relative;">
         <i class="layui-icon">&#xe67c;</i>上传图片
@@ -170,9 +160,8 @@
 				$.post("<?php echo U('Carousel/carouselt_add');?>", {
 					  id: $("input[name='id']").val(),
 	          img: img,
-	          c_id:$("select[name='c_id'] option:checked").val(),
 	          a_id:$("select[name='a_id'] option:checked").val(),
-	          s_id:$("select[name='s_id'] option:checked").val(),
+	          c_id:$("select[name='c_id'] option:checked").val(),
 	          title:$("input[name='title']").val(),
 	          disable:$("input[name='disable']:checked").val()
 	       }, function (res) {
