@@ -4799,3 +4799,985 @@ INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
 INFO: Run Behavior\CronRunBehavior [ RunTime:0.005000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.006500s ]
 
+[ 2018-01-12T22:53:34+08:00 ] 127.0.0.1 /index.php?s=/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kq_config` [ RunTime:0.0030s ]
+SQL: SELECT `config_pic` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `web_name` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `keywords` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `description` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-01-12T22:53:34+08:00 ] 127.0.0.1 /index.php?s=/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kq_config` [ RunTime:0.0030s ]
+SQL: SELECT `copyright`,`config_pic` FROM `kq_config` LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-01-12T22:53:34+08:00 ] 127.0.0.1 /index.php?s=/Login/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-01-12T22:53:34+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-01-12T22:53:44+08:00 ] 127.0.0.1 /index.php?s=/login/dologin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `kq_admin` [ RunTime:0.0030s ]
+SQL: SELECT `password` FROM `kq_admin` WHERE `admin_name` = 'zzcn77' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `status` FROM `kq_admin` WHERE `admin_name` = 'zzcn77' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id` FROM `kq_admin` WHERE `admin_name` = 'zzcn77' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `character_id` FROM `kq_admin` WHERE `admin_name` = 'zzcn77' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_character` [ RunTime:0.0020s ]
+SQL: SELECT `is_root` FROM `kq_character` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `character` FROM `kq_character` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2018-01-12T22:53:45+08:00 ] 127.0.0.1 /index.php?s=/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kq_config` [ RunTime:0.0030s ]
+SQL: SELECT `config_pic` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `web_name` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `keywords` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `description` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `kq_character` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Kqsys\Controller\CommonController.class.php 第 26 行.
+SQL: SELECT `character` FROM `kq_character` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: monitoring D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\33ee3f78805f6515ac8c1359a1ee4ca2.php 第 164 行.
+NOTIC: [8] Undefined variable: monitoring D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\33ee3f78805f6515ac8c1359a1ee4ca2.php 第 175 行.
+NOTIC: [8] Undefined variable: monitoring D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\33ee3f78805f6515ac8c1359a1ee4ca2.php 第 185 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-01-12T22:53:45+08:00 ] 127.0.0.1 /index.php?s=/Index/welcome1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kq_config` [ RunTime:0.0030s ]
+SQL: SELECT `config_pic` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `web_name` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `keywords` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `description` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_character` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Kqsys\Controller\CommonController.class.php 第 26 行.
+SQL: SELECT `character` FROM `kq_character` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-01-12T22:53:47+08:00 ] 127.0.0.1 /index.php?s=/Carousel/classify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `kq_config` [ RunTime:0.0020s ]
+SQL: SELECT `config_pic` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `web_name` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `keywords` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `description` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `kq_character` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Kqsys\Controller\CommonController.class.php 第 26 行.
+SQL: SELECT `character` FROM `kq_character` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2018-01-12T22:53:47+08:00 ] 127.0.0.1 /index.php?s=/Carousel/classify_list.html&page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kq_config` [ RunTime:0.0020s ]
+SQL: SELECT `config_pic` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `web_name` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `keywords` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `description` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_character` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Kqsys\Controller\CommonController.class.php 第 26 行.
+SQL: SELECT `character` FROM `kq_character` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+ERR: 1054:Unknown column 'a.type' in 'field list'
+ [ SQL语句 ] : select a.id,FROM_UNIXTIME(a.addtime,'%Y-%m-%d %H:%i:%s') as addtime,a.name,case a.disable when '0' then '否' else '是' end as disable,case b.name is NULL when 1 then '无' else b.name end as site_name,case a.type when '0' then '教学点' when '1' then '首页' else '课程页' end as type from kq_carousel_classify as a left join kq_site as b on a.s_id = b.id order by id asc
+ERR: 1054:Unknown column 'a.type' in 'field list'
+ [ SQL语句 ] : select a.id,FROM_UNIXTIME(a.addtime,'%Y-%m-%d %H:%i:%s') as addtime,a.name,case a.disable when '0' then '否' else '是' end as disable,case b.name is NULL when 1 then '无' else b.name end as site_name,case a.type when '0' then '教学点' when '1' then '首页' else '课程页' end as type from kq_carousel_classify as a left join kq_site as b on a.s_id = b.id order by id asc
+
+[ 2018-01-12T22:54:57+08:00 ] 127.0.0.1 /index.php?s=/Carousel/classify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kq_config` [ RunTime:0.0020s ]
+SQL: SELECT `config_pic` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `web_name` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `keywords` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `description` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_character` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Kqsys\Controller\CommonController.class.php 第 26 行.
+SQL: SELECT `character` FROM `kq_character` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-01-12T22:54:57+08:00 ] 127.0.0.1 /index.php?s=/Carousel/classify_list.html&page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kq_config` [ RunTime:0.0020s ]
+SQL: SELECT `config_pic` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `web_name` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `keywords` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `description` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_character` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Kqsys\Controller\CommonController.class.php 第 26 行.
+SQL: SELECT `character` FROM `kq_character` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+ERR: 1054:Unknown column 'a.type' in 'field list'
+ [ SQL语句 ] : select a.id,FROM_UNIXTIME(a.addtime,'%Y-%m-%d %H:%i:%s') as addtime,a.name,case a.disable when '0' then '否' else '是' end as disable,case b.name is NULL when 1 then '无' else b.name end as site_name,case a.type when '0' then '教学点' when '1' then '首页' else '课程页' end as type from kq_carousel_classify as a left join kq_site as b on a.s_id = b.id order by id asc
+ERR: 1054:Unknown column 'a.type' in 'field list'
+ [ SQL语句 ] : select a.id,FROM_UNIXTIME(a.addtime,'%Y-%m-%d %H:%i:%s') as addtime,a.name,case a.disable when '0' then '否' else '是' end as disable,case b.name is NULL when 1 then '无' else b.name end as site_name,case a.type when '0' then '教学点' when '1' then '首页' else '课程页' end as type from kq_carousel_classify as a left join kq_site as b on a.s_id = b.id order by id asc
+
+[ 2018-01-12T22:55:25+08:00 ] 127.0.0.1 /index.php?s=/Carousel/classify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kq_config` [ RunTime:0.0020s ]
+SQL: SELECT `config_pic` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `web_name` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `keywords` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `description` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_character` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Kqsys\Controller\CommonController.class.php 第 26 行.
+SQL: SELECT `character` FROM `kq_character` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-01-12T22:55:25+08:00 ] 127.0.0.1 /index.php?s=/Carousel/classify_list.html&page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kq_config` [ RunTime:0.0030s ]
+SQL: SELECT `config_pic` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `web_name` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `keywords` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `description` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `kq_character` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Kqsys\Controller\CommonController.class.php 第 26 行.
+SQL: SELECT `character` FROM `kq_character` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+ERR: 1054:Unknown column 'a.type' in 'field list'
+ [ SQL语句 ] : select a.id,FROM_UNIXTIME(a.addtime,'%Y-%m-%d %H:%i:%s') as addtime,a.name,case a.disable when '0' then '否' else '是' end as disable,case b.name is NULL when 1 then '无' else b.name end as site_name,case a.type when '0' then '教学点' when '1' then '首页' else '课程页' end as type from kq_carousel_classify as a left join kq_site as b on a.s_id = b.id order by id asc
+ERR: 1054:Unknown column 'a.type' in 'field list'
+ [ SQL语句 ] : select a.id,FROM_UNIXTIME(a.addtime,'%Y-%m-%d %H:%i:%s') as addtime,a.name,case a.disable when '0' then '否' else '是' end as disable,case b.name is NULL when 1 then '无' else b.name end as site_name,case a.type when '0' then '教学点' when '1' then '首页' else '课程页' end as type from kq_carousel_classify as a left join kq_site as b on a.s_id = b.id order by id asc
+
+[ 2018-01-12T22:55:26+08:00 ] 127.0.0.1 /index.php?s=/Carousel/classify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kq_config` [ RunTime:0.0030s ]
+SQL: SELECT `config_pic` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `web_name` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `keywords` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `description` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `kq_character` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Kqsys\Controller\CommonController.class.php 第 26 行.
+SQL: SELECT `character` FROM `kq_character` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2018-01-12T22:55:26+08:00 ] 127.0.0.1 /index.php?s=/Carousel/classify_list.html&page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kq_config` [ RunTime:0.0030s ]
+SQL: SELECT `config_pic` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `web_name` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `keywords` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `description` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_character` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Kqsys\Controller\CommonController.class.php 第 26 行.
+SQL: SELECT `character` FROM `kq_character` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+ERR: 1054:Unknown column 'a.type' in 'field list'
+ [ SQL语句 ] : select a.id,FROM_UNIXTIME(a.addtime,'%Y-%m-%d %H:%i:%s') as addtime,a.name,case a.disable when '0' then '否' else '是' end as disable,case b.name is NULL when 1 then '无' else b.name end as site_name,case a.type when '0' then '教学点' when '1' then '首页' else '课程页' end as type from kq_carousel_classify as a left join kq_site as b on a.s_id = b.id order by id asc
+ERR: 1054:Unknown column 'a.type' in 'field list'
+ [ SQL语句 ] : select a.id,FROM_UNIXTIME(a.addtime,'%Y-%m-%d %H:%i:%s') as addtime,a.name,case a.disable when '0' then '否' else '是' end as disable,case b.name is NULL when 1 then '无' else b.name end as site_name,case a.type when '0' then '教学点' when '1' then '首页' else '课程页' end as type from kq_carousel_classify as a left join kq_site as b on a.s_id = b.id order by id asc
+
+[ 2018-01-12T22:56:01+08:00 ] 127.0.0.1 /index.php?s=/Carousel/classify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kq_config` [ RunTime:0.0020s ]
+SQL: SELECT `config_pic` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `web_name` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `keywords` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `description` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_character` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Kqsys\Controller\CommonController.class.php 第 26 行.
+SQL: SELECT `character` FROM `kq_character` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2018-01-12T22:56:01+08:00 ] 127.0.0.1 /index.php?s=/Carousel/classify_list.html&page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kq_config` [ RunTime:0.0020s ]
+SQL: SELECT `config_pic` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `web_name` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `keywords` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `description` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_character` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Kqsys\Controller\CommonController.class.php 第 26 行.
+SQL: SELECT `character` FROM `kq_character` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: select a.id,FROM_UNIXTIME(a.addtime,'%Y-%m-%d %H:%i:%s') as addtime,a.name,case a.disable when '0' then '否' else '是' end as disable,case b.name is NULL when 1 then '无' else b.name end as site_name,case a.type when '0' then '教学点' when '1' then '首页' else '课程页' end as type from kq_carousel_classify as a left join kq_site as b on a.s_id = b.id order by id asc [ RunTime:0.0000s ]
+
+[ 2018-01-12T22:56:09+08:00 ] 127.0.0.1 /index.php?s=/Carousel/classifyltoggle.html&id=7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kq_config` [ RunTime:0.0030s ]
+SQL: SELECT `config_pic` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `web_name` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `keywords` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `description` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_character` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Kqsys\Controller\CommonController.class.php 第 26 行.
+SQL: SELECT `character` FROM `kq_character` WHERE `id` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `kq_carousel_classify` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `kq_carousel_classify` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `kq_site` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `kq_site`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-01-12T22:56:13+08:00 ] 127.0.0.1 /index.php?s=/Carousel/classify_add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `kq_config` [ RunTime:0.0030s ]
+SQL: SELECT `config_pic` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `web_name` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `keywords` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `description` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `kq_character` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Kqsys\Controller\CommonController.class.php 第 26 行.
+SQL: SELECT `character` FROM `kq_character` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_carousel_classify` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: auto D:\phpStudy\WWW\xueyuan\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `kq_carousel_classify` SET `s_id`='0',`name`='测试1',`type`='1',`disable`='1' WHERE `id` = 7 [ RunTime:0.0000s ]
+
+[ 2018-01-12T22:56:14+08:00 ] 127.0.0.1 /index.php?s=/Carousel/classify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kq_config` [ RunTime:0.0030s ]
+SQL: SELECT `config_pic` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `web_name` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `keywords` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `description` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_character` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Kqsys\Controller\CommonController.class.php 第 26 行.
+SQL: SELECT `character` FROM `kq_character` WHERE `id` = null LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-12T22:56:14+08:00 ] 127.0.0.1 /index.php?s=/Carousel/classify_list.html&page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kq_config` [ RunTime:0.0020s ]
+SQL: SELECT `config_pic` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `web_name` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `keywords` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `description` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_character` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Kqsys\Controller\CommonController.class.php 第 26 行.
+SQL: SELECT `character` FROM `kq_character` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: select a.id,FROM_UNIXTIME(a.addtime,'%Y-%m-%d %H:%i:%s') as addtime,a.name,case a.disable when '0' then '否' else '是' end as disable,case b.name is NULL when 1 then '无' else b.name end as site_name,case a.type when '0' then '教学点' when '1' then '首页' else '课程页' end as type from kq_carousel_classify as a left join kq_site as b on a.s_id = b.id order by id asc [ RunTime:0.0000s ]
+
+[ 2018-01-12T22:56:17+08:00 ] 127.0.0.1 /index.php?s=/Carousel/classifyltoggle.html&id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `kq_config` [ RunTime:0.0020s ]
+SQL: SELECT `config_pic` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `web_name` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `keywords` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `description` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_character` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Kqsys\Controller\CommonController.class.php 第 26 行.
+SQL: SELECT `character` FROM `kq_character` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_carousel_classify` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `kq_carousel_classify` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_site` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `kq_site`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-01-12T22:56:19+08:00 ] 127.0.0.1 /index.php?s=/Carousel/classify_add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `kq_config` [ RunTime:0.0030s ]
+SQL: SELECT `config_pic` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `web_name` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `keywords` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `description` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_character` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Kqsys\Controller\CommonController.class.php 第 26 行.
+SQL: SELECT `character` FROM `kq_character` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_carousel_classify` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: auto D:\phpStudy\WWW\xueyuan\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `kq_carousel_classify` SET `s_id`='31',`name`='测试1',`type`='0',`disable`='1' WHERE `id` = 8 [ RunTime:0.0000s ]
+
+[ 2018-01-12T22:56:20+08:00 ] 127.0.0.1 /index.php?s=/Carousel/classify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kq_config` [ RunTime:0.0030s ]
+SQL: SELECT `config_pic` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `web_name` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `keywords` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `description` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_character` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Kqsys\Controller\CommonController.class.php 第 26 行.
+SQL: SELECT `character` FROM `kq_character` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-01-12T22:56:21+08:00 ] 127.0.0.1 /index.php?s=/Carousel/classify_list.html&page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kq_config` [ RunTime:0.0020s ]
+SQL: SELECT `config_pic` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `web_name` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `keywords` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `description` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_character` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Kqsys\Controller\CommonController.class.php 第 26 行.
+SQL: SELECT `character` FROM `kq_character` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: select a.id,FROM_UNIXTIME(a.addtime,'%Y-%m-%d %H:%i:%s') as addtime,a.name,case a.disable when '0' then '否' else '是' end as disable,case b.name is NULL when 1 then '无' else b.name end as site_name,case a.type when '0' then '教学点' when '1' then '首页' else '课程页' end as type from kq_carousel_classify as a left join kq_site as b on a.s_id = b.id order by id asc [ RunTime:0.0010s ]
+
+[ 2018-01-12T22:56:23+08:00 ] 127.0.0.1 /index.php?s=/Carousel/index.html&id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kq_config` [ RunTime:0.0020s ]
+SQL: SELECT `config_pic` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `web_name` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `keywords` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `description` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_character` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Kqsys\Controller\CommonController.class.php 第 26 行.
+SQL: SELECT `character` FROM `kq_character` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_carousel` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `kq_carousel` WHERE `c_id` = 8  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-01-12T22:56:24+08:00 ] 127.0.0.1 /index.php?s=/Carousel/carouseltoggle.html&id=0&c_id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kq_config` [ RunTime:0.0020s ]
+SQL: SELECT `config_pic` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `web_name` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `keywords` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `description` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_character` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Kqsys\Controller\CommonController.class.php 第 26 行.
+SQL: SELECT `character` FROM `kq_character` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_carousel_classify` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `kq_carousel_classify` WHERE `id` = 8  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: carousel D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\cfe35f868ee22d446bdcae878fc0215f.php 第 40 行.
+NOTIC: [8] Undefined variable: carousel D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\cfe35f868ee22d446bdcae878fc0215f.php 第 41 行.
+NOTIC: [8] Undefined variable: carousel D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\cfe35f868ee22d446bdcae878fc0215f.php 第 49 行.
+NOTIC: [8] Undefined variable: carousel D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\cfe35f868ee22d446bdcae878fc0215f.php 第 151 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-01-12T22:56:35+08:00 ] 127.0.0.1 /index.php?s=/Carousel/carouselt_add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kq_config` [ RunTime:0.0020s ]
+SQL: SELECT `config_pic` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `web_name` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `keywords` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `description` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_character` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Kqsys\Controller\CommonController.class.php 第 26 行.
+SQL: SELECT `character` FROM `kq_character` WHERE `id` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `kq_carousel` [ RunTime:0.0020s ]
+SQL: INSERT INTO `kq_carousel` (`id`,`img`,`a_id`,`c_id`,`title`,`disable`,`addtime`) VALUES ('0','/Public/uploads/images/carouselt/25220_225635_3383.png','2','8','1231','1','1515768995') [ RunTime:0.0000s ]
+
+[ 2018-01-12T22:56:36+08:00 ] 127.0.0.1 /index.php?s=/Carousel/index.html&id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `kq_config` [ RunTime:0.0020s ]
+SQL: SELECT `config_pic` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `web_name` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `keywords` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `description` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_character` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Kqsys\Controller\CommonController.class.php 第 26 行.
+SQL: SELECT `character` FROM `kq_character` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_carousel` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `kq_carousel` WHERE `c_id` = 8  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-01-12T22:56:53+08:00 ] 127.0.0.1 /index.php?s=/Carousel/carouseltoggle.html&id=8&c_id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kq_config` [ RunTime:0.0030s ]
+SQL: SELECT `config_pic` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `web_name` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `keywords` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `description` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_character` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Kqsys\Controller\CommonController.class.php 第 26 行.
+SQL: SELECT `character` FROM `kq_character` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_carousel` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `kq_carousel` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_carousel_classify` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `kq_carousel_classify` WHERE `id` = 8  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-01-12T22:57:00+08:00 ] 127.0.0.1 /index.php?s=/Carousel/carouseltoggle.html&id=0&c_id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kq_config` [ RunTime:0.0020s ]
+SQL: SELECT `config_pic` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `web_name` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `keywords` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `description` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_character` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Kqsys\Controller\CommonController.class.php 第 26 行.
+SQL: SELECT `character` FROM `kq_character` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_carousel_classify` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `kq_carousel_classify` WHERE `id` = 8  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: carousel D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\cfe35f868ee22d446bdcae878fc0215f.php 第 40 行.
+NOTIC: [8] Undefined variable: carousel D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\cfe35f868ee22d446bdcae878fc0215f.php 第 41 行.
+NOTIC: [8] Undefined variable: carousel D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\cfe35f868ee22d446bdcae878fc0215f.php 第 49 行.
+NOTIC: [8] Undefined variable: carousel D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\cfe35f868ee22d446bdcae878fc0215f.php 第 151 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-01-12T22:57:05+08:00 ] 127.0.0.1 /index.php?s=/Carousel/carouseltoggle.html&id=8&c_id=8
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `kq_config` [ RunTime:0.0030s ]
+SQL: SELECT `config_pic` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `web_name` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `keywords` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `description` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `kq_character` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Kqsys\Controller\CommonController.class.php 第 26 行.
+SQL: SELECT `character` FROM `kq_character` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_carousel` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `kq_carousel` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `kq_carousel_classify` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `kq_carousel_classify` WHERE `id` = 8  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-01-12T23:00:57+08:00 ] 127.0.0.1 /index.php?s=/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kq_config` [ RunTime:0.0050s ]
+SQL: SELECT `config_pic` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `web_name` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `keywords` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `description` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_character` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Kqsys\Controller\CommonController.class.php 第 26 行.
+SQL: SELECT `character` FROM `kq_character` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: monitoring D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\33ee3f78805f6515ac8c1359a1ee4ca2.php 第 171 行.
+NOTIC: [8] Undefined variable: monitoring D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\33ee3f78805f6515ac8c1359a1ee4ca2.php 第 182 行.
+NOTIC: [8] Undefined variable: monitoring D:\phpStudy\WWW\xueyuan\App\Runtime\Cache\Kqsys\33ee3f78805f6515ac8c1359a1ee4ca2.php 第 192 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-01-12T23:00:57+08:00 ] 127.0.0.1 /index.php?s=/Index/welcome1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kq_config` [ RunTime:0.0050s ]
+SQL: SELECT `config_pic` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `web_name` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `keywords` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `description` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `kq_character` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Kqsys\Controller\CommonController.class.php 第 26 行.
+SQL: SELECT `character` FROM `kq_character` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-01-12T23:00:59+08:00 ] 127.0.0.1 /index.php?s=/Article/classify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `kq_config` [ RunTime:0.0040s ]
+SQL: SELECT `config_pic` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `web_name` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `keywords` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `description` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_character` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Kqsys\Controller\CommonController.class.php 第 26 行.
+SQL: SELECT `character` FROM `kq_character` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-01-12T23:01:01+08:00 ] 127.0.0.1 /index.php?s=/Carousel/classify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `kq_config` [ RunTime:0.0030s ]
+SQL: SELECT `config_pic` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `web_name` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `keywords` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `description` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_character` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Kqsys\Controller\CommonController.class.php 第 26 行.
+SQL: SELECT `character` FROM `kq_character` WHERE `id` = null LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-01-12T23:01:02+08:00 ] 127.0.0.1 /index.php?s=/Carousel/classify_list.html&page=1&limit=10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `kq_config` [ RunTime:0.0040s ]
+SQL: SELECT `config_pic` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `web_name` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `keywords` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `description` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_character` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Kqsys\Controller\CommonController.class.php 第 26 行.
+SQL: SELECT `character` FROM `kq_character` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: select a.id,FROM_UNIXTIME(a.addtime,'%Y-%m-%d %H:%i:%s') as addtime,a.name,case a.disable when '0' then '否' else '是' end as disable,case b.name is NULL when 1 then '无' else b.name end as site_name,case a.type when '0' then '教学点' when '1' then '首页' else '课程页' end as type from kq_carousel_classify as a left join kq_site as b on a.s_id = b.id order by id asc [ RunTime:0.0000s ]
+
+[ 2018-01-12T23:01:06+08:00 ] 127.0.0.1 /index.php?s=/Carousel/classifyltoggle.html&id=7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `kq_config` [ RunTime:0.0040s ]
+SQL: SELECT `config_pic` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `web_name` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `keywords` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `description` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_character` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Kqsys\Controller\CommonController.class.php 第 26 行.
+SQL: SELECT `character` FROM `kq_character` WHERE `id` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `kq_carousel_classify` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `kq_carousel_classify` WHERE `id` = 7 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_site` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `kq_site`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-12T23:01:21+08:00 ] 127.0.0.1 /index.php?s=/Article/classify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `kq_config` [ RunTime:0.0030s ]
+SQL: SELECT `config_pic` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `web_name` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `keywords` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `description` FROM `kq_config` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `kq_character` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: arr D:\phpStudy\WWW\xueyuan\App\Kqsys\Controller\CommonController.class.php 第 26 行.
+SQL: SELECT `character` FROM `kq_character` WHERE `id` = null LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CronRunBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+

@@ -40,8 +40,8 @@
     <!--<div class="liantian floatl"><img src="/Public/admin/images/liaotian.jpg" width="81" height="23"></div>-->
   </div><!--底部结束-->
 </div>
-<script type="text/javascript" src="/xueyuan/Public/lib/jquery/1.9.1/jquery.min.js"></script>
-<script type="text/javascript" src="/xueyuan/Public/lib/layer/2.1/layer.js"></script>
+<script type="text/javascript" src="/Public/lib/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="/Public/lib/layer/2.1/layer.js"></script>
 <script>
 $("#sub").click(function(){
     var url = "<?php echo U('login/dologin');?>";
