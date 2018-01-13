@@ -15,7 +15,7 @@
 <script type="text/javascript" src="lib/respond.min.js"></script>
 <script type="text/javascript" src="lib/PIE_IE678.js"></script>
 <![endif]-->
-  <link rel="stylesheet" type="text/css" href="/Public/static/h-ui.admin/layui-v2.2.5/layui/css/layui.css" />
+  <link rel="stylesheet" type="text/css" href="/xueyuan/Public/static/h-ui.admin/layui-v2.2.5/layui/css/layui.css" />
   <!--[if IE 6]>
 <script type="text/javascript" src="http://lib.h-ui.net/DD_belatedPNG_0.0.8a-min.js" ></script>
 <script>DD_belatedPNG.fix('*');</script>
@@ -73,8 +73,8 @@
     <div class="layui-form-item">
       <label class="layui-form-label">禁用</label>
       <div class="layui-input-block">
-        <input type="radio" name="disable" value="1" title="是" checked="">
-        <input type="radio" name="disable" value="0" title="否">
+        <input type="radio" name="disable" value="1" title="是" <?php if($carousel["disable"] == 1): ?>checked<?php endif; ?> >
+        <input type="radio" name="disable" value="0" title="否" <?php if($carousel["disable"] == 0): ?>checked<?php endif; ?> >
       </div>
     </div>
 
@@ -86,17 +86,17 @@
     </div>
   </form>
   <!--_footer 作为公共模版分离出去-->
-  <script type="text/javascript" src="/Public/lib/jquery/1.9.1/jquery.min.js"></script>
-<script type="text/javascript" src="/Public/lib/layer/2.1/layer.js"></script> 
-<script type="text/javascript" src="/Public/lib/icheck/jquery.icheck.min.js"></script> 
-<script type="text/javascript" src="/Public/lib/jquery.validation/1.14.0/jquery.validate.min.js"></script> 
-<script type="text/javascript" src="/Public/lib/jquery.validation/1.14.0/validate-methods.js"></script> 
-<script type="text/javascript" src="/Public/lib/jquery.validation/1.14.0/messages_zh.min.js"></script> 
-<script type="text/javascript" src="/Public/static/h-ui/js/H-ui.js"></script>
-<script type="text/javascript" src="/Public/lib/datatables/1.10.0/jquery.dataTables.min.js"></script> 
-<script type="text/javascript" src="/Public/static/h-ui.admin/js/H-ui.admin.js"></script>
-<script language="javascript" type="text/javascript" src="/Public/lib/My97DatePicker/WdatePicker.js"></script>
-<script type="text/javascript" src="/Public/lib/jquery.textSearch-1.0.js"></script> 
+  <script type="text/javascript" src="/xueyuan/Public/lib/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="/xueyuan/Public/lib/layer/2.1/layer.js"></script> 
+<script type="text/javascript" src="/xueyuan/Public/lib/icheck/jquery.icheck.min.js"></script> 
+<script type="text/javascript" src="/xueyuan/Public/lib/jquery.validation/1.14.0/jquery.validate.min.js"></script> 
+<script type="text/javascript" src="/xueyuan/Public/lib/jquery.validation/1.14.0/validate-methods.js"></script> 
+<script type="text/javascript" src="/xueyuan/Public/lib/jquery.validation/1.14.0/messages_zh.min.js"></script> 
+<script type="text/javascript" src="/xueyuan/Public/static/h-ui/js/H-ui.js"></script>
+<script type="text/javascript" src="/xueyuan/Public/lib/datatables/1.10.0/jquery.dataTables.min.js"></script> 
+<script type="text/javascript" src="/xueyuan/Public/static/h-ui.admin/js/H-ui.admin.js"></script>
+<script language="javascript" type="text/javascript" src="/xueyuan/Public/lib/My97DatePicker/WdatePicker.js"></script>
+<script type="text/javascript" src="/xueyuan/Public/lib/jquery.textSearch-1.0.js"></script> 
 <!--分页样式-->
 <script type="text/javascript">
     $("#page a").hover(function(){
@@ -126,8 +126,8 @@
   <!--/_footer /作为公共模版分离出去-->
 
   <!--请在下方写此页面业务相关的脚本-->
-  <script type="text/javascript" src="/Public/static/h-ui.admin/js/jquery-1.8.3.min.js"></script>
-  <script type="text/javascript" src="/Public/static/h-ui.admin/layui-v2.2.5/layui/layui.js"></script>
+  <script type="text/javascript" src="/xueyuan/Public/static/h-ui.admin/js/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript" src="/xueyuan/Public/static/h-ui.admin/layui-v2.2.5/layui/layui.js"></script>
 
   <script type="text/javascript">
     layui.use(['form', 'upload'], function () {

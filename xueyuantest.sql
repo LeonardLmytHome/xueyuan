@@ -10,13 +10,13 @@ Target Server Type    : MYSQL
 Target Server Version : 50553
 File Encoding         : 65001
 
-Date: 2018-01-12 23:09:03
+Date: 2018-01-13 11:00:43
 */
 
 SET FOREIGN_KEY_CHECKS=0;
 
 -- ----------------------------
--- Table structure for `kq_admin`
+-- Table structure for kq_admin
 -- ----------------------------
 DROP TABLE IF EXISTS `kq_admin`;
 CREATE TABLE `kq_admin` (
@@ -41,7 +41,7 @@ INSERT INTO `kq_admin` VALUES ('1', 'zzcn77', '1', '4766ef201aceba59ff733d42f6d5
 INSERT INTO `kq_admin` VALUES ('2', 'kuaiqian', '1', '86bd97a59a14ce3948ffcf7c11612b2b', '1498553888', '1', '18638035535', 'kuaiqian@qq.com', '学员快签', '0', '学员快签');
 
 -- ----------------------------
--- Table structure for `kq_article_classify`
+-- Table structure for kq_article_classify
 -- ----------------------------
 DROP TABLE IF EXISTS `kq_article_classify`;
 CREATE TABLE `kq_article_classify` (
@@ -52,14 +52,19 @@ CREATE TABLE `kq_article_classify` (
   `addtime` int(10) NOT NULL,
   `disable` int(1) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of kq_article_classify
 -- ----------------------------
+INSERT INTO `kq_article_classify` VALUES ('1', '0', '1', '1212', '1515596674', '0');
+INSERT INTO `kq_article_classify` VALUES ('2', '1', '21', '251', '1515596674', '0');
+INSERT INTO `kq_article_classify` VALUES ('3', '1', '1', '15615', '1515596674', '0');
+INSERT INTO `kq_article_classify` VALUES ('4', '0', 'data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAVgAAAFnCAYAAADjQFE4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAP+lSURBVHhe7P33mxXXlqaL5naStra8RSABEja9d1hJCBBGGOGEEPLeIIFAeO9tGiANmViBkN/e1K5dtqu763af+5zb5p5+zvlnxhnviPVlzlysBElb1aVd', '轮滑', '1515810479', '0');
+INSERT INTO `kq_article_classify` VALUES ('5', '0', '/Public/uploads/images/articleclassify/25220_103100_6735.png', '花花', '1515810660', '0');
 
 -- ----------------------------
--- Table structure for `kq_carousel`
+-- Table structure for kq_carousel
 -- ----------------------------
 DROP TABLE IF EXISTS `kq_carousel`;
 CREATE TABLE `kq_carousel` (
@@ -72,7 +77,7 @@ CREATE TABLE `kq_carousel` (
   `disable` int(1) NOT NULL DEFAULT '0',
   `addtime` int(10) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of kq_carousel
@@ -83,9 +88,10 @@ INSERT INTO `kq_carousel` VALUES ('5', '18', '1', '32', '/Public/uploads/images/
 INSERT INTO `kq_carousel` VALUES ('4', '7', '0', '31', '/Public/uploads/images/carouselt/25220_231115_2627.png', '差时辰2', '1', '1515682844');
 INSERT INTO `kq_carousel` VALUES ('7', '18', '2', '28', '/Public/uploads/images/carouselt/25220_233905_1351.png', '呵呵', '1', '1515685145');
 INSERT INTO `kq_carousel` VALUES ('8', '8', '2', '0', '/Public/uploads/images/carouselt/25220_225635_3383.png', '1231', '1', '1515768995');
+INSERT INTO `kq_carousel` VALUES ('9', '19', '0', '0', '/Public/uploads/images/carouselt/25220_091704_1592.png', 'csacsa', '0', '1515806224');
 
 -- ----------------------------
--- Table structure for `kq_carousel_classify`
+-- Table structure for kq_carousel_classify
 -- ----------------------------
 DROP TABLE IF EXISTS `kq_carousel_classify`;
 CREATE TABLE `kq_carousel_classify` (
@@ -102,15 +108,15 @@ CREATE TABLE `kq_carousel_classify` (
 -- Records of kq_carousel_classify
 -- ----------------------------
 INSERT INTO `kq_carousel_classify` VALUES ('15', '添加数据', '1515596247', '1', '0', '0');
-INSERT INTO `kq_carousel_classify` VALUES ('7', '测试1', '0', '1', '0', '1');
-INSERT INTO `kq_carousel_classify` VALUES ('8', '测试1', '0', '1', '31', '0');
+INSERT INTO `kq_carousel_classify` VALUES ('7', '测试1', '1515596674', '1', '0', '1');
+INSERT INTO `kq_carousel_classify` VALUES ('8', '测试1', '1515596674', '1', '31', '0');
 INSERT INTO `kq_carousel_classify` VALUES ('9', '测试1', '1515596662', '0', '0', '0');
 INSERT INTO `kq_carousel_classify` VALUES ('12', 'cscsacs', '1515596674', '1', '0', '0');
 INSERT INTO `kq_carousel_classify` VALUES ('18', '测试232', '1515596290', '0', '0', '0');
 INSERT INTO `kq_carousel_classify` VALUES ('19', '时间', '1515596850', '0', '0', '0');
 
 -- ----------------------------
--- Table structure for `kq_character`
+-- Table structure for kq_character
 -- ----------------------------
 DROP TABLE IF EXISTS `kq_character`;
 CREATE TABLE `kq_character` (
@@ -129,7 +135,7 @@ INSERT INTO `kq_character` VALUES ('1', '超级管理员', null, '0', '最大权
 INSERT INTO `kq_character` VALUES ('13', '普通管理员', 'user-edit,user-index,user-detail,cate-add,goods-status,cate-del,goods-edit,pic-uploadify,pic-edit,pic-file_upload_del,cate-edit,goods-index,goods-log,goods-desc,cate-index,goods-status,news-add,news-cateadd,news-edit,news-cateedit,cuxiao-add,cuxiao-del,cuxiao-edit,cuxiao-index,cuxiao-tui,Index-index,Index-welcome1', '1', '普通管理员');
 
 -- ----------------------------
--- Table structure for `kq_config`
+-- Table structure for kq_config
 -- ----------------------------
 DROP TABLE IF EXISTS `kq_config`;
 CREATE TABLE `kq_config` (
@@ -160,7 +166,7 @@ CREATE TABLE `kq_config` (
 INSERT INTO `kq_config` VALUES ('1', '学员快签APP-后台管理系统', '学员快签APP-后台管理系统', '学员快签APP-后台管理系统', '18638035535', 'ldcom@163.com', '豫ICP备17028773', '财富指南针-后台管理系统版权所有Copyright ©2015 All Rights Reserved', '财富指南针-后台管理系统13层1325室', '314000', 'chenqiandiansang', 'wAQBPxk3', '/Public/uploads/images/logo/59c0c72f3b538.png', null, '10000', 'wx_ldns', '10', '365');
 
 -- ----------------------------
--- Table structure for `kq_equip`
+-- Table structure for kq_equip
 -- ----------------------------
 DROP TABLE IF EXISTS `kq_equip`;
 CREATE TABLE `kq_equip` (
@@ -181,7 +187,7 @@ CREATE TABLE `kq_equip` (
 -- ----------------------------
 
 -- ----------------------------
--- Table structure for `kq_site`
+-- Table structure for kq_site
 -- ----------------------------
 DROP TABLE IF EXISTS `kq_site`;
 CREATE TABLE `kq_site` (
@@ -206,7 +212,7 @@ INSERT INTO `kq_site` VALUES ('32', '哈尔滨轮滑教学点', '张予', '18904
 INSERT INTO `kq_site` VALUES ('28', '深圳蓝天轮滑俱乐部', '王倩倩', '13539792080', 'zzcn77', '14e1b600b1fd579f47433b88e8d85291', '1510195918', '1514658853', '1');
 
 -- ----------------------------
--- Table structure for `kq_user`
+-- Table structure for kq_user
 -- ----------------------------
 DROP TABLE IF EXISTS `kq_user`;
 CREATE TABLE `kq_user` (
@@ -296,7 +302,7 @@ INSERT INTO `kq_user` VALUES ('62', 'r7a7isgrdc', '测试', '1', '15', '13134578
 INSERT INTO `kq_user` VALUES ('63', 'e8ndzvk8sf', '测试', '1', '16', '13539792080', '0', '80', '0', '80', '1', '1515322635', '1515390212', '1515322627', '1544180231');
 
 -- ----------------------------
--- Table structure for `kq_user_log`
+-- Table structure for kq_user_log
 -- ----------------------------
 DROP TABLE IF EXISTS `kq_user_log`;
 CREATE TABLE `kq_user_log` (

@@ -34,10 +34,10 @@
     <table class="layui-hide" id="test" lay-filter="demo"></table>
 
     <script type="text/html" id="barDemo">
-         <a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="look">查看</a>
-         <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
-         <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
-       </script>
+        <a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="look">查看</a>
+        <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
+        <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+    </script>
     <!--_footer 作为公共模版分离出去-->
     <script type="text/javascript" src="/Public/lib/jquery/1.9.1/jquery.min.js"></script>
 <script type="text/javascript" src="/Public/lib/layer/2.1/layer.js"></script> 
