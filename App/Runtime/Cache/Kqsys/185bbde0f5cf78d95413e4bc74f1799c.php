@@ -31,10 +31,8 @@
     <style>
     .layui-table-cell{overflow:inherit;}
     .main_oImg{position: relative;width: 20px;height: 20px;}
-    .lImg{    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 1;}
+    .main_oImg img:first-child{cursor: pointer;}
+    .lImg{position: absolute;top: 100%;left: 100%;z-index: 1;display: none;}
     </style>
     <div style="width: 216px; margin: 20px;">
     <button class="layui-btn layui-btn-fluid add">新增</button>
@@ -42,14 +40,16 @@
     <table class="layui-hide" id="test" lay-filter="demo"></table>
 
     <script type="text/html" id="barDemo">
-        <a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="look">查看分类</a>
+    	{{#  if(d.p_id == 0){ }}
+	    <a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="look">查看分类</a>
+	    {{#  } }}
         <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
         <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
     </script>
     <script type="text/html" id="imgTpl">
         <div class="main_oImg">
             <img src="{{d.img}}" width="20" class="oImg" />
-            <img src="{{d.img}}" class="lImg" />
+            <img src="{{d.img}}" class="lImg" width="500" />
         </div>
     </script>
     <!--_footer 作为公共模版分离出去-->
@@ -99,17 +99,16 @@
         layui.use(['layer', 'table'], function () {
             var layer = layui.layer, //弹层
                 table = layui.table //表格
-
             //执行一个 table 实例
             table.render({
                 elem: '#test'
                 , height: 500
-                , url: "<?php echo U('Article/article_list');?>" //数据接口
+                , url: "<?php echo U('Article/classify_list');?>"+ (!!'<?php echo ($p_id); ?>' ? "&p_id=<?php echo ($p_id); ?>" : '' ) //数据接口
                 , page: true //开启分页
                 , cols: [[ //表头
-                    { field: 'id', title: 'ID', width: 120, sort: true, fixed: 'left' }
-                    , { field: 'title', title: '主分类', width: 200 }
-                    , { field: 'img', title: '图标', width: 300 ,templet:"#imgTpl" }
+                    { field: 'id', title: 'ID', width: 60, sort: true, fixed: 'left' }
+                    , { field: 'title', title: '主分类名称', width: 200 }
+                    , { field: 'img', title: '图标', width: 100 ,templet:"#imgTpl" }
                     , { field: 'addtime', title: '添加时间', width: 300, sort: true }
                     , { field: 'disable', title: '禁用', width: 100, sort: true }
                     ,{fixed: 'right', width: 200, align:'center', toolbar: '#barDemo'}
@@ -122,7 +121,7 @@
                     , layEvent = obj.event; //获得 lay-event 对应的值
                 if (layEvent === 'del') {
                     layer.confirm('真的删除行么', function (index) {
-                        $.get("<?php echo U('Carousel/classify_del');?>"+"&id="+data.id,function(res){
+                        $.get("<?php echo U('Article/classify_del');?>"+"&id="+data.id+"&p_id="+data.p_id,function(res){
                             if(!!res.status){
                                 obj.del(); //删除对应行（tr）的DOM结构
                                 layer.close(index);
@@ -133,7 +132,7 @@
                 } else if (layEvent === 'edit') {
                     openEdit(data.id)
                 }else if(layEvent === 'look'){
-                    window.location.href = "<?php echo U('Carousel/index');?>"+"&id="+data.id;
+                    window.location.href = "<?php echo U('Article/classify');?>"+"&p_id="+data.id+"&type=sub";
                 }
             });
         })
@@ -148,12 +147,16 @@
                 type: 2,
                 title: '分类操作',
                 area: ['600px', '400px'],
-                content: "<?php echo U('Article/classifyltoggle');?>"+'&id='+id+"&type=main"
+                content: "<?php echo U('Article/classifyltoggle');?>"+'&id='+id+ "&p_id=<?php echo ($p_id); ?>"+(!!'<?php echo ($type); ?>' ? '&type=<?php echo ($type); ?>' : '')
             });
         }
 
-        $(".oImg").hover(function(){
-
+        $(".oImg").live('mouseenter',function(){
+            $(this).parent().find(".lImg").show()
+        })
+        
+        $(".oImg").live('mouseleave',function(){
+            $(this).parent().find(".lImg").hide()
         })
     </script>
     <!--/请在上方写此页面业务相关的脚本-->

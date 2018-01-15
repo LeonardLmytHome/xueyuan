@@ -81,6 +81,9 @@ class CarouselController extends CommonController{
         }
     }
 
+    /**
+     * 删除分类
+     */
     public function classify_del(){
     	$obj=M('carousel_classify');
     	$id=I('get.id');
@@ -104,7 +107,7 @@ class CarouselController extends CommonController{
         $page=I('get.page',1);
         $limit=I('get.limit',10);
         $page = ($page - 1) * $limit;
-        $list=$Model->query("select a.id,FROM_UNIXTIME(a.addtime,'%Y-%m-%d %H:%i:%s') as addtime,a.name,case a.disable when '0' then '否' else '是' end as disable,case b.name is NULL when 1 then '无' else b.name end as site_name,case a.type when '0' then '教学点' when '1' then '首页' else '课程页' end as type from kq_carousel_classify as a left join kq_site as b on a.s_id = b.id order by id asc");
+        $list=$Model->query("select a.id,FROM_UNIXTIME(a.addtime,'%Y-%m-%d %H:%i:%s') as addtime,a.name,case a.disable when '0' then '否' else '是' end as disable,case b.name is NULL when 1 then '无' else b.name end as site_name,case a.type when '0' then '教学点' when '1' then '首页' else '课程页' end as type from kq_carousel_classify as a left join kq_site as b on a.s_id = b.id order by id desc");
         
         $this->ajaxReturn(array(
             "code"=> 0,

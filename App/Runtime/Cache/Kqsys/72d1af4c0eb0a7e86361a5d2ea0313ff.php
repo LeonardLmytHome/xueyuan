@@ -38,6 +38,7 @@
       <label class="layui-form-label">标题</label>
       <div class="layui-input-inline">
         <input value="<?php echo ($classify["id"]); ?>" hidden="hidden" name="id" lay-verify="id" />
+        <input value="<?php echo ($p_id); ?>" hidden="hidden" name="p_id" lay-verify="p_id" />
         <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入标题" class="layui-input" value="<?php echo ($classify["title"]); ?>">
       </div>
     </div>
@@ -47,16 +48,19 @@
         <i class="layui-icon">&#xe67c;</i>上传图片
         <input type="file" class="upload-pic" value="上传图片" style="position: absolute;font-size: 0;width: 100%;height: 100%;outline: 0;opacity: 0;filter: alpha(opacity=0);top:0;left:0;z-index: 1;cursor: pointer;">
       </button>
+      <?php if($classify["img"] != ''): ?><div style="display: inline-block;">
+	      	 <img src="<?php echo ($classify["img"]); ?>" height="38" />
+	      </div><?php endif; ?>
     </div>
-    <!-- <div class="layui-form-item">
-          <label class="layui-form-label">教学点</label>
-          <div class="layui-input-inline">
-            <select name="s_id" lay-search="">
-              <option value="0">直接选择或搜索选择</option>
-              <?php if(is_array($site)): $i = 0; $__LIST__ = $site;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value="<?php echo ($vo["id"]); ?>" <?php if($classify['s_id'] == $vo['id']): ?>selected<?php endif; ?> ><?php echo ($vo["name"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
-            </select>
-          </div>
-        </div> -->
+    <?php if($type == 'sub'): ?><div class="layui-form-item">
+	      <label class="layui-form-label">主分类</label>
+	      <div class="layui-input-inline">
+	        <select name="s_id" lay-search="">
+	          <option value="0">直接选择或搜索选择</option>
+	          <?php if(is_array($article_classify)): $i = 0; $__LIST__ = $article_classify;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value="<?php echo ($vo["id"]); ?>" <?php if($classify['p_id'] == $vo['id']): ?>selected<?php endif; ?> ><?php echo ($vo["title"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+	        </select>
+	      </div>
+	    </div><?php endif; ?>
     <?php if($classify["addtime"] != ''): ?><div class="layui-form-item">
         <label class="layui-form-label">添加时间</label>
         <div class="layui-input-inline">
@@ -141,8 +145,8 @@
         }
         reader.readAsDataURL(files);
       } else {
-        if (!'<?php echo ($carousel["id"]); ?>') {
-          layer.msg('轮播图片不能为空');
+        if (!'<?php echo ($classify["id"]); ?>') {
+          layer.msg('图标不能为空');
           return false;
         }
         upload('old');
@@ -154,6 +158,7 @@
       $.post("<?php echo U('Article/classify_add');?>",
         {
           id: $("input[name='id']").val(),
+          p_id: $("input[name='p_id']").val(),
           img: img,
           title: $("input[name='title']").val(),
           disable: $("input[name='disable']:checked").val()
