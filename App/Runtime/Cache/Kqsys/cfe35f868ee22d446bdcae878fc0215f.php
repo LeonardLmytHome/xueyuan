@@ -55,11 +55,7 @@
       <div class="layui-input-inline">
         <select name="a_id" lay-search="">
           <option value="">直接选择或搜索选择</option>
-          <option value="1">layer</option>
-          <option value="2">form</option>
-          <option value="3">layim</option>
-          <option value="4">element</option>
-          <option value="5">laytpl</option>
+          <?php if(is_array($list_carticle)): $i = 0; $__LIST__ = $list_carticle;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value="<?php echo ($vo["id"]); ?>" <?php if($carousel['a_id'] == $vo['id']): ?>selected<?php endif; ?> ><?php echo ($vo["title"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
         </select>
       </div>
     </div>
@@ -69,6 +65,7 @@
         <i class="layui-icon">&#xe67c;</i>上传图片
         <input type="file" class="upload-pic" value="上传图片" style="position: absolute;font-size: 0;width: 100%;height: 100%;outline: 0;opacity: 0;filter: alpha(opacity=0);top:0;left:0;z-index: 1;cursor: pointer;">
       </button>
+      <div id="show" style="display: inline-block;"></div>
       <?php if($carousel["img"] != ''): ?><div style="display: inline-block;">
 	      	 <img src="<?php echo ($carousel["img"]); ?>" height="38" />
 	      </div><?php endif; ?>
@@ -156,6 +153,17 @@
 					  return false;
 					}
 					upload('old');
+				}
+			})
+			
+			$(".upload-pic").change(function(){
+				var files = $('input[type="file"]').prop('files')[0];
+				if(!!files){
+					var reader = new FileReader();
+		      reader.onload = function (oFREvent) {
+		        $("#show").html("<img src='"+ oFREvent.currentTarget.result +"' height='38' >");
+		      }
+		      reader.readAsDataURL(files);
 				}
 			})
 			

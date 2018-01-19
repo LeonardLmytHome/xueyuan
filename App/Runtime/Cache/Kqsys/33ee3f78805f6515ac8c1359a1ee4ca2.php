@@ -161,7 +161,14 @@
 				</ul>
 			</dd>
 		</dl>
-
+<dl id="menu-article">
+			<dt><i class="Hui-iconfont">&#xe6cc;</i> 联系管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+			<dd>
+				<ul>
+					<li><a _href="<?php echo U('Contact/index');?>" data-title="联系我们" href="javascript:void(0)"> 联系我们</a></li>
+				</ul>
+			</dd>
+		</dl>
 
 
 

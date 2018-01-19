@@ -57,11 +57,9 @@
       <div class="layui-input-inline">
         <select name="a_id" lay-search="">
           <option value="">直接选择或搜索选择</option>
-          <option value="1">layer</option>
-          <option value="2">form</option>
-          <option value="3">layim</option>
-          <option value="4">element</option>
-          <option value="5">laytpl</option>
+          <volist name="list_carticle" id="vo">
+          	 <option value="{$vo.id}" <if condition="$carousel['a_id'] eq $vo['id']">selected</if> >{$vo.title}</option>
+          </volist>
         </select>
       </div>
     </div>
@@ -71,6 +69,7 @@
         <i class="layui-icon">&#xe67c;</i>上传图片
         <input type="file" class="upload-pic" value="上传图片" style="position: absolute;font-size: 0;width: 100%;height: 100%;outline: 0;opacity: 0;filter: alpha(opacity=0);top:0;left:0;z-index: 1;cursor: pointer;">
       </button>
+      <div id="show" style="display: inline-block;"></div>
       <if condition="$carousel.img != ''">
 	      <div style="display: inline-block;">
 	      	 <img src="{$carousel.img}" height="38" />
@@ -124,6 +123,17 @@
 					  return false;
 					}
 					upload('old');
+				}
+			})
+			
+			$(".upload-pic").change(function(){
+				var files = $('input[type="file"]').prop('files')[0];
+				if(!!files){
+					var reader = new FileReader();
+		      reader.onload = function (oFREvent) {
+		        $("#show").html("<img src='"+ oFREvent.currentTarget.result +"' height='38' >");
+		      }
+		      reader.readAsDataURL(files);
 				}
 			})
 			

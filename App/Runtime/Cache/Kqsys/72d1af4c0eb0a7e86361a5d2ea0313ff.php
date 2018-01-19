@@ -48,6 +48,7 @@
         <i class="layui-icon">&#xe67c;</i>上传图片
         <input type="file" class="upload-pic" value="上传图片" style="position: absolute;font-size: 0;width: 100%;height: 100%;outline: 0;opacity: 0;filter: alpha(opacity=0);top:0;left:0;z-index: 1;cursor: pointer;">
       </button>
+      <div id="show" style="display: inline-block;"></div>
       <?php if($classify["img"] != ''): ?><div style="display: inline-block;">
 	      	 <img src="<?php echo ($classify["img"]); ?>" height="38" />
 	      </div><?php endif; ?>
@@ -152,6 +153,17 @@
         upload('old');
       }
     })
+    
+    $(".upload-pic").change(function(){
+				var files = $('input[type="file"]').prop('files')[0];
+				if(!!files){
+					var reader = new FileReader();
+		      reader.onload = function (oFREvent) {
+		        $("#show").html("<img src='"+ oFREvent.currentTarget.result +"' height='38' >");
+		      }
+		      reader.readAsDataURL(files);
+				}
+			})
 
 
     function upload(img) {

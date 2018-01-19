@@ -284,6 +284,24 @@ class ArticleController extends CommonController{
         $page=I('get.page',1);
         $limit=I('get.limit',10);
         $page = ($page - 1) * $limit;
+        $title=I('get.title');
+        $p_id=I('get.p_id');
+        $c_id=I('get.c_id');
+        $s_id=I('get.s_id');
+        
+        $whe = " where 1 = 1 ";
+        if(!empty($title)){
+           $whe .= " and a.title like '%".$title."%' ";
+        }
+        if(!empty($p_id)){
+           $whe .= " and a.p_id = ".$p_id." ";	
+        }
+        if(!empty($c_id)){
+           $whe .= " and a.c_id = ".$c_id." ";	
+        }
+        if(!empty($s_id)){
+           $whe .= " and a.s_id = ".$s_id." ";	
+        }
 
         $list=$Model->query("select a.id,a.title,a.img,FROM_UNIXTIME(a.addtime,'%Y-%m-%d %H:%i:%s') as addtime,
 a.p_id,a.c_id,a.s_id,a.phone,case a.disable when '0' then '否' else '是' end as disable,
@@ -291,7 +309,7 @@ case a.p_id when '0' then '无' else b.title end as maintitle,
 case a.c_id when '0' then '无' else c.title end as subtitle,
 case a.s_id when '0' then '无' else d.name end as sitename
 from kq_article as a LEFT JOIN kq_article_classify as b on a.p_id = b.id LEFT JOIN 
-kq_article_classify as c on a.c_id = c.id LEFT JOIN kq_site as d on a.s_id = d.id order by id desc");
+kq_article_classify as c on a.c_id = c.id LEFT JOIN kq_site as d on a.s_id = d.id ". $whe ." order by id desc");
         
         $this->ajaxReturn(array(
             "code"=> 0,
@@ -315,5 +333,26 @@ kq_article_classify as c on a.c_id = c.id LEFT JOIN kq_site as d on a.s_id = d.i
 	            $this->error("删除失败");
 	        }
     	}
+    }
+    
+    /**
+     * 文章列表数据
+     */
+    public function articlelist(){
+    	//主分类
+    	$main_where = array();
+    	$main_where['p_id'] = 0;
+    	$main_where['disable'] = 0;
+    	
+    	$main_classify=M('article_classify');
+    	$main_classify=$main_classify->where($main_where)->select();
+        $this->assign('main_classify',$main_classify);
+    	
+    	//教学点
+    	$site=M('site');
+    	$site=$site->where()->select();
+        $this->assign('site',$site);
+    	
+    	$this->display();
     }
 }

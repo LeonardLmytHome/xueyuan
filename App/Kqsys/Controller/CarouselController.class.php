@@ -42,6 +42,11 @@ class CarouselController extends CommonController{
 			 $this->assign('carousel',$list);
 		 }
 		 
+		 //文章
+		 $carticle=M('article');
+		 $list_carticle=$carticle->where('disable = 0')->select();
+	     $this->assign('list_carticle',$list_carticle);
+		 
 		 //分类
 		 $carousel_classify=M('carousel_classify');
 		 $list_carousel_classify=$carousel_classify->where(array('id'=>(int)$c_id))->select();

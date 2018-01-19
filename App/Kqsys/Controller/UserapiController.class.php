@@ -15,7 +15,7 @@ class UserapiController extends BaseController {
 		if(!$site){
 			$data['code']="1";
 			$data['msg']="查询成功,返回数据";
-			$data['res']="";
+			$data['res']="";	
 			$this->ajaxReturn($data);
 		}else{
 			$data['code']="1";
@@ -327,5 +327,180 @@ class UserapiController extends BaseController {
 				$this->ajaxReturn($data);
 			}
 		}
+	}
+	
+	
+	
+	/**
+	 * 小程序获取用户课时详情数据
+	 */
+	public function xcx_get_scan(){
+		$number=trim(I("post.number"));
+		$user=M("user")->where("number='".$number."'")->field("id,total_hours,shang_hours")->find();
+		if(!$user){
+			$data['code']='113';
+			$data['msg']="学员信息不存在";
+			$this->ajaxReturn($data);
+		}else{
+			$data['code']="1";
+			$data['msg']="返回数据成功";
+			$user1=M("user")->where("id='".$user['id']."'")->field("id,number,name,sex,age,tel,sid,total_hours,shang_hours,FROM_UNIXTIME(start_time,'%Y-%m-%d %H:%i:%s') as start_time,FROM_UNIXTIME(end_time,'%Y-%m-%d %H:%i:%s') as end_time")->find();
+			$user2=M("site")->where("id='".$user1['sid']."'")->field("name,principal")->find();
+			$user1['sname'] = $user2['name'];
+			$user1['principal'] = $user2['principal'];
+			$data['res']['user']=$user1;
+			
+			$Model = M();
+			$log=$Model->query("select FROM_UNIXTIME(a.addtime,'%Y-%m-%d %H:%i:%s') as addtime,b.name from kq_user_log as a inner join kq_user as b on a.uid = b.id where b.id = {$user1['sid']} order by addtime desc");
+			$data['res']['user']['log']= $log[0];
+			
+			
+			$carousel=$Model->query("select b.title,b.img,b.a_id from kq_carousel_classify as a inner join kq_carousel as b on a.id = b.c_id where a.`disable` = 0 and b.`disable` = 0 and a.type = 0 and a.s_id = ". $user1['sid'] ." ORDER BY b.id desc");
+            $data['res']['carousel']=$carousel;
+			
+			$this->ajaxReturn($data);
+		}
+	}
+	
+	
+	/**
+	 * 学员签到
+	 * @access public
+	 */
+	public function xcx_sign(){
+		$id=trim(I("post.id"));
+		$user=M("user")->where("id='".$id."'")->field("id")->find();
+		if(!$user){
+			$data['code']='113';
+			$data['msg']="学员信息不存在";
+			$this->ajaxReturn($data);
+		}
+		$Model = M();
+		$list=$Model->query("select FROM_UNIXTIME(a.addtime,'%Y-%m-%d %H:%i:%s') as addtime,b.name from kq_user_log as a inner join kq_user as b on a.uid = b.id where b.id = {$id}");
+		if(!$list){
+			$data['code']='111';
+			$data['msg']="没有要查询的数据";
+			$this->ajaxReturn($data);
+		}else{
+			$data['code']="1";
+			$data["res"]=$list;
+			$this->ajaxReturn($data);
+		}
+	}
+	
+	/**
+	 * 课程首页
+	 */
+	public function xcx_get_course(){
+		$Model = M();
+		$carousel=$Model->query("select b.title,b.img,b.a_id from kq_carousel_classify as a inner join kq_carousel as b on a.id = b.c_id where a.`disable` = 0 and b.`disable` = 0 and a.type = 2 ORDER BY b.id desc");
+        $data['res']['carousel']=$carousel;
+        
+        $classify=$Model->query("select id,title,img from kq_article_classify as a where disable = 0 and p_id = 0");
+        $data['res']['classify']=$classify;
+        
+        $article=$Model->query("select id,title,a.`describe`,img from kq_article as a where disable = 0 and s_id > 0");
+        $data['res']['article']=$article;
+        
+        $data['code']="1";
+		$data['msg']="返回数据成功";
+		$this->ajaxReturn($data);
+	}
+	
+	/**
+	 * 查询子分类
+	 */
+	public function xcx_get_subclassify(){
+		$id=trim(I("post.id"));
+		if(!empty($id)){
+			$Model = M();
+	        $classify=$Model->query("select a_id,title,img from kq_article_classify as a where disable = 0 and p_id = {$id}");
+	        if($classify){
+	        	$data['res']['classify']=$classify;
+		        $data['code']="1";
+				$data['msg']="返回数据成功";
+				$this->ajaxReturn($data);
+	        }else{
+	        	$data['code']="117";
+				$data['msg']="查询为空";
+				$this->ajaxReturn($data);
+	        }
+		}else{
+			$data['code']="113";
+			$data['msg']="返回数据失败";
+			$this->ajaxReturn($data);
+		}
+	}
+	
+	/**
+	 * 文章详情
+	 */
+	public function xcx_get_article(){
+		$id=trim(I("post.id"));
+		if(!empty($id)){
+			$Model = M();
+	        $article=$Model->query("select id,title,a.`describe`,img,phone,gps,content,FROM_UNIXTIME(a.addtime,'%Y-%m-%d %H:%i:%s') as addtime from kq_article as a where disable = 0 and id = {$id}");
+	        if($article){
+	        	$data['res']['article']=$article[0];
+		        $data['code']="1";
+				$data['msg']="返回数据成功";
+				$this->ajaxReturn($data);
+	        }else{
+	        	$data['code']="117";
+				$data['msg']="查询为空";
+				$this->ajaxReturn($data);
+	        }
+		}else{
+			$data['code']="113";
+			$data['msg']="返回数据失败";
+			$this->ajaxReturn($data);
+		}
+	}
+	
+	
+	/**
+	 * 子分类文章列表
+	 */
+	public function xcx_get_articlelist(){
+		$p_id=trim(I("post.p_id"));
+		$c_id=trim(I("post.c_id"));
+		if(!empty($p_id) && !empty($c_id)){
+			$Model = M();
+	        $article=$Model->query("select id,title,`describe`,img,phone,gps,content,FROM_UNIXTIME(addtime,'%Y-%m-%d %H:%i:%s') as addtime from kq_article where `disable` = 0 and p_id = {$p_id} and c_id = {$c_id}");
+	        if($article){
+	        	$data['res']['article']=$article;
+		        $data['code']="1";
+				$data['msg']="返回数据成功";
+				$this->ajaxReturn($data);
+	        }else{
+	        	$data['code']="117";
+				$data['msg']="查询为空";
+				$this->ajaxReturn($data);
+	        }
+		}else{
+			$data['code']="113";
+			$data['msg']="返回数据失败";
+			$this->ajaxReturn($data);
+		}
+	}
+	
+	
+	/**
+	 * 搜索教学点文章 标题
+	 */
+	public function xcx_search_site(){
+		$keyword=trim(I("post.keyword"));
+		$Model = M();
+        $article=$Model->query("select id,title,a.`describe`,img from kq_article as a where disable = 0 and s_id > 0 and title like '%{$keyword}%'");
+        if($article){
+        	$data['res']['article']=$article;
+	        $data['code']="1";
+			$data['msg']="返回数据成功";
+			$this->ajaxReturn($data);
+        }else{
+        	$data['code']="117";
+			$data['msg']="查询为空";
+			$this->ajaxReturn($data);
+        }
 	}
 }	

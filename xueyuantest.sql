@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50553
 File Encoding         : 65001
 
-Date: 2018-01-15 23:46:49
+Date: 2018-01-19 22:42:35
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -101,7 +101,6 @@ CREATE TABLE `kq_carousel` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `c_id` int(10) NOT NULL COMMENT '分类',
   `a_id` int(10) NOT NULL COMMENT '文章id',
-  `s_id` int(10) NOT NULL DEFAULT '0',
   `img` varchar(255) NOT NULL,
   `title` varchar(255) DEFAULT NULL,
   `disable` int(1) NOT NULL DEFAULT '0',
@@ -112,13 +111,13 @@ CREATE TABLE `kq_carousel` (
 -- ----------------------------
 -- Records of kq_carousel
 -- ----------------------------
-INSERT INTO `kq_carousel` VALUES ('6', '9', '1', '32', '/Public/uploads/images/carouselt/25220_233814_4226.png', '哈哈哈', '1', '1515685094');
-INSERT INTO `kq_carousel` VALUES ('2', '7', '0', '0', '/Public/uploads/images/carouselt/25220_210042_1406.png', 'csadcsa', '0', '1515675642');
-INSERT INTO `kq_carousel` VALUES ('5', '18', '1', '32', '/Public/uploads/images/carouselt/25220_233706_7910.png', '轮播', '1', '1515685026');
-INSERT INTO `kq_carousel` VALUES ('4', '7', '0', '31', '/Public/uploads/images/carouselt/25220_231115_2627.png', '差时辰2', '1', '1515682844');
-INSERT INTO `kq_carousel` VALUES ('7', '18', '2', '28', '/Public/uploads/images/carouselt/25220_233905_1351.png', '呵呵', '1', '1515685145');
-INSERT INTO `kq_carousel` VALUES ('8', '8', '2', '0', '/Public/uploads/images/carouselt/25220_225635_3383.png', '1231', '1', '1515768995');
-INSERT INTO `kq_carousel` VALUES ('9', '19', '0', '0', '/Public/uploads/images/carouselt/25220_091704_1592.png', 'csacsa', '0', '1515806224');
+INSERT INTO `kq_carousel` VALUES ('6', '9', '1', '/Public/uploads/images/carouselt/25220_233814_4226.png', '哈哈哈', '1', '1515685094');
+INSERT INTO `kq_carousel` VALUES ('2', '7', '0', '/Public/uploads/images/carouselt/25220_210042_1406.png', 'csadcsa', '0', '1515675642');
+INSERT INTO `kq_carousel` VALUES ('5', '18', '1', '/Public/uploads/images/carouselt/25220_233706_7910.png', '轮播', '0', '1515685026');
+INSERT INTO `kq_carousel` VALUES ('4', '7', '0', '/Public/uploads/images/carouselt/25220_231115_2627.png', '差时辰2', '1', '1515682844');
+INSERT INTO `kq_carousel` VALUES ('7', '18', '0', '/Public/uploads/images/carouselt/25220_233905_1351.png', '呵呵', '0', '1515685145');
+INSERT INTO `kq_carousel` VALUES ('8', '8', '2', '/Public/uploads/images/carouselt/25220_225635_3383.png', '1231', '1', '1515768995');
+INSERT INTO `kq_carousel` VALUES ('9', '19', '1', '/Public/uploads/images/carouselt/25220_091704_1592.png', 'csacsa', '0', '1515806224');
 
 -- ----------------------------
 -- Table structure for `kq_carousel_classify`
@@ -142,8 +141,8 @@ INSERT INTO `kq_carousel_classify` VALUES ('7', '测试1', '1515596674', '1', '0
 INSERT INTO `kq_carousel_classify` VALUES ('8', '测试1', '1515596674', '1', '31', '0');
 INSERT INTO `kq_carousel_classify` VALUES ('9', '测试1', '1515596662', '0', '0', '0');
 INSERT INTO `kq_carousel_classify` VALUES ('12', 'cscsacs', '1515596674', '1', '0', '0');
-INSERT INTO `kq_carousel_classify` VALUES ('18', '测试232', '1515596290', '0', '0', '0');
-INSERT INTO `kq_carousel_classify` VALUES ('19', '时间', '1515596850', '0', '0', '0');
+INSERT INTO `kq_carousel_classify` VALUES ('18', '测试232', '1515596290', '0', '0', '2');
+INSERT INTO `kq_carousel_classify` VALUES ('19', '时间', '1515596850', '0', '33', '0');
 
 -- ----------------------------
 -- Table structure for `kq_character`
@@ -194,6 +193,26 @@ CREATE TABLE `kq_config` (
 -- Records of kq_config
 -- ----------------------------
 INSERT INTO `kq_config` VALUES ('1', '学员快签APP-后台管理系统', '学员快签APP-后台管理系统', '学员快签APP-后台管理系统', '18638035535', 'ldcom@163.com', '豫ICP备17028773', '财富指南针-后台管理系统版权所有Copyright ©2015 All Rights Reserved', '财富指南针-后台管理系统13层1325室', '314000', 'chenqiandiansang', 'wAQBPxk3', '/Public/uploads/images/logo/59c0c72f3b538.png', null, '10000', 'wx_ldns', '10', '365');
+
+-- ----------------------------
+-- Table structure for `kq_contact`
+-- ----------------------------
+DROP TABLE IF EXISTS `kq_contact`;
+CREATE TABLE `kq_contact` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `phone` int(11) DEFAULT NULL,
+  `email` varchar(255) DEFAULT NULL,
+  `name` varchar(255) DEFAULT NULL,
+  `address` varchar(255) DEFAULT NULL,
+  `gps` varchar(255) DEFAULT NULL,
+  `content` varchar(10000) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of kq_contact
+-- ----------------------------
+INSERT INTO `kq_contact` VALUES ('1', '12332', '56@qq.com', '2', '1515615', '', 'aaaaaaaaaaaaaacacas');
 
 -- ----------------------------
 -- Table structure for `kq_equip`
