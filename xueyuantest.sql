@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50553
 File Encoding         : 65001
 
-Date: 2018-01-19 22:42:35
+Date: 2018-01-23 22:15:04
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -57,15 +57,16 @@ CREATE TABLE `kq_article` (
   `disable` int(1) NOT NULL DEFAULT '0',
   `content` mediumtext NOT NULL,
   `addtime` int(10) NOT NULL,
+  `address` varchar(1000) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of kq_article
 -- ----------------------------
-INSERT INTO `kq_article` VALUES ('1', 'a1', 'b11', '/Public/uploads/images/article/25220_232253_9325.png', '1', '2', '31', '1353979500', '23.1485100000,113.2231400000', '0', '<p>cfacascacscsa<img src=\"/ueditor/php/upload/image/20180115/1516030555135808.png\" title=\"1516030555135808.png\" alt=\"微信图片_20180111202211.png\"/></p>', '1516026905');
-INSERT INTO `kq_article` VALUES ('3', 'a', 'b', '/Public/uploads/images/articleclassify/25220_232157_5849.png', '1', '2', '31', '2147483647', 'a', '0', '<p>cfacas</p>', '1516029717');
-INSERT INTO `kq_article` VALUES ('4', '文章添加测试', '文章添加测试', '/Public/uploads/images/article/25220_233928_1385.png', '1', '2', '31', '2147483647', '23.1485100000,113.2231400000', '0', '<p>啥才上车撒<img src=\"/ueditor/php/upload/image/20180115/1516030758131117.png\" title=\"1516030758131117.png\" alt=\"微信图片_20180111202211.png\"/></p>', '1516030768');
+INSERT INTO `kq_article` VALUES ('1', 'a1', 'b11', '/Public/uploads/images/article/25220_232253_9325.png', '1', '2', '31', '1353979500', '23.1485100000,113.2231400000', '0', '<p>cfacascacscsa<img src=\"/ueditor/php/upload/image/20180115/1516030555135808.png\" title=\"1516030555135808.png\" alt=\"微信图片_20180111202211.png\"/></p>', '1516026905', null);
+INSERT INTO `kq_article` VALUES ('3', 'a', 'b', '/Public/uploads/images/articleclassify/25220_232157_5849.png', '1', '2', '31', '2147483647', 'a', '0', '<p>cfacas</p>', '1516029717', null);
+INSERT INTO `kq_article` VALUES ('4', '文章添加测试', '文章添加测试', '/Public/uploads/images/article/25220_233928_1385.png', '1', '2', '31', '2147483647', '23.1485100000,113.2231400000', '0', '<p>啥才上车撒<img src=\"/ueditor/php/upload/image/20180115/1516030758131117.png\" title=\"1516030758131117.png\" alt=\"微信图片_20180111202211.png\"/></p>', '1516030768', '广东省白云区罗冲围客运站');
 
 -- ----------------------------
 -- Table structure for `kq_article_classify`
@@ -206,13 +207,14 @@ CREATE TABLE `kq_contact` (
   `address` varchar(255) DEFAULT NULL,
   `gps` varchar(255) DEFAULT NULL,
   `content` varchar(10000) DEFAULT NULL,
+  `img` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of kq_contact
 -- ----------------------------
-INSERT INTO `kq_contact` VALUES ('1', '12332', '56@qq.com', '2', '1515615', '', 'aaaaaaaaaaaaaacacas');
+INSERT INTO `kq_contact` VALUES ('1', '12332', '56@qq.com', '2', '1515615', '', 'aaaaaaaaaaaaaacacas', '/Public/uploads/images/contactqrcode/25220_215235_4179.png');
 
 -- ----------------------------
 -- Table structure for `kq_equip`
@@ -234,6 +236,21 @@ CREATE TABLE `kq_equip` (
 -- ----------------------------
 -- Records of kq_equip
 -- ----------------------------
+
+-- ----------------------------
+-- Table structure for `kq_keyword`
+-- ----------------------------
+DROP TABLE IF EXISTS `kq_keyword`;
+CREATE TABLE `kq_keyword` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `keyword` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of kq_keyword
+-- ----------------------------
+INSERT INTO `kq_keyword` VALUES ('1', '轮滑');
 
 -- ----------------------------
 -- Table structure for `kq_site`
