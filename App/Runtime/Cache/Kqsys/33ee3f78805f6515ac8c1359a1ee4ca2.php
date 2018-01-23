@@ -169,10 +169,14 @@
 				</ul>
 			</dd>
 		</dl>
-
-
-
-		
+<dl id="menu-article">
+			<dt><i class="Hui-iconfont">&#xe6cc;</i> 关键字管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+			<dd>
+				<ul>
+					<li><a _href="<?php echo U('Keyword/index');?>" data-title="搜索关键字" href="javascript:void(0)"> 搜索关键字</a></li>
+				</ul>
+			</dd>
+		</dl>
 	</div>
 </aside>
 <!--监控-->

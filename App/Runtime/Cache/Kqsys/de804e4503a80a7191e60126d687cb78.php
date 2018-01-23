@@ -91,6 +91,12 @@
 	      </div>
 	    </div>
 	    <div class="layui-form-item">
+	      <label class="layui-form-label">联系地址</label>
+	      <div class="layui-input-inline">
+	        <input type="text" name="address" autocomplete="off" placeholder="请输入联系地址" class="layui-input" value="<?php echo ($article["address"]); ?>">
+	      </div>
+	    </div>
+	    <div class="layui-form-item">
 	      <label class="layui-form-label">经纬度</label>
 	      <div class="layui-input-inline">
 	        <input type="text" name="gps" lay-verify="gps" autocomplete="off" placeholder="请输入经纬度" class="layui-input" value="<?php echo ($article["gps"]); ?>">
@@ -389,6 +395,7 @@
 	          p_id:$("select[name='p_id'] option:checked").val(),
 	          c_id:$("select[name='c_id'] option:checked").val(),
 	          s_id:$("select[name='s_id'] option:checked").val(),
+	          address:$("input[name='address']").val(),
 	          title: $("input[name='title']").val(),
 	          describe: $("input[name='describe']").val(),
 	          phone: $("input[name='phone']").val(),

@@ -344,7 +344,7 @@ class UserapiController extends BaseController {
 		}else{
 			$data['code']="1";
 			$data['msg']="返回数据成功";
-			$user1=M("user")->where("id='".$user['id']."'")->field("id,number,name,sex,age,tel,sid,total_hours,shang_hours,FROM_UNIXTIME(start_time,'%Y-%m-%d %H:%i:%s') as start_time,FROM_UNIXTIME(end_time,'%Y-%m-%d %H:%i:%s') as end_time")->find();
+			$user1=M("user")->where("id='".$user['id']."'")->field("id,number,name,sex,age,tel,sid,total_hours,shang_hours,FROM_UNIXTIME(start_time,'%Y-%m-%d') as start_time,FROM_UNIXTIME(end_time,'%Y-%m-%d') as end_time")->find();
 			$user2=M("site")->where("id='".$user1['sid']."'")->field("name,principal")->find();
 			$user1['sname'] = $user2['name'];
 			$user1['principal'] = $user2['principal'];
@@ -402,6 +402,9 @@ class UserapiController extends BaseController {
         $article=$Model->query("select id,title,a.`describe`,img from kq_article as a where disable = 0 and s_id > 0");
         $data['res']['article']=$article;
         
+        $keyword=$Model->query("select keyword from kq_keyword");
+        $data['res']['keyword']=$keyword;
+        
         $data['code']="1";
 		$data['msg']="返回数据成功";
 		$this->ajaxReturn($data);
@@ -414,7 +417,7 @@ class UserapiController extends BaseController {
 		$id=trim(I("post.id"));
 		if(!empty($id)){
 			$Model = M();
-	        $classify=$Model->query("select a_id,title,img from kq_article_classify as a where disable = 0 and p_id = {$id}");
+	        $classify=$Model->query("select id,title,img from kq_article_classify as a where disable = 0 and p_id = {$id}");
 	        if($classify){
 	        	$data['res']['classify']=$classify;
 		        $data['code']="1";
@@ -439,7 +442,7 @@ class UserapiController extends BaseController {
 		$id=trim(I("post.id"));
 		if(!empty($id)){
 			$Model = M();
-	        $article=$Model->query("select id,title,a.`describe`,img,phone,gps,content,FROM_UNIXTIME(a.addtime,'%Y-%m-%d %H:%i:%s') as addtime from kq_article as a where disable = 0 and id = {$id}");
+	        $article=$Model->query("select a.id,a.title,a.`describe`,a.img,a.phone,a.gps,a.content,FROM_UNIXTIME(a.addtime,'%Y-%m-%d %H:%i:%s') as addtime,b.name,a.address from kq_article as a left join kq_site as b on a.s_id = b.id where a.disable = 0 and a.id = {$id}");
 	        if($article){
 	        	$data['res']['article']=$article[0];
 		        $data['code']="1";

@@ -37,6 +37,17 @@
 	      </div>
 	    </div>
 	    <div class="layui-form-item">
+	      <label class="layui-form-label">二维码</label>
+	      <button type="button" class="layui-btn" id="image" style="position: relative;">
+	        <i class="layui-icon">&#xe67c;</i>上传图片
+	        <input type="file" class="upload-pic" value="上传图片" style="position: absolute;font-size: 0;width: 100%;height: 100%;outline: 0;opacity: 0;filter: alpha(opacity=0);top:0;left:0;z-index: 1;cursor: pointer;">
+	      </button>
+	      <div id="show" style="display: inline-block;"></div>
+	      <?php if($contact["img"] != ''): ?><div style="display: inline-block;">
+		      	 <img src="<?php echo ($contact["img"]); ?>" height="38" />
+		      </div><?php endif; ?>
+	    </div>
+	    <div class="layui-form-item">
 	      <label class="layui-form-label">联系电话</label>
 	      <div class="layui-input-inline">
 	        <input type="text" value="<?php echo ($contact["phone"]); ?>" name="phone" autocomplete="off" placeholder="请输入联系电话" class="layui-input">
@@ -123,14 +134,40 @@
                 form = layui.form //表格
         })
         
+        $(".upload-pic").change(function(){
+		    var files = $('input[type="file"]').prop('files')[0];
+			if(!!files){
+				var reader = new FileReader();
+		        reader.onload = function (oFREvent) {
+		            $("#show").html("<img src='"+ oFREvent.currentTarget.result +"' height='38' >");
+		        }
+		        reader.readAsDataURL(files);
+			}
+		})
+        
         $(".submit").click(function(){
         	addAr();
+        	var files = $('input[type="file"]').prop('files')[0];
+		      if (!!files) {
+		        var reader = new FileReader();
+		        reader.onload = function (oFREvent) {
+		          addAr(oFREvent.currentTarget.result)
+		        }
+		        reader.readAsDataURL(files);
+		      } else {
+		        if (!'<?php echo ($article["id"]); ?>') {
+		          layer.msg('封面图不能为空');
+		          return false;
+		        }
+		        addAr('old')
+		      }
         })
 
-        function addAr(){
+        function addAr(img){
 			$.post("<?php echo U('Contact/add');?>",
 	        {
 	          id: $("input[name='id']").val(),
+	          img: img,
 	          name: $("input[name='name']").val(),
 	          phone: $("input[name='phone']").val(),
 	          email: $("input[name='email']").val(),
