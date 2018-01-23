@@ -148,7 +148,7 @@
 			<dd>
 				<ul>
 					<li><a _href="<?php echo U('Carousel/classify');?>" data-title="轮播分类" href="javascript:void(0)"> 轮播分类</a></li>
-					<!--<li><a _href="<?php echo U('Carousel/demo');?>" data-title="demo" href="javascript:void(0)"> demo</a></li>-->
+					<li><a _href="<?php echo U('Carousel/demo');?>" data-title="demo" href="javascript:void(0)"> demo</a></li>
 				</ul>
 			</dd>
 		</dl>

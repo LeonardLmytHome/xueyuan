@@ -14,12 +14,7 @@
 <script type="text/javascript" src="lib/respond.min.js"></script>
 <script type="text/javascript" src="lib/PIE_IE678.js"></script>
 <![endif]-->
-<link rel="stylesheet" type="text/css" href="/Public/static/h-ui/css/H-ui.min.css" />
-<link rel="stylesheet" type="text/css" href="/Public/static/h-ui.admin/css/H-ui.admin.css" />
-<link rel="stylesheet" type="text/css" href="/Public/lib/Hui-iconfont/1.0.7/iconfont.css" />
-<link rel="stylesheet" type="text/css" href="/Public/lib/icheck/icheck.css" />
-<link rel="stylesheet" type="text/css" href="/Public/static/h-ui.admin/skin/default/skin.css" id="skin" />
-<link rel="stylesheet" type="text/css" href="/Public/static/h-ui.admin/css/style.css" />
+<link rel="stylesheet" type="text/css" href="/Public/static/h-ui.admin/layui-v2.2.5/layui/css/layui.css" />
 <!--[if IE 6]>
 <script type="text/javascript" src="http://lib.h-ui.net/DD_belatedPNG_0.0.8a-min.js" ></script>
 <script>DD_belatedPNG.fix('*');</script>
@@ -31,7 +26,11 @@
 <meta name="description" content="">
 </head>
 <body>
-
+	<form class="layui-form layui-form-pane">
+		<button type="button" class="layui-btn" id="test1">
+		  <i class="layui-icon">&#xe67c;</i>上传图片
+		</button>
+	</form>
 <!--_footer 作为公共模版分离出去-->
 <script type="text/javascript" src="/Public/lib/jquery/1.9.1/jquery.min.js"></script>
 <script type="text/javascript" src="/Public/lib/layer/2.1/layer.js"></script> 
@@ -73,12 +72,24 @@
 <!--/_footer /作为公共模版分离出去-->
 
 <!--请在下方写此页面业务相关的脚本-->
-<script type="text/javascript" src="/Public/lib/My97DatePicker/WdatePicker.js"></script>  
-<script type="text/javascript" src="/Public/lib/ueditor/1.4.3/ueditor.config.js"></script>
-<script type="text/javascript" src="/Public/lib/ueditor/1.4.3/ueditor.all.min.js"> </script> 
-<script type="text/javascript" src="/Public/lib/ueditor/1.4.3/lang/zh-cn/zh-cn.js"></script>
+<script type="text/javascript" src="/Public/static/h-ui.admin/layui-v2.2.5/layui/layui.js"></script>
 
 <script type="text/javascript">
+	layui.use(['layer', 'form','upload'], function () {
+        var layer = layui.layer, //弹层
+            form = layui.form,//表格
+            upload = layui.upload;
+			upload.render({
+			    elem: '#test1', //绑定元素
+			    url: "<?php echo U('Carousel/uploadlayerimg');?>", //上传接口
+		        done: function(res){
+		            console.log(res)
+		        },
+		        error: function(){
+			      //请求异常回调
+			    }
+		  });
+    })
 </script>
 <!--/请在上方写此页面业务相关的脚本-->
 </body>

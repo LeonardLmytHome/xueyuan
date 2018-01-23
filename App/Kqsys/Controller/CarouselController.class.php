@@ -208,4 +208,33 @@ class CarouselController extends CommonController{
 		
 		$this->ajaxReturn($list);
     }
+    
+    public function uploadlayerimg(){
+    	$imageName = "25220_".date("His",time())."_".rand(1111,9999).'.png';
+    	
+    	$dir = iconv("UTF-8", "GBK", "Public/uploads/images/layerimg/");
+        if (!file_exists($dir)){
+            mkdir ($dir,0777,true);
+        } 
+        
+		$imgname = $_FILES['file']['name'];
+	    $tmp = $_FILES['file']['tmp_name'];
+	    if(move_uploaded_file($tmp,$dir.$imgname.".png")){
+	        echo json_encode(array(
+		   "code" => 0,
+		   "msg" => "成功",
+		   "data" => array(
+		       "src" => $imgname
+		   )
+		));
+	    }else{
+	        echo json_encode(array(
+		   "code" => 1,
+		   "msg" => "失败",
+		   "data" => array(
+		       "src" => $imgname
+		   )
+		   ));
+	    }
+	}
 }

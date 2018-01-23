@@ -36,6 +36,9 @@
 	        <input type="text" value="<?php echo ($keyword["id"]); ?>" hidden="hidden" name="id">
 	      </div>
 	    </div>
+	    <button type="button" class="layui-btn" id="test1">
+  <i class="layui-icon">&#xe67c;</i>上传图片
+</button>
 	    <div class="layui-form-item">
 	      <div class="layui-input-block">
 	        <button class="layui-btn submit" type="button" lay-submit="" lay-filter="demo1">立即提交</button>
@@ -87,10 +90,25 @@
     <script type="text/javascript" src="/Public/static/h-ui.admin/js/jquery-1.8.3.min.js"></script>
     <script type="text/javascript" src="/Public/static/h-ui.admin/layui-v2.2.5/layui/layui.js"></script>
     <script type="text/javascript">
-        layui.use(['layer', 'form'], function () {
+    	   
+    	
+        layui.use(['layer', 'form','upload'], function () {
             var layer = layui.layer, //弹层
-                form = layui.form //表格
+                form = layui.form,//表格
+                upload = layui.upload;
+   
+			  upload.render({
+			    elem: '#test1' //绑定元素
+			    ,url: "<?php echo U('Keyword/upl');?>" //上传接口
+			    ,done: function(res){
+			      console.log(res)
+			    }
+			    ,error: function(){
+			      //请求异常回调
+			    }
+			  });
         })
+        
         
         $(".upload-pic").change(function(){
 		    var files = $('input[type="file"]').prop('files')[0];
